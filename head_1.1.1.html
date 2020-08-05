@@ -1,0 +1,642 @@
+<!DOCTYPE html">
+<html>
+<head>
+    <title>1.1. Основные определения.</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+
+	<header class="header">
+        <h1>Математический анализ</h1>
+    </header>
+
+    <div class="main-grid">
+
+        <nav class="side-menu">
+            <h2>Темы</h2>
+			
+			
+            <ul class="no-dec">
+
+                <li>
+                    <div class="spoiler spoiler-submenu">
+                        <button class="spoiler-button spoiler-submenu">ГЛАВА 1. ПРЕДЕЛ ФУНКЦИИ В ТОЧКЕ.</button>
+                        <div class="spoiler-content spoiler-submenu">
+                            <ul class="no-dec">
+                                <li>
+                                    <p><a href="head_1.1.1.html">1.1. Основные определения.</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="#">1.2. Существование предела функции в точке.</a></p>
+                                </li>
+								<li>
+                                    <p><a href="Limits. Important points.html">Пределы. Важные моменты.</a></p>
+                                </li>
+                            </ul>
+                        </div>  
+                    </div>
+                </li>
+            </ul>
+
+        </nav>
+
+        <main class="main">
+
+            <section class="section">
+						
+
+                <p>
+				Функция \(\displaystyle f\left( x \right):X\to \mathbb{R}\) возрастает (убывает) в точке \(\displaystyle x={{x}_{0}}\in X\), если существует некоторая окрестность этой точки, в которой 
+				</p>
+				<br>
+				<p>
+				\(\displaystyle \left\{ \begin{matrix}
+				f\left( x \right)\,>\,f\left( {{x}_{0}} \right)\text{ }\text{ }x\,>\,{{x}_{0}};  \\
+				f\left( x \right)\,<\,f\left( {{x}_{0}} \right)\text{ }\text{ }x\,<\,{{x}_{0}},  \\
+				\end{matrix} \right.\) 
+				\(\displaystyle \left( \left\{ \begin{matrix}
+				f\left( x \right)\,<\,f\left( {{x}_{0}} \right)\text{ }\text{ }x\,>\,{{x}_{0}};  \\
+				f\left( x \right)\,>\,f\left( {{x}_{0}} \right)\text{ }\text{ }x\,<\,{{x}_{0}}.  \\
+				\end{matrix} \right. \right)\)
+				</p>
+				<br>
+				<p>
+				Если обозначить \(\displaystyle \Delta x=x-{{x}_{0}}\), \(\displaystyle \Delta f=f\left( x \right)-f\left( {{x}_{0}} \right)\), то определение можно переформулировать следующим образом: функция \(\displaystyle f\left( x \right)\) возрастает 
+				(убывает) в точке \(\displaystyle x\,=\,{{x}_{0}}\), если при \(\displaystyle \Delta x\,\ne \,0\) \(\displaystyle \frac{\Delta f}{\Delta x}\,>\,0\) (\(\displaystyle \frac{\Delta f}{\Delta x}\,<\,0\)). Точка, в которой функция возрастает (убывает), называется точкой возрастания (убывания) функции \(\displaystyle f\left( x \right)\). 
+				</p>
+				
+<br>
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=633
+ style='width:474.9pt;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=633 valign=top style='width:474.9pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=a0 align=center style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+  margin-left:0cm;line-height:normal'>Функция \(\displaystyle f\left( x \right):X\to \mathbb{R}\) называется:</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=633 valign=top style='width:474.9pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:normal'><b><i>неубывающей на множестве</i></b> \(\displaystyle A\), если</p>
+  <p class=a0 align=center style='line-height:normal'>\(\displaystyle \forall {{x}_{1}},{{x}_{2}}\in A\bigcap X\ \ {{x}_{1}}\ne {{x}_{2}}\ \Rightarrow \ \frac{f\left( {{x}_{1}} \right)-f\left( {{x}_{2}} \right)}{{{x}_{1}}-{{x}_{2}}}\ge 0\);</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=633 valign=top style='width:474.9pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:normal'>– <b><i>невозрастающей на
+  множестве</i></b> \(\displaystyle A\), если </p>
+  <p class=a0 align=center style='line-height:normal'>\(\displaystyle \forall {{x}_{1}},{{x}_{2}}\in A\bigcap X\ \ {{x}_{1}}\ne {{x}_{2}}\ \Rightarrow \ \frac{f\left( {{x}_{1}} \right)-f\left( {{x}_{2}} \right)}{{{x}_{1}}-{{x}_{2}}}\le 0\);</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=633 valign=top style='width:474.9pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:normal'>– <b><i>возрастающей на множестве</i></b>
+  \(\displaystyle A\), если </p>
+  <p class=24 align=center style='text-align:center;line-height:normal'>\(\displaystyle \forall {{x}_{1}},{{x}_{2}}\in A\bigcap X\ \ {{x}_{1}}\ne {{x}_{2}}\ \Rightarrow \ \frac{f\left( {{x}_{1}} \right)-f\left( {{x}_{2}} \right)}{{{x}_{1}}-{{x}_{2}}}>0\);</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=633 valign=top style='width:474.9pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:normal'>– <b><i>убывающей на множестве</i>
+  </b> \(\displaystyle A\), если </p>
+  <p class=24 align=center style='text-align:center;line-height:normal'>\(\displaystyle \forall {{x}_{1}},{{x}_{2}}\in A\bigcap X\ \ {{x}_{1}}\ne {{x}_{2}}\ \Rightarrow \ \frac{f\left( {{x}_{1}} \right)-f\left( {{x}_{2}} \right)}{{{x}_{1}}-{{x}_{2}}}<0\).</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=633 valign=top style='width:474.9pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=a style='margin-top:6.0pt;text-indent:22.95pt'>Неубывающие,
+  невозрастающие, убывающие и возрастающие функции объединяются общим
+  наименованием <b><i>монотонные</i> </b>функции; убывающие и возрастающие
+  функции называются также <b><i>строго монотонными</i></b>.</p>
+  </td>
+ </tr>
+</table>
+
+
+<br>
+
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=869
+ style='width:23.0cm;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr style='height:17.15pt'>
+  <td width=344 colspan=3 style='width:258.3pt;border:solid windowtext 1.5pt;
+  border-left:solid windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.15pt'><span
+  style='font-size:15.0pt;line-height:87%;font-family:"Times New Roman",serif'><br
+  clear=all style='page-break-before:always'>
+  </span>
+  <p class=a align=center style='text-align:center'>Символическая запись</p>
+  </td>
+  <td width=525 colspan=5 style='width:393.75pt;border:solid windowtext 1.5pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.15pt'>
+  <p class=a align=center style='text-align:center'>Определение предела для
+  функции <b><span style='color:black'><span style='position:relative;
+  top:5.0pt'><img width=39 height=20
+  src="Символическая%20запись.files/image001.png"></span></span></b>,</p>
+  <p class=a align=center style='text-align:center'>определенной на множестве <span
+  style='position:relative;top:2.0pt'><img width=18 height=15
+  src="Символическая%20запись.files/image002.png"></span></p>
+  </td>
+ </tr>
+ <tr style='height:19.85pt'>
+  <td width=123 style='width:92.15pt;border-top:none;border-left:solid windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a><img width=91
+  height=33 src="Символическая%20запись.files/image003.png"></p>
+  </td>
+  <td width=142 rowspan=6 style='width:106.3pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=right style='text-align:right'><img width=76 height=28
+  src="Символическая%20запись.files/image004.png"> при</p>
+  </td>
+  <td width=80 style='width:59.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='text-align:center'><img width=49 height=28
+  src="Символическая%20запись.files/image005.png"></p>
+  </td>
+  <td width=71 rowspan=6 style='width:53.55pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='margin-right:-5.4pt;text-align:center'><img width=62 height=20
+  src="Символическая%20запись.files/image006.png"></p>
+  </td>
+  <td width=104 rowspan=3 style='width:77.95pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='text-align:center'><img width=86 height=28
+  src="Символическая%20запись.files/image007.png"></p>
+  </td>
+  <td width=85 rowspan=6 style='width:63.8pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='margin-right:-5.4pt;text-align:center'><b><img width=20 height=18
+  src="Символическая%20запись.files/image008.png"></b><b><img width=42 height=18
+  src="Символическая%20запись.files/image009.png"></b>,</p>
+  </td>
+  <td width=113 style='width:3.0cm;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='text-align:center'><img width=96 height=28
+  src="Символическая%20запись.files/image010.png"></p>
+  </td>
+  <td width=151 rowspan=6 style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a><b><img width=91 height=33
+  src="Символическая%20запись.files/image011.png"></b></p>
+  </td>
+ </tr>
+ <tr style='height:19.85pt'>
+  <td width=123 style='width:92.15pt;border-top:none;border-left:solid windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a><img width=99
+  height=33 src="Символическая%20запись.files/image012.png"></p>
+  </td>
+  <td width=80 style='width:59.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='text-align:center'><img width=62 height=28
+  src="Символическая%20запись.files/image013.png"></p>
+  </td>
+  <td width=113 style='width:3.0cm;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='text-align:center'><img width=91 height=28
+  src="Символическая%20запись.files/image014.png"></p>
+  </td>
+ </tr>
+ <tr style='height:19.85pt'>
+  <td width=123 style='width:92.15pt;border-top:none;border-left:solid windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a><img width=99
+  height=33 src="Символическая%20запись.files/image015.png"></p>
+  </td>
+  <td width=80 style='width:59.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='text-align:center'><img width=62 height=28
+  src="Символическая%20запись.files/image016.png"></p>
+  </td>
+  <td width=113 style='width:3.0cm;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='margin-right:-5.4pt;text-align:center'><img width=99 height=28
+  src="Символическая%20запись.files/image017.png"></p>
+  </td>
+ </tr>
+ <tr style='height:19.85pt'>
+  <td width=123 style='width:92.15pt;border-top:none;border-left:solid windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a><img width=91
+  height=33 src="Символическая%20запись.files/image018.png"></p>
+  </td>
+  <td width=80 style='width:59.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='text-align:center'><img width=49 height=15
+  src="Символическая%20запись.files/image019.png"></p>
+  </td>
+  <td width=104 rowspan=3 style='width:77.95pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='margin-right:-5.4pt;text-align:center'><img width=91 height=28
+  src="Символическая%20запись.files/image020.png"></p>
+  </td>
+  <td width=113 style='width:3.0cm;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='text-align:center'><img width=45 height=28
+  src="Символическая%20запись.files/image021.png"></p>
+  </td>
+ </tr>
+ <tr style='height:19.85pt'>
+  <td width=123 style='width:92.15pt;border-top:none;border-left:solid windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a><img width=96
+  height=33 src="Символическая%20запись.files/image022.png"></p>
+  </td>
+  <td width=80 style='width:59.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='text-align:center'><img width=55 height=15
+  src="Символическая%20запись.files/image023.png"></p>
+  </td>
+  <td width=113 style='width:3.0cm;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='text-align:center'><img width=41 height=18
+  src="Символическая%20запись.files/image024.png"></p>
+  </td>
+ </tr>
+ <tr style='height:19.85pt'>
+  <td width=123 style='width:92.15pt;border-top:none;border-left:solid windowtext 2.25pt;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a><img width=96
+  height=33 src="Символическая%20запись.files/image025.png"></p>
+  </td>
+  <td width=80 style='width:59.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='text-align:center'><img width=55 height=15
+  src="Символическая%20запись.files/image026.png"></p>
+  </td>
+  <td width=113 style='width:3.0cm;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='text-align:center'><img width=51 height=18
+  src="Символическая%20запись.files/image027.png"></p>
+  </td>
+ </tr>
+ <tr style='height:19.85pt'>
+  <td width=123 style='width:92.15pt;border-top:none;border-left:solid windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a><img width=103
+  height=33 src="Символическая%20запись.files/image028.png"></p>
+  </td>
+  <td width=142 rowspan=6 style='width:106.3pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=right style='text-align:right'><img width=81 height=28
+  src="Символическая%20запись.files/image029.png"> при</p>
+  </td>
+  <td width=80 style='width:59.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='text-align:center'><img width=49 height=28
+  src="Символическая%20запись.files/image005.png"></p>
+  </td>
+  <td width=71 rowspan=6 style='width:53.55pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='margin-right:-5.4pt;text-align:center'><img width=62 height=20
+  src="Символическая%20запись.files/image006.png"></p>
+  </td>
+  <td width=104 rowspan=3 style='width:77.95pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='text-align:center'><img width=86 height=28
+  src="Символическая%20запись.files/image007.png"></p>
+  </td>
+  <td width=85 rowspan=6 style='width:63.8pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='margin-right:-5.4pt;text-align:center'><b><img width=20 height=18
+  src="Символическая%20запись.files/image008.png"><</b><b><img width=42 height=18
+  src="Символическая%20запись.files/image009.png"></b>,</p>
+  </td>
+  <td width=113 style='width:3.0cm;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='text-align:center'><img width=96 height=28
+  src="Символическая%20запись.files/image010.png"></p>
+  </td>
+  <td width=151 rowspan=6 style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a><b></b><b><img width=86 height=28
+  src="Символическая%20запись.files/image030.png"></b></p>
+  </td>
+ </tr>
+ <tr style='height:20.65pt'>
+  <td width=123 style='width:92.15pt;border-top:none;border-left:solid windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.65pt'>
+  <p class=a style='margin-right:-5.4pt'><img width=107 height=33
+  src="Символическая%20запись.files/image031.png"></p>
+  </td>
+  <td width=80 style='width:59.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.65pt'>
+  <p class=a align=center style='text-align:center'><img width=62 height=28
+  src="Символическая%20запись.files/image013.png"></p>
+  </td>
+  <td width=113 style='width:3.0cm;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.65pt'>
+  <p class=a align=center style='text-align:center'><img width=91 height=28
+  src="Символическая%20запись.files/image014.png"></p>
+  </td>
+ </tr>
+ <tr style='height:19.85pt'>
+  <td width=123 style='width:92.15pt;border-top:none;border-left:solid windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a style='margin-right:-5.4pt'><img width=107 height=33
+  src="Символическая%20запись.files/image032.png"></p>
+  </td>
+  <td width=80 style='width:59.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='text-align:center'><img width=62 height=28
+  src="Символическая%20запись.files/image016.png"></p>
+  </td>
+  <td width=113 style='width:3.0cm;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='margin-right:-5.4pt;text-align:center'><img width=99 height=28
+  src="Символическая%20запись.files/image017.png"></p>
+  </td>
+ </tr>
+ <tr style='height:19.85pt'>
+  <td width=123 style='width:92.15pt;border-top:none;border-left:solid windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a><img width=99
+  height=33 src="Символическая%20запись.files/image033.png"></p>
+  </td>
+  <td width=80 style='width:59.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='text-align:center'><img width=49 height=15
+  src="Символическая%20запись.files/image019.png"></p>
+  </td>
+  <td width=104 rowspan=3 style='width:77.95pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='margin-right:-5.4pt;text-align:center'><img width=91 height=28
+  src="Символическая%20запись.files/image020.png"></p>
+  </td>
+  <td width=113 style='width:3.0cm;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='text-align:center'><img width=45 height=28
+  src="Символическая%20запись.files/image021.png"></p>
+  </td>
+ </tr>
+ <tr style='height:19.85pt'>
+  <td width=123 style='width:92.15pt;border-top:none;border-left:solid windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a><img width=104
+  height=33 src="Символическая%20запись.files/image034.png"></p>
+  </td>
+  <td width=80 style='width:59.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='text-align:center'><img width=55 height=15
+  src="Символическая%20запись.files/image023.png"></p>
+  </td>
+  <td width=113 style='width:3.0cm;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='text-align:center'><img width=41 height=18
+  src="Символическая%20запись.files/image024.png"></p>
+  </td>
+ </tr>
+ <tr style='height:19.85pt'>
+  <td width=123 style='width:92.15pt;border-top:none;border-left:solid windowtext 2.25pt;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a><img width=104
+  height=33 src="Символическая%20запись.files/image035.png"></p>
+  </td>
+  <td width=80 style='width:59.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='text-align:center'><img width=55 height=15
+  src="Символическая%20запись.files/image026.png"></p>
+  </td>
+  <td width=113 style='width:3.0cm;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=a align=center style='text-align:center'><img width=51 height=18
+  src="Символическая%20запись.files/image027.png"></p>
+  </td>
+ </tr>
+ <tr style='height:22.0pt'>
+  <td width=123 style='width:92.15pt;border-top:none;border-left:solid windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
+  <p class=a><img width=103
+  height=33 src="Символическая%20запись.files/image036.png"></p>
+  </td>
+  <td width=142 rowspan=6 style='width:106.3pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
+  <p class=a align=right style='text-align:right'><img width=81 height=28
+  src="Символическая%20запись.files/image037.png">при</p>
+  </td>
+  <td width=80 style='width:59.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
+  <p class=a align=center style='text-align:center'><img width=49 height=28
+  src="Символическая%20запись.files/image005.png"></p>
+  </td>
+  <td width=71 rowspan=6 style='width:53.55pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
+  <p class=a align=center style='margin-right:-5.4pt;text-align:center'><img width=62 height=20
+  src="Символическая%20запись.files/image006.png"></p>
+  </td>
+  <td width=104 rowspan=3 style='width:77.95pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
+  <p class=a align=center style='text-align:center'><img width=86 height=28
+  src="Символическая%20запись.files/image007.png"></p>
+  </td>
+  <td width=85 rowspan=6 style='width:63.8pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
+  <p class=a align=center style='margin-right:-5.4pt;text-align:center'><b><img width=20 height=18
+  src="Символическая%20запись.files/image008.png"></b><b><img width=42 height=18
+  src="Символическая%20запись.files/image009.png"></b>,</p>
+  </td>
+  <td width=113 style='width:3.0cm;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
+  <p class=a align=center style='text-align:center'><img width=96 height=28
+  src="Символическая%20запись.files/image010.png"></p>
+  </td>
+  <td width=151 rowspan=6 style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
+  <p class=a><b></b><b><img width=93 height=28
+  src="Символическая%20запись.files/image038.png"></b></p>
+  </td>
+ </tr>
+ <tr style='height:22.0pt'>
+  <td width=123 style='width:92.15pt;border-top:none;border-left:solid windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
+  <p class=a style='margin-right:-5.4pt'><img width=107 height=33
+  src="Символическая%20запись.files/image039.png"></p>
+  </td>
+  <td width=80 style='width:59.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
+  <p class=a align=center style='text-align:center'><img width=62 height=28
+  src="Символическая%20запись.files/image013.png"></p>
+  </td>
+  <td width=113 style='width:3.0cm;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
+  <p class=a align=center style='text-align:center'><img width=91 height=28
+  src="Символическая%20запись.files/image014.png"></p>
+  </td>
+ </tr>
+ <tr style='height:22.75pt'>
+  <td width=123 style='width:92.15pt;border-top:none;border-left:solid windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.75pt'>
+  <p class=a style='margin-right:-5.4pt'><img width=107 height=33
+  src="Символическая%20запись.files/image040.png"></p>
+  </td>
+  <td width=80 style='width:59.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.75pt'>
+  <p class=a align=center style='text-align:center'><img width=62 height=28
+  src="Символическая%20запись.files/image016.png"></p>
+  </td>
+  <td width=113 style='width:3.0cm;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.75pt'>
+  <p class=a align=center style='margin-right:-5.4pt;text-align:center'><img width=99 height=28
+  src="Символическая%20запись.files/image017.png"></p>
+  </td>
+ </tr>
+ <tr style='height:22.0pt'>
+  <td width=123 style='width:92.15pt;border-top:none;border-left:solid windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
+  <p class=a style='margin-right:-5.4pt'><img width=99 height=33
+  src="Символическая%20запись.files/image041.png"></p>
+  </td>
+  <td width=80 style='width:59.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
+  <p class=a align=center style='text-align:center'><img width=49 height=15
+  src="Символическая%20запись.files/image019.png"></p>
+  </td>
+  <td width=104 rowspan=3 style='width:77.95pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
+  <p class=a align=center style='margin-right:-5.4pt;text-align:center'><img width=91 height=28
+  src="Символическая%20запись.files/image020.png"></p>
+  </td>
+  <td width=113 style='width:3.0cm;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
+  <p class=a align=center style='text-align:center'><img width=45 height=28
+  src="Символическая%20запись.files/image021.png"></p>
+  </td>
+ </tr>
+ <tr style='height:22.0pt'>
+  <td width=123 style='width:92.15pt;border-top:none;border-left:solid windowtext 2.25pt;
+  border-bottom:none;border-right:solid windowtext 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:22.0pt'>
+  <p class=a><img width=104
+  height=33 src="Символическая%20запись.files/image042.png"></p>
+  </td>
+  <td width=80 style='width:59.85pt;border:none;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
+  <p class=a align=center style='text-align:center'><img width=55 height=15
+  src="Символическая%20запись.files/image023.png"></p>
+  </td>
+  <td width=113 style='width:3.0cm;border:none;padding:0cm 5.4pt 0cm 5.4pt;
+  height:22.0pt'>
+  <p class=a align=center style='text-align:center'><img width=41 height=18
+  src="Символическая%20запись.files/image024.png"></p>
+  </td>
+ </tr>
+ <tr style='height:20.5pt'>
+  <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
+  solid windowtext 2.25pt;border-bottom:solid windowtext 1.5pt;border-right:
+  solid windowtext 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;height:20.5pt'>
+  <p class=a><img width=104
+  height=33 src="Символическая%20запись.files/image043.png"></p>
+  </td>
+  <td width=80 style='width:59.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.5pt'>
+  <p class=a align=center style='text-align:center'><img width=55 height=15
+  src="Символическая%20запись.files/image026.png"></p>
+  </td>
+  <td width=113 style='width:3.0cm;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.5pt'>
+  <p class=a align=center style='text-align:center'><img width=51 height=18
+  src="Символическая%20запись.files/image027.png"></p>
+  </td>
+ </tr>
+</table>
+<br>
+<p><b>Замечание.</b> В определении предела \(\displaystyle \underset{x\to {{x}_{0}}}{\mathop{\lim }}\,f\left( x \right)\) нет никаких условий на значение \(\displaystyle f\left( {{x}_{0}} \right)\), функция может быть даже не определена в точке \(\displaystyle {{x}_{0}}\). Поэтому если две функции  \(\displaystyle f\left( x \right)\) и \(\displaystyle g\left( x \right)\)совпадают в некоторой проколотой окрестности точки \(\displaystyle {{x}_{0}}\), то либо обе функции не имееют предела при \(\displaystyle x\to {{x}_{0}}\), либо \(\displaystyle \underset{x\to {{x}_{0}}}{\mathop{\lim }}\,f\left( x \right)=\underset{x\to {{x}_{0}}}{\mathop{\lim }}\,g\left( x \right)\). Аналогичное утверждение справедливо и для пределов \(\displaystyle \underset{x\to {{x}_{0}}+}{\mathop{\lim }}\,f\left( x \right)\), \(\displaystyle \underset{x\to {{x}_{0}}-}{\mathop{\lim }}\,f\left( x \right)\)
+на значение предела никак не влияет.
+</p>
+<br>
+<p><b>Пример 3.1.</b> Докажем по определению, что \(\displaystyle \underset{x\to 3}{\mathop{\lim }}\,\left( 5x+1 \right)=16\).</p>
+
+
+                    <button class="spoiler-button">Решение</button>
+                    <div class="spoiler-content">
+					
+					<br>
+                        
+						<p>\(\displaystyle \forall \varepsilon >0\,\,\exists \delta =\frac{\varepsilon }{5}\) \(\displaystyle \forall x\in X\,\,\,0<\left| x-3 \right|<\delta \,\,\Rightarrow \,\,\left| \left( 5x+1 \right)-16 \right|=5\left| x-3 \right|<5\delta =5\frac{\varepsilon }{5}=\varepsilon \)</p>
+                    <br>
+					</div>  
+					
+<p><b>Пример 3.2.</b> Пусть \(\displaystyle f\left( x \right)=\left\{ \begin{matrix}
+   1,x\ne 0,  \\
+   0,x=0.  \\
+\end{matrix} \right.\) Докажем по определению, что 
+\(\displaystyle \underset{x\to 0}{\mathop{\lim }}\,f\left( x \right)=1\).
+</p>					
+					<button class="spoiler-button">Решение</button>
+                    <div class="spoiler-content">
+					
+					<br>
+                        
+						<p>В любой проколотой окрестности 0 \(\displaystyle f\left( x \right)=1\), следовательно,
+\(\displaystyle \forall \varepsilon >0\,\,\exists \delta =\varepsilon \) \(\displaystyle \forall x\in X\,\,\,0<\left| x \right|<\delta \,\,\Rightarrow \,\,\left| f\left( x \right)-1 \right|=0<\varepsilon \)
+</p>
+                    <br>
+					</div>  				
+					
+					
+					
+				
+
+
+
+
+
+
+				
+            </section>
+          
+
+        </main>
+
+    </div>
+    <i class="fas fa-angle-down"></i>
+    <footer class="footer">
+        <h1>Надпись</h1>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
