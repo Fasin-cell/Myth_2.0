@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Математический анализ</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+
+	<header class="header">
+        <h1>Математический анализ</h1>
+    </header>
+
+    <div class="main-grid">
+
+        <nav class="side-menu">
+            <h2>Темы</h2>
+						
+            <ul class="no-dec">
+
+                <li>
+                    <div class="spoiler spoiler-submenu">
+                        <button class="spoiler-button spoiler-submenu">Интегралы, зависящие от параметра.</button>
+                        <div class="spoiler-content spoiler-submenu">
+                            <ul class="no-dec">
+                                <li>
+                                    <p><a href="1.1. Равномерная сходимость функций по параметру.html">1.1. Равномерная сходимость функций по параметру.</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="1.2. Собственные интегралы.html">1.2. Собственные интегралы.</a></p>
+                                </li>
+								<li>
+                                    <p><a href="Общий случай.html">Общий случай.</a></p>
+                                </li>
+															
+								<li>	
+									<div class="spoiler spoiler-submenu">
+										<button class="spoiler-button spoiler-submenu">1.3 Несобственные интегралы.</button>
+										<div class="spoiler-content spoiler-submenu">
+											<ul class="no-dec">
+												<li>
+													<p><a href="">1.3.1. Основные определения.</a></p>
+												</li>
+												<li>
+													<p><a href="">1.3.2. Равномерная сходимость несобственных интегралов.</a></p>
+												</li>
+												<li>
+													<p><a href="">1.3.3. Признаки равномерной сходимости.</a></p>
+												</li>
+												<li>
+													<p><a href="">1.3.4. Свойства равномерно сходящихся интегралов.</a></p>
+												</li>
+												<li>
+													<p><a href="">1.3.5. Эйлеровы интегралы.</a></p>
+												</li>
+											</ul>
+										</div>	
+									</div>										
+								</li>								                                 
+                            </ul>
+                        </div>  
+                    </div>
+                </li>
+				
+				
+				
+            </ul>
+
+        </nav>
+		
+				
+		<main class="main">
+
+            <section class="section">
+			
+				<p><h3>1.1. РАВНОМЕРНАЯ ПО ПАРАМЕТРУ СХОДИМОСТЬ ФУНКЦИЙ</h3></p>
+				<p>Пусть функция \(\displaystyle  f(x,\gamma )\) определена на множестве \(\displaystyle X\times \Gamma\)  и 
+				\(\displaystyle {{x}_{0}}\) – некоторая предельная точка множества \(\displaystyle X\). 
+				</p>
+				<p>Функция \(\displaystyle f(x,\gamma )\) при \(\displaystyle x\to {{x}_{0}}\) <strong><i>стремится к предельной функции</i></strong> \(\displaystyle \varphi \left( \gamma  \right)\) <strong><i>равномерно относительно</strong></i> \(\displaystyle \gamma \) в области \(\displaystyle \Gamma \), если:</p>
+				<p>1)	\(\displaystyle\,\forall \gamma \in \Gamma \) \(\displaystyle\underset{x\to {{x}_{0}}}{\mathop{\lim }}\,f(x,\gamma )=\varphi \left( \gamma  \right)<\infty \),</p>
+				<p>2)	\(\displaystyle \forall \varepsilon >0\) \(\displaystyle\exists \delta >0\) \(\displaystyle\forall x\in X\) \(\displaystyle\forall \gamma \in \Gamma \) \(\displaystyle\left| x-{{x}_{0}} \right|<\delta \) \(\displaystyle\Rightarrow \) \(\displaystyle\left| f\left( x,\gamma  \right)-\varphi \left( \gamma  \right) \right|<\varepsilon \).</p>
+				<p>Замечание. Второе условие эквивалентно тому, что
+				\(\displaystyle\underset{x\to {{x}_{0}}}{\mathop{\lim }}\,\underset{\gamma \in \Gamma }{\mathop{\sup }}\,\left| f(x,\gamma )-\varphi \left( \gamma  \right) \right|=0\).
+				</p>
+            </section>
+			
+			<section class="section">
+			
+				<p><strong>Теорема 1 (критерий равномерной сходимости Коши).</strong> Для того чтобы функция \(\displaystyle f(x,\gamma )\) при \(\displaystyle x\,\to \,{{x}_{0}}\) имела предель-ную функцию и стремилась к ней равномерно относительно \(\displaystyle \gamma \) в области \(\displaystyle \Gamma \), необходимо и достаточно, чтобы 
+					\(\displaystyle \forall \varepsilon >0\) \(\displaystyle \exists \delta >0\) \(\displaystyle \forall x\in X\) \(\displaystyle \forall {x}'\in X\) 
+                               \(\displaystyle \forall \gamma \in \Gamma \) \(\displaystyle \left| x-{x}' \right|<\delta \) \(\displaystyle \Rightarrow \) \(\displaystyle \left| f\left( x,\gamma  \right)-f\left( {x}',\gamma  \right) \right|<\varepsilon \).
+				</p>
+				
+				<p><strong>Теорема 2.</strong> Для того чтобы функция \(\displaystyle f(x,\gamma )\) при \(\displaystyle x\to {{x}_{0}}\) стремилась 
+				к \(\displaystyle\varphi \left( \gamma  \right)\) равномерно относительно \(\displaystyle\gamma \) в области \(\displaystyle\Gamma \), необходимо и достаточно, чтобы к \(\displaystyle\varphi \left( \gamma  \right)\) равномерно сходилась каждая функциональная последо-вательность \(\displaystyle\left\{ {{g}_{n}}\left( \gamma  \right) \right\},\,\,\,{{g}_{n}}\left( \gamma  \right)=f({{x}_{n}},\gamma )\), где \(\displaystyle\left\{ {{x}_{n}} \right\}\) – произвольная сходящаяся к \(\displaystyle{{x}_{0}}\) последовательность.
+					Изученные ранее свойства равномерно сходящихся функциональных последовательностей в силу теоремы 2 могут быть переформулированы на случай равномерно сходящихся по параметру функций. 
+				</p>
+				
+				<p>
+				<strong>Теорема 3 (перестановка двух предельных переходов).</strong> Пусть функция \(\displaystyle f\left( x,\gamma  \right)\) определена на множестве \(\displaystyle X\times \Gamma \), \(\displaystyle {{x}_{0}}\) и \(\displaystyle{{\gamma }_{0}}\) – предельные точки (ко-нечные или бесконечные) соответственно множеств \(\displaystyle X\) и \(\displaystyle \Gamma \). Пусть далее
+				\(\displaystyle \forall \gamma \in \Gamma \) \(\displaystyle \underset{x\to {{x}_{0}}}{\mathop{\lim }}\,f(x,\gamma )=\varphi \left( \gamma  \right)\),
+				\(\displaystyle \forall x\in X\) \(\displaystyle \underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,f(x,\gamma )=\psi \left( x \right)\).
+				Если при \(\displaystyle x\to {{x}_{0}}\) функция \(\displaystyle f\left( x,\gamma  \right)\) сходится к \(\displaystyle \varphi \left( \gamma  \right)\) равномерно относительно \(\displaystyle \gamma \) в области \(\displaystyle\Gamma \), то существуют двойной и оба повторных предела
+					\(\displaystyle\underset{\begin{smallmatrix} 
+				x\to {{x}_{0}} \\ 
+				\gamma \to {{\gamma }_{0}} 
+					\end{smallmatrix}}{\mathop{\lim }}\,f(x,\gamma )=\underset{x\to {{x}_{0}}}{\mathop{\lim }}\,\underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,f(x,\gamma )=\underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,\underset{x\to {{x}_{0}}}{\mathop{\lim }}\,f(x,\gamma )\).
+				</p>
+				<p><strong>Теорема 4 (непрерывность).</strong> Если функция \(\displaystyle f\left( x,\gamma  \right)\) \(\displaystyle \forall x\in X\) непрерывна по \(\displaystyle \gamma \) на \(\displaystyle \left(\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right)\) и при \(\displaystyle x\to {{x}_{0}}\) равномерно стремится к предельной функции \(\displaystyle\varphi \left( \gamma  \right)\), то функция \(\displaystyle\varphi \left( \gamma  \right)\) также будет непрерывна. </p>
+				<p><strong>Теорема 5 (обобщение теоремы Дини).</strong> Если \(\displaystyle\forall x\in X\) функция \(\displaystyle f\left( x,\gamma  \right)\)  непрерывна по \(\displaystyle\gamma \) на \(\displaystyle\left(\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right)\) и при возрастании \(\displaystyle x\), возрастая, сходится 
+				к непрерывной предельной функции \(\displaystyle\varphi \left( \gamma  \right)\), то \(\displaystyle f\left( x,\gamma  \right)\) сходится к \(\displaystyle\varphi \left( \gamma  \right)\) равномерно относительно \(\displaystyle\gamma \).
+				</p>
+				<p><strong>Теорема 6 (интегрируемость).</strong> Если функция \(\displaystyle f\left( x,\gamma  \right)\) \(\displaystyle\forall x\in X\) интегрируема по \(\displaystyle\gamma \) на \(\displaystyle\left(\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right)\) и при \(\displaystyle x\to {{x}_{0}}\) равномерно стремится к предельной функции \(\displaystyle\varphi \left( \gamma  \right)\), то функция \(\displaystyle\varphi \left( \gamma  \right)\) также будет интегрируема. </p>
+				<p><strong>Теорема 7 (дифференцируемость).</strong> Если функция \(\displaystyle f\left( x,\gamma  \right)\) \(\displaystyle\forall x\in X\) дифференцируема по \(\displaystyle\gamma \) на \(\displaystyle\left(\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right)\), при \(\displaystyle x\to {{x}_{0}}\) сходится хотя бы в одной точке  , а функция \(\displaystyle\frac{\partial }{\partial \gamma }f\left( x,\gamma  \right)\) при \(\displaystyle x\to {{x}_{0}}\) равномерно по \(\displaystyle\gamma \) 
+				сходится на \(\displaystyle\left(\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right)\), то \(\displaystyle f\left( x,\gamma  \right)\) сходится равномерно на \(\displaystyle\left(\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right)\) к некоторой дифференцируемой функции \(\displaystyle\varphi \left( \gamma  \right)\) и \(\displaystyle\forall \gamma \in \left(\displaystyle {{\gamma }_{1}},{{\gamma }_{2}} \right)\,\) \(\displaystyle{\varphi }'\left( \gamma  \right)=\underset{x\to 
+				{{x}_{0}}}{\mathop{\lim }}\,\frac{\partial f\left( x,\gamma  \right)}{\partial \gamma }\).
+				</p>
+
+            </section>
+
+            
+
+        </main>
+
+
+    </div>
+    <i class="fas fa-angle-down"></i>
+    <footer class="footer">
+        <h1>Учебные материалы</h1>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

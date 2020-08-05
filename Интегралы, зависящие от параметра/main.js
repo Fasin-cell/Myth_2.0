@@ -5,8 +5,9 @@ SpoilersBtns.forEach(button => {
         e.stopPropagation();
         let content = e.target.parentNode.querySelector('.spoiler-content');
         if (!content.style.maxHeight) {
-            content.style.overflow = 'visible';
-            content.style.maxHeight = content.scrollHeight + "px";
+	content.style.maxHeight = content.scrollHeight + "px";
+	// TODO: change it ASAP
+	setTimeout(() => content.style.overflow = 'visible', 200);
         }
         else {
             content.style.overflow = 'hidden';

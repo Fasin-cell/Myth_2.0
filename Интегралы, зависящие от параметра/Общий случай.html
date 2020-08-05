@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head><title>Математический анализ</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><link href="style.css" type="text/css" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></head>
+<body>
+<header class="header"><h1>Математический анализ</h1></header>
+<div class="main-grid">
+<nav class="side-menu"><h2>Темы</h2><ul class="no-dec"><li><div class="spoiler spoiler-submenu"><button class="spoiler-button spoiler-submenu">Интегралы, зависящие от параметра.</button><div class="spoiler-content spoiler-submenu"><ul class="no-dec"><li><p><a href="1.1. Равномерная сходимость функций по параметру.html">1.1. Равномерная сходимость функций по параметру.</a></p></li><li><p><a href="1.2. Собственные интегралы.html">1.2. Собственные интегралы.</a></p></li><li><p><a href="Общий случай.html">Общий случай.</a></p></li><li><div class="spoiler spoiler-submenu"><button class="spoiler-button spoiler-submenu">1.3 Несобственные интегралы.</button><div class="spoiler-content spoiler-submenu"><ul class="no-dec"><li><p><a href="">1.3.1. Основные определения.</a></p></li><li><p><a href="">1.3.2. Равномерная сходимость несобственных интегралов.</a></p></li><li><p><a href="">1.3.3. Признаки равномерной сходимости.</a></p></li><li><p><a href="">1.3.4. Свойства равномерно сходящихся интегралов.</a></p></li><li><p><a href="">1.3.5. Эйлеровы интегралы.</a></p></li></ul></div></div></li></ul></div></div></li></ul></nav>
+<main class="main">
+
+
+<p><strong>Общий случай.</strong></p>
+
+<p>Если при любом <em>фиксированном \(\displaystyle \gamma \in \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)</em> функция \(\displaystyle f(x,\gamma )\) интегрируема по \(\displaystyle x\) на \(\displaystyle \left[ a(\gamma ),b(\gamma ) \right]\), то на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) определена функция </p>
+<p>\(\displaystyle I(\gamma )=\int\limits_{a(\gamma )}^{b(\gamma )}{f(x,\gamma )dx}\),</p>
+<p>представляющая собой <strong><em>интеграл, зависящий от параметра</em></strong>,<br> у которого пределы интегрирования также зависят от параметра.</p>
+<section class="theorem"><strong>Теорема </strong><strong>1</strong><strong> (непрерывность). </strong>Пусть \(\displaystyle f(x,\gamma )\) непрерывна на прямоугольнике \(\displaystyle \), а функции \(\displaystyle a(\gamma )\) и \(\displaystyle b(\gamma )\) непрерывны на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\). Тогда функция \(\displaystyle I(\gamma )=\int\limits_{a(\gamma )}^{b(\gamma )}{f(x,\gamma )dx}\) непрерывна на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\).
+<div class="spoiler">
+<button class="spoiler-button">Доказательство</button>
+<div class="spoiler-content">
+<span>4</span><span>Пусть \(\displaystyle {{\gamma }_{0}}\in \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) – фиксировано. Представим \(\displaystyle I(\gamma )\) в виде:</span>
+<p><span>       \(\displaystyle I(\gamma )\,=\,\int\limits_{a({{\gamma }_{0}})}^{b({{\gamma }_{0}})}{f(x,\gamma )dx}+\,\int\limits_{b({{\gamma }_{0}})}^{b(\gamma )}{f(x,\gamma )dx}-\,\int\limits_{a({{\gamma }_{0}})}^{a(\gamma )}{f(x,\gamma )dx}\,=\,{{I}_{1}}\,+\,{{I}_{2}}\,+\,{{I}_{3}}\)</span><span>.                                      </span></p>
+<p><span>Так как \(\displaystyle {{I}_{1}}\) – интеграл, зависящий от параметра \(\displaystyle \gamma \), с постоянными <br> пределами интегрирования и с непрерывной подынтегральной функцией, то в силу теоремы </span><strong>Ошибка! Источник ссылки не найден.</strong><span> этот интеграл является непрерывной функцией от \(\displaystyle \gamma \) и поэтому \(\displaystyle \underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,{{I}_{1}}(\gamma )=I({{\gamma }_{0}})\). </span></p>
+<p><span>Пусть \(\displaystyle M=\underset{}{\mathop{\sup }}\,\left| f\left( x,\gamma  \right) \right|\), тогда для интегралов \(\displaystyle {{I}_{2}}\) и \(\displaystyle {{I}_{3}}\) справедливы <br> следующие оценки (теорема о среднем):</span></p>
+<p><span>\(\displaystyle \left| \int\limits_{b({{\gamma }_{0}})}^{b(\gamma )}{f(x,\gamma )dx} \right|\le M\left| b(\gamma )-b({{\gamma }_{0}}) \right|\),   \(\displaystyle \left| \int\limits_{a({{\gamma }_{0}})}^{a(\gamma )}{f(x,\gamma )dx} \right|\le M\left| a(\gamma )-a({{\gamma }_{0}}) \right|\)</span><span>.</span></p>
+<p><span>Так как \(\displaystyle a(\gamma ),b(\gamma )\in \mathbb{C}\left( \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right] \right)\), то </span></p>
+<p><span>\(\displaystyle \underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,\left| b(\gamma )-b({{\gamma }_{0}}) \right|=0\) и \(\displaystyle \underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,\left| a(\gamma )-a({{\gamma }_{0}}) \right|=0\),</span></p>
+<p><span>а значит, \(\displaystyle \underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,{{I}_{2}}=0\), \(\displaystyle \underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,{{I}_{3}}=0\). </span></p>
+<p><span>Следовательно, предел правой части </span><span> при \(\displaystyle \gamma \to {{\gamma }_{0}}\) существует и равен \(\displaystyle I\left( {{\gamma }_{0}} \right)\), т.е. функция \(\displaystyle I\left( \gamma  \right)\) непрерывна в любой точке \(\displaystyle {{\gamma }_{0}}\in \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\).</span><span>3</span>
+</p></div>
+</div></section>
+<p><strong>Следствие (предельный переход). </strong>Если \(\displaystyle a(\gamma )\,\in \,\mathbb{C}\left( \Gamma  \right)\), \(\displaystyle b(\gamma )\,\in \,\mathbb{C}\left( \Gamma  \right)\);  </p>
+<p>\(\displaystyle f(x,\gamma )\in \mathbb{C}\left( \left[ a,b \right]\times \Gamma   \right)\), \(\displaystyle \forall \gamma \in \Gamma \,\,\left\{ \begin{matrix}
+    a\le a\left( \gamma  \right)\le b,  \\
+    a\le b\left( \gamma  \right)\le b,  \\
+\end{matrix} \right.\)</p>
+<p>то \(\displaystyle \forall {{\gamma }_{0}}\in \operatorname{int}\Gamma \) справедливо равенство</p>
+<p> \(\displaystyle \underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,\int\limits_{a(\gamma )}^{b(\gamma )}{f(x,\gamma )dx}=\)\(\displaystyle \int\limits_{\underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,a(\gamma )}^{\underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,b(\gamma )}{\left( \underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,f(x,\gamma ) \right)dx}=\int\limits_{a({{\gamma }_{0}})}^{b({{\gamma }_{0}})}{f(x,{{\gamma }_{0}})dx}\).                </p>
+<p>Если \(\displaystyle {{\gamma }_{0}}\in \partial \Gamma \bigcap \Gamma \), то в выражении все пределы надо заменить<br> на соответствующие односторонние.</p>
+<section class="example">Пример <span>1</span><span>.</span> Вычислим \(\displaystyle \underset{\gamma \to 1-0}{\mathop{\lim }}\,\int\limits_{1-\gamma }^{\pi \gamma }{\sqrt{1-{{\gamma }^{2}}{{\sin }^{2}}x}\,dx}\).
+<div class="spoiler">
+<button class="spoiler-button">Доказательство</button>
+<div class="spoiler-content">
+<span>4</span><span>Для вычисления предела достаточно, чтобы требования предельного перехода выполнялись в некоторой окрестности предельного значения. Пусть \(\displaystyle \Gamma =\left[ 0,1 \right]\)</span><span>, \(\displaystyle \gamma \in \Gamma \), тогда \(\displaystyle 1-\gamma \in \mathbb{C}\left( \Gamma  \right)\), \(\displaystyle \pi \gamma \in \mathbb{C}\left( \Gamma   \right)\),   \(\displaystyle \sqrt{1-{{\gamma }^{2}}{{\sin }^{2}}x}\in \mathbb{C}\left( \left[ 0,\pi   \right]\times \Gamma  \right)\), \(\displaystyle 0\le 1-\gamma \le 1\le \pi \), \(\displaystyle 0\le \pi \gamma \le \pi \), а значит,</span>
+\(\displaystyle \underset{\gamma \to 1-0}{\mathop{\lim }}\,\int\limits_{1-\gamma }^{\pi \gamma }{\sqrt{1-{{\gamma }^{2}}{{\sin }^{2}}x}\,dx}=\int\limits_{0}^{\pi }{\sqrt{1-{{\sin }^{2}}x}\,dx}=\int\limits_{0}^{\pi }{\left| \cos x \right|\,dx}=2\).<span>3</span>
+</div>
+</div></section>
+<section class="theorem"><strong>Теорема </strong><strong>2</strong><strong> (дифференцируемость). </strong>Если \(\displaystyle f(x,\gamma )\) и \(\displaystyle \frac{\partial f(x,\gamma )}{\partial \gamma }\) непрерывны на \(\displaystyle \left[ a,b \right]\times \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), а \(\displaystyle a(\gamma )\) и \(\displaystyle b(\gamma )\) дифференцируемы на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), то \(\displaystyle I(\gamma )\,=\,\int\limits_{a(\gamma )}^{b(\gamma )}{f(x,\gamma )dx}\) дифференцируема на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и
+<p> \(\displaystyle {I}'(\gamma )=\int\limits_{a(\gamma )}^{b(\gamma )}{\frac{\partial f\left( x,\gamma   \right)}{\partial \gamma }dx}+{b}'(\gamma )\cdot f(b(\gamma ),\gamma )-{a}'(\gamma )\cdot f(a(\gamma ),\gamma )\).      </p>
+<div class="spoiler">
+<button class="spoiler-button">Доказательство</button>
+<div class="spoiler-content">
+<span>4</span><span>Пусть \(\displaystyle {{\gamma }_{0}}\in \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) – фиксировано. Представим \(\displaystyle I(\gamma )\) в виде </span><span>. </span>
+<p><span>\(\displaystyle {{I}_{1}}\) – интеграл, зависящий от параметра \(\displaystyle \gamma \), с постоянными <br> пределами интегрирования и с непрерывной подынтегральной функцией, поэтому, в силу теоремы </span><strong>Ошибка! Источник ссылки не найден.</strong><span>, функция \(\displaystyle {{I}_{1}}\left( \gamma  \right)\) дифференцируема на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\)</span><span> </span><span>и </span></p>
+<p><span>\(\displaystyle \frac{d{{I}_{1}}\left( {{\gamma }_{0}} \right)}{d\gamma }=\int\limits_{a\left( {{\gamma }_{0}} \right)}^{b\left( {{\gamma }_{0}} \right)}{\frac{\partial f(x,{{\gamma }_{0}})}{\partial \gamma }dx}\).</span></p>
+<p><span>По определению производной для функции \(\displaystyle {{I}_{2}}\left( \gamma  \right)\)</span><span> получим </span></p>
+<p><span>\(\displaystyle \frac{d{{I}_{2}}\left( {{\gamma }_{0}} \right)}{d\gamma }=\underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,\frac{\int\limits_{b\left( {{\gamma }_{0}} \right)}^{b\left( \gamma   \right)}{f(x,\gamma )dx}}{\gamma -{{\gamma }_{0}}}\).</span></p>
+<p><span>По формуле среднего значения </span></p>
+<p><span>         \(\displaystyle \int\limits_{b\left( {{\gamma }_{0}} \right)}^{b\left( \gamma   \right)}{f(x,\gamma )dx}=f(\tilde{x},\gamma )\left( b\left( \gamma  \right)-b\left( {{\gamma }_{0}} \right) \right)\),  \(\displaystyle \tilde{x}\in \left[ b\left( {{\gamma }_{0}} \right),b\left( \gamma  \right) \right]\).</span></p>
+<p><span>Из непрерывности функции \(\displaystyle f(x,\gamma )\) следует, что </span></p>
+<p><span>         \(\displaystyle \underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,f(\tilde{x},\gamma )=f(b\left( {{\gamma }_{0}} \right),{{\gamma }_{0}})\); </span></p>
+<p><span>а из дифференцируемости функции \(\displaystyle b(\gamma )\) следует, что </span></p>
+<p><span>         \(\displaystyle \underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,\frac{b\left( \gamma   \right)-b\left( {{\gamma }_{0}} \right)}{\gamma -{{\gamma }_{0}}}={b}'\left( {{\gamma }_{0}} \right)\). </span></p>
+<p><span>Поэтому</span></p>
+<p><span>         \(\displaystyle \frac{d{{I}_{2}}\left( {{\gamma }_{0}} \right)}{d\gamma }=\underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,\frac{f(\tilde{x},\gamma )\left( b\left( \gamma  \right)-b\left( {{\gamma }_{0}} \right) \right)}{\gamma -{{\gamma }_{0}}}=\)</span></p>
+<p><span>         \(\displaystyle =\underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,\left( f(\tilde{x},\gamma )\frac{b\left( \gamma  \right)-b\left( {{\gamma }_{0}} \right)}{\gamma -{{\gamma }_{0}}} \right)={b}'\left( {{\gamma }_{0}} \right)f(b\left( {{\gamma }_{0}} \right),{{\gamma }_{0}})\).</span></p>
+<p><span>Аналогично доказывается, что \(\displaystyle \frac{d{{I}_{3}}\left( {{\gamma }_{0}} \right)}{d\gamma }={a}'\left( {{\gamma }_{0}} \right)f(a\left( {{\gamma }_{0}} \right),{{\gamma }_{0}})\).</span></p>
+<p><span>Так как \(\displaystyle {{\gamma }_{0}}\)</span><span> произвольная точка сегмента \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), то можно утверждать, что </span><span>функция \(\displaystyle I(\gamma )=\int\limits_{a(\gamma )}^{b(\gamma )}{f(x,\gamma )dx}\) дифференцируема на всем сегменте</span><span> \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и ее производная может быть вычислена по формуле </span><span>.</span><span>3</span>
+</p></div>
+</div></section>
+<section class="example">Пример <span>2</span><span>.</span> Вычислим \(\displaystyle {I}'\left( a \right)\), если \(\displaystyle I\left( a \right)=\int\limits_{0}^{{{a}^{3}}}{\frac{\ln \left( 1+ax \right)}{x}dx}\).
+<div class="spoiler">
+<button class="spoiler-button">Доказательство</button>
+<div class="spoiler-content">
+<span>4</span><span>\(\displaystyle {I}'\left( a \right)=\int\limits_{0}^{{{a}^{3}}}{\frac{x}{\left( 1+ax \right)x}dx}+3{{a}^{2}}\cdot \frac{\ln \left( 1+a\cdot {{a}^{3}} \right)}{{{a}^{3}}}=\)</span>
+<p>\(\displaystyle =\left. \frac{\ln \left( 1+ax \right)}{a} \right|_{0}^{{{a}^{3}}}+\frac{3\ln \left( 1+{{a}^{4}} \right)}{a}=\frac{4\ln \left( 1+{{a}^{4}} \right)}{a}\).<span>3</span>
+</p></div>
+</div></section>
+
+</main>
+</div>
+<footer class="footer"><h1>Учебные материалы</h1></footer><script src="main.js"></script>
+</body>
+</html>

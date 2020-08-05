@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Математический анализ</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+
+	<header class="header">
+        <h1>Математический анализ</h1>
+    </header>
+
+    <div class="main-grid">
+
+        <nav class="side-menu">
+            <h2>Темы</h2>
+						
+            <ul class="no-dec">
+
+                <li>
+                    <div class="spoiler spoiler-submenu">
+                        <button class="spoiler-button spoiler-submenu">Интегралы, зависящие от параметра.</button>
+                        <div class="spoiler-content spoiler-submenu">
+                            <ul class="no-dec">
+                                <li>
+                                    <p><a href="1.1. Равномерная сходимость функций по параметру.html">1.1. Равномерная сходимость функций по параметру.</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="1.2. Собственные интегралы.html">1.2. Собственные интегралы.</a></p>
+                                </li>
+								<li>
+                                    <p><a href="Общий случай.html">Общий случай.</a></p>
+                                </li>
+															
+								<li>	
+									<div class="spoiler spoiler-submenu">
+										<button class="spoiler-button spoiler-submenu">1.3 Несобственные интегралы.</button>
+										<div class="spoiler-content spoiler-submenu">
+											<ul class="no-dec">
+												<li>
+													<p><a href="">1.3.1. Основные определения.</a></p>
+												</li>
+												<li>
+													<p><a href="">1.3.2. Равномерная сходимость несобственных интегралов.</a></p>
+												</li>
+												<li>
+													<p><a href="">1.3.3. Признаки равномерной сходимости.</a></p>
+												</li>
+												<li>
+													<p><a href="">1.3.4. Свойства равномерно сходящихся интегралов.</a></p>
+												</li>
+												<li>
+													<p><a href="">1.3.5. Эйлеровы интегралы.</a></p>
+												</li>
+											</ul>
+										</div>	
+									</div>										
+								</li>								                                 
+                            </ul>
+                        </div>  
+                    </div>
+                </li>
+				
+				
+				
+            </ul>
+
+        </nav>
+		
+				
+		<main class="main">
+
+            <section class="section">
+				<p><h3>1.2. СОБСТВЕННЫЕ ИНТЕГРАЛЫ</h3></p>
+				<p>Пусть в прямоугольнике \(\displaystyle \,=\,\left(\displaystyle  a,b \right)\times \left(\displaystyle  {{\gamma }_{1}},{{\gamma }_{2}} \right)\) определена функция \(\displaystyle f(x,\gamma )\), интегрируемая по \(\displaystyle x\) на \(\displaystyle \left(\displaystyle  a,b \right)\) при любом фиксированном \(\displaystyle \gamma \in \left(\displaystyle  {{\gamma }_{1}},{{\gamma }_{2}} \right)\). 
+				Тогда на \(\displaystyle \left(\displaystyle  {{\gamma }_{1}},{{\gamma }_{2}} \right)\) определена функция \(\displaystyle I(\gamma )=\int\limits_{a}^{b}{f(x,\gamma )dx}\), называемая интегралом, зависящим от параметра \(\displaystyle \gamma \).
+				</p>
+				
+            </section>
+			
+			<section class="section">
+			
+				<p>Теорема 8 (предельный переход). Если \(\displaystyle f(x,\gamma )\) при любом фиксированном \(\displaystyle \gamma \in \left(\displaystyle  {{\gamma }_{1}},{{\gamma }_{2}} \right)\) интегрируема по \(\displaystyle x\) на \(\displaystyle \left(\displaystyle  a,b \right)\) и при \(\displaystyle \gamma \to {{\gamma }_{0}}\) сходится равномерно относительно \(\displaystyle x\) к функции \(\displaystyle \varphi (x)\), то 
+					\(\displaystyle \underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,I(\gamma )=\underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,\int\limits_{a}^{b}{f(x,\gamma )dx}=\int\limits_{a}^{b}{\left( \underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,f(x,\gamma ) \right)dx}=\int\limits_{a}^{b}{\varphi (x)dx}\).	(0.1)
+				</p>
+				
+				<div class="spoiler">
+                    <button class="spoiler-button">Доказательство</button>
+                    <div class="spoiler-content">
+                        <p><p><span>Интегрируемость функции \(\displaystyle \varphi (x)\) следует из теоремы </span>6<span>. Пусть задано произвольное \(\displaystyle \varepsilon &gt;0\). Тогда существует \(\displaystyle \delta &gt;0\), не зависящее от \(\displaystyle x\), такое что \(\displaystyle \forall \gamma \,\in \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) \(\displaystyle \left| \gamma \,-\,{{\gamma }_{0}} \right|\,&lt;\,\delta \ \Rightarrow \ \left| f(x,\gamma )\,-\,\varphi (x) \right|\,&lt;\,\varepsilon \), а значит, </span></p>
+							<p><span>\(\displaystyle \left| \int\limits_{a}^{b}{f\left( x,\gamma   \right)dx\,}\,-\,\int\limits_{a}^{b}{\varphi \left( x \right)dx\,} \right|\,\le \,\int\limits_{a}^{b}{\left| f\left( x,\gamma  \right)\,-\,\varphi \left( x \right) \right|dx}\,\le \,\varepsilon \left( b\,-\,a \right)\,\),</span></p>
+							<p><span>что и доказывает формулу (0.1)</span></p>
+						</p>
+                        
+                    </div>  
+                </div>
+				
+				
+				
+				
+				
+            </section>
+			
+			
+            
+
+        </main>
+
+
+    </div>
+    <i class="fas fa-angle-down"></i>
+    <footer class="footer">
+        <h1>Учебные материалы</h1>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
