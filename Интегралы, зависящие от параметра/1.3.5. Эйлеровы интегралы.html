@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head><title>Математический анализ</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><link href="style.css" type="text/css" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></head>
+<body>
+<header class="header"><h1>Математический анализ</h1></header>
+<div class="main-grid">
+<nav class="side-menu"><h2>Темы</h2><ul class="no-dec"><li><div class="spoiler spoiler-submenu"><button class="spoiler-button spoiler-submenu">Интегралы, зависящие от параметра.</button><div class="spoiler-content spoiler-submenu"><ul class="no-dec"><li><p><a href="1.1. Равномерная сходимость функций по параметру.html">1.1. Равномерная сходимость функций по параметру.</a></p></li><li><p><a href="1.2. Собственные интегралы.html">1.2. Собственные интегралы.</a></p></li><li><p><a href="Общий случай.html">Общий случай.</a></p></li><li><div class="spoiler spoiler-submenu"><button class="spoiler-button spoiler-submenu">1.3 Несобственные интегралы.</button><div class="spoiler-content spoiler-submenu"><ul class="no-dec"><li><p><a href="">1.3.1. Основные определения.</a></p></li><li><p><a href="">1.3.2. Равномерная сходимость несобственных интегралов.</a></p></li><li><p><a href="">1.3.3. Признаки равномерной сходимости.</a></p></li><li><p><a href="">1.3.4. Свойства равномерно сходящихся интегралов.</a></p></li><li><p><a href="">1.3.5. Эйлеровы интегралы.</a></p></li></ul></div></div></li></ul></div></div></li></ul></nav>
+<main class="main">
+
+<div>
+    <ol>
+        <li>
+            <h4>Эйлеровы интегралы</h4>
+        </li>
+    </ol>
+</div>
+<p><strong><em><span>Гамма-функция    \(\displaystyle \left( p \right)=\int\limits_{0}^{+\infty }{{{e}^{-x}}{{x}^{p-1}}dx}\)</span></em>                                                </strong> </p>
+<p><strong>1. Сходимость. </strong>Из теоремы сравнения следует, что при \(\displaystyle p\le 0\) интеграл расходится. Представим функцию \(\displaystyle \left( p \right)\)<strong> </strong>в виде</p>
+<p>\(\displaystyle \left( p \right)=\int\limits_{0}^{1}{{{e}^{-x}}{{x}^{p-1}}dx}+\int\limits_{1}^{+\infty }{{{e}^{-x}}{{x}^{p-1}}dx}={{I}_{1}}\left( p \right)+{{I}_{2}}\left( p \right)\).</p>
+<p>1. Так как \(\displaystyle {{e}^{-x}}{{x}^{p-1}}\le {{x}^{p-1}}\) при \(\displaystyle x&gt;0\), а \(\displaystyle \int\limits_{0}^{1}{{{x}^{p-1}}dx}\) сходится при \(\displaystyle p&gt;0\), то и интеграл \(\displaystyle {{I}_{1}}\left( p \right)\) сходится  при \(\displaystyle p&gt;0\) (по признаку Вейерштрасса).</p>
+<p>2. Так как \(\displaystyle \underset{x\to +\infty }{\mathop{\lim }}\,{{e}^{-x}}{{x}^{r}}=0\) при любом \(\displaystyle r\), то из сходимости интеграла \(\displaystyle \int\limits_{1}^{+\infty }{{{x}^{-2}}dx}\) следует сходимость интеграла \(\displaystyle {{I}_{2}}\left( p \right)\) при любом \(\displaystyle p\). (Из определения предела</p>
+<p>\(\displaystyle \forall r&gt;0\,\,\exists {{x}_{0}}\,\forall x&gt;{{x}_{0}}\ \ {{e}^{-x}}&lt;\frac{1}{{{x}^{r}}}\),</p>
+<p>следовательно,</p>
+<p>\(\displaystyle \forall p&gt;0\,\,\exists {{x}_{0}}\ \forall x&gt;{{x}_{0}}\ \ {{e}^{-x}}&lt;\frac{1}{{{x}^{p+1}}}\ \ \Leftrightarrow \ \ {{e}^{-x}}{{x}^{p-1}}&lt;\frac{1}{{{x}^{1-p}}}\frac{1}{{{x}^{p+1}}}=\frac{1}{{{x}^{2}}}\)).</p>
+<p><strong>2. Непрерывность. </strong>Для доказательства непрерывности \(\displaystyle \left( p \right)\) на полупрямой \(\displaystyle p&gt;0\), достаточно установить равномерную сходимость интеграла относительно параметра \(\displaystyle p\) при \(\displaystyle 0\,&lt;\,{{p}_{0}}\,\le \,p\,\le \,{{p}_{1}}\) для любых фиксированных значений \(\displaystyle {{p}_{0}}\) и \(\displaystyle {{p}_{1}}\), удовлетворяющих условию \(\displaystyle 0&lt;{{p}_{0}}\le {{p}_{1}}\).</p>
+<p>Учитывая, что</p>
+<p>1) при \(\displaystyle 0&lt;x&lt;1\) \(\displaystyle {{x}^{p}}\le {{x}^{{{p}_{0}}}}&lt;{{x}^{{{p}_{0}}}}+{{x}^{{{p}_{1}}}}\) (степенная функция убывает),</p>
+<p>2)  (т.к. x \(\displaystyle {{x}^{{{p}_{1}}}}&gt;0\))при \(\displaystyle x&gt;1\) \(\displaystyle {{x}^{p}}\le {{x}^{{{p}_{1}}}}&lt;{{x}^{{{p}_{0}}}}+{{x}^{{{p}_{1}}}}\) (степенная функция возрастает),</p>
+<p>получим:</p>
+<p>\(\displaystyle \forall x&gt;0\)  \(\displaystyle \frac{{{e}^{-x}}}{x}{{x}^{p}}\le \frac{{{e}^{-x}}}{x}\left[ {{x}^{{{p}_{0}}}}+{{x}^{{{p}_{1}}}} \right]={{e}^{-x}}\left[ {{x}^{{{p}_{0}}-1}}+{{x}^{{{p}_{1}}-1}} \right]\).</p>
+<p>Равномерная сходимость интеграла \(\displaystyle \left( p \right)\) следует в силу признака Вейерштрасса из сходимости интеграла</p>
+<p>\(\displaystyle \int\limits_{0}^{+\infty }{{{e}^{-x}}\left[ {{x}^{{{p}_{0}}-1}}+{{x}^{{{p}_{1}}-1}} \right]dx}=\left( {{p}_{0}} \right)+\left( {{p}_{1}} \right)\).</p>
+<p><strong>3. Формула приведения. </strong>Применяя формулу интегрирования по частям для функции \(\displaystyle \left( p+1 \right)\)<strong> </strong>при \(\displaystyle p&gt;0\) получим</p>
+<p>\(\displaystyle \left( p+1 \right)=\int\limits_{0}^{+\infty }{{{e}^{-x}}{{x}^{p}}dx}=\left. \left[ -{{e}^{-x}}{{x}^{p}} \right] \right|_{0}^{+\infty }+p\int\limits_{0}^{+\infty }{{{e}^{-x}}{{x}^{p-1}}dx}=p\left( p \right)\).</p>
+
+<p><strong><em>Бета-функция  \(\displaystyle B\left( p,q \right)=\int\limits_{0}^{1}{{{x}^{p-1}}{{\left( 1-x \right)}^{q-1}}dx}\)</em></strong>                                      </p>
+<p><strong>1. Сходимость. </strong>Из теоремы сравнения следует, что при \(\displaystyle p\le 0\), \(\displaystyle q\le 0\)<br> интеграл расходится.</p>
+<p>1. При \(\displaystyle p\ge 1\) и \(\displaystyle q\ge 1\) подынтегральная функция в соотношении непрерывна, поэтому интеграл в правой части является собственным. Следовательно, функция \(\displaystyle B\left( p,q \right)\) определена для всех \(\displaystyle p\ge 1\), \(\displaystyle q\ge 1\).</p>
+<p>2. Пусть выполняются одно или оба из следующих неравенств</p>
+<p>\(\displaystyle 0&lt;p&lt;1\), \(\displaystyle 0&lt;q&lt;1\).</p>
+<p>Тогда одна или обе точки \(\displaystyle x=0\) и \(\displaystyle x=1\) являются особыми точками подынтегральной функции. Представим функцию \(\displaystyle B\left( p,q \right)\) в виде</p>
+<p>\(\displaystyle B\left( p,q \right)=\int\limits_{0}^{1/2}{{{x}^{p-1}}{{\left( 1-x \right)}^{q-1}}dx}+\int\limits_{1/2}^{1}{{{x}^{p-1}}{{\left( 1-x \right)}^{q-1}}dx}={{I}_{1}}\left( p,q \right)+{{I}_{2}}\left( p,q \right)\).</p>
+<p>Для интеграла \(\displaystyle {{I}_{1}}\left( p,q \right)\) особой точкой будет точка \(\displaystyle x=0\). На сегменте \(\displaystyle \left[ 0,1/2 \right]\) функция \(\displaystyle {{\left( 1-x \right)}^{q-1}}\) непрерывна и поэтому ограничена некоторой константой \(\displaystyle C\), тогда функция \(\displaystyle C{{x}^{p-1}}\) будет мажорантой для подынтегральной функции интеграла \(\displaystyle {{I}_{1}}\left( p,q \right)\). Отсюда следует, что интеграл \(\displaystyle {{I}_{1}}\left( p,q \right)\) сходится при \(\displaystyle 0&lt;p&lt;1\) и любом \(\displaystyle q\). Аналогично доказывается, что интеграл \(\displaystyle {{I}_{2}}\left( p,q \right)\) сходится при \(\displaystyle 0&lt;q&lt;1\) и любом \(\displaystyle p\).</p>
+<p>Объединяя случаи 1 и 2, получаем, что функция \(\displaystyle B\left( p,q \right)\) определена для \(\displaystyle p&gt;0,\ \ q&gt;0\).</p>
+<p><strong>2. Непрерывность. </strong>Для доказательства непрерывности \(\displaystyle B\left( p,q \right)\) в квадранте \(\displaystyle p&gt;0,\ \ q&gt;0\) достаточно доказать равномерную сходимость интеграла относительно параметров \(\displaystyle p\) и \(\displaystyle q\) при \(\displaystyle p\ge {{p}_{0}}&gt;0\) и \(\displaystyle q\ge {{q}_{0}}&gt;0\) для любых фиксированных значений \(\displaystyle {{p}_{0}}\) и \(\displaystyle {{q}_{0}}\). При \(\displaystyle 0&lt;x&lt;1\) справедливо неравенство</p>
+<p>\(\displaystyle {{x}^{p-1}}{{\left( 1-x \right)}^{q-1}}\le {{x}^{{{p}_{0}}-1}}{{\left( 1-x \right)}^{{{q}_{0}}-1}}\).</p>
+<p>Отсюда из сходимости интеграла</p>
+<p>\(\displaystyle \int\limits_{0}^{1}{{{x}^{{{p}_{0}}-1}}{{\left( 1-x \right)}^{{{q}_{0}}-1}}dx}=B\left( {{p}_{0}},{{q}_{0}} \right)\)</p>
+<p>вытекает в силу признака Вейерштрасса равномерная сходимость интеграла . Таким образом, непрерывность функции \(\displaystyle B\left( p,q \right)\) в квадранте \(\displaystyle p&gt;0,\ \ q&gt;0\) доказана.</p>
+
+<p><strong>3. Формулы приведения. </strong>Считая, что \(\displaystyle p&gt;0\), \(\displaystyle q&gt;0\), интегрируем по час-тям функцию \(\displaystyle B\left( p,q+1 \right)\)</p>
+<p>\(\displaystyle \begin{matrix}
+  B\left( p,q+1 \right)=\int\limits_{0}^{1}{{{x}^{p-1}}{{\left( 1-x \right)}^{q}}dx}= \\
+  =\left. \left[ \frac{{{x}^{p}}}{p}{{\left( 1-x \right)}^{q}} \right] \right|_{0}^{1}+\frac{q}{p}\int\limits_{0}^{1}{{{x}^{p}}{{\left( 1-x \right)}^{q-1}}dx}= \\
+   =\frac{q}{p}\int\limits_{0}^{1}{\left\{ {{x}^{p-1}}{{\left( 1-x \right)}^{q-1}}-{{x}^{p-1}}{{\left( 1-x \right)}^{q}} \right\}dx}= \\
+  =\frac{q}{p}B\left( p,q \right)-\frac{q}{p}B\left( p,q+1 \right). \\
+\end{matrix}\)</p>
+<p>Следовательно,</p>
+<p>\(\displaystyle B\left( p,q+1 \right)=\,\frac{q}{p+q}B\left( p,q \right)\).</p>
+<p>Учитывая симметрию функции \(\displaystyle B\left( p,q \right)\), получаем вторую формулу приведения</p>
+<p>\(\displaystyle B\left( p+1,q \right)=\,\frac{p}{p+q}B\left( p,q \right)\).
+<strong><em><span><br> </span></em></strong></p>
+
+<section class="example">Пример <span>22</span><span>.</span><strong> </strong>Вычислим интегралы
+<p>1) \(\displaystyle \int\limits_{0}^{1}{{{\left( 1-x \right)}^{n}}{{x}^{p-1}}\,dx}\), \(\displaystyle p&gt;0\);   2) \(\displaystyle \int\limits_{-1}^{2}{\frac{dx}{\sqrt[4]{\left( 2-x \right){{\left( 1+x \right)}^{3}}}}}\);    3) \(\displaystyle \int\limits_{0}^{1}{\frac{1+{{x}^{2}}}{1+{{x}^{4}}}\,dx}\).
+</p><div class="spoiler">
+<button class="spoiler-button">Доказательство</button>
+<div class="spoiler-content">
+<span>4</span>1. \(\displaystyle \int\limits_{0}^{1}{{{\left( 1-x \right)}^{n}}{{x}^{p-1}}\,dx}=B\left( n+1,p \right)=\frac{\left( n+1 \right)\left( p \right)}{\left( p+n+1 \right)}=\)
+\(\displaystyle =\frac{n!\left( p \right)}{\left( p+n \right)\left( p+n-1 \right)...\left( p+1 \right)p\left( p \right)}=\frac{n!}{\left( p+n \right)\left( p+n-1 \right)...\left( p+1 \right)p}\).
+<p>2. \(\displaystyle \int\limits_{-1}^{2}{\frac{dx}{\sqrt[4]{\left( 2-x \right){{\left( 1+x \right)}^{3}}}}}=\left[ t=\frac{x+1}{3} \right]=3\int\limits_{0}^{1}{\frac{dt}{\sqrt[4]{3\left( 1-t \right){{\left( 3t \right)}^{3}}}}}=\)</p>
+<p>\(\displaystyle =\int\limits_{0}^{1}{{{\left( 1-t \right)}^{-1/4}}{{t}^{-3/4}}dt}=B\left( \frac{3}{4},\frac{1}{4} \right)=\frac{\pi }{\sin \frac{\pi }{4}}=\pi \sqrt{2}.\)</p>
+<p>3. Учитывая, что </p>
+<p>\(\displaystyle \int\limits_{0}^{1}{\frac{1+{{x}^{2}}}{1+{{x}^{4}}}\,dx}=\left[ t=\frac{1}{x} \right]=\int\limits_{+\infty }^{1}{\frac{1+1/{{t}^{2}}}{1+1/{{t}^{4}}}\cdot \,\frac{-dt}{{{t}^{2}}}}=-\int\limits_{+\infty }^{1}{\frac{{{t}^{2}}+1}{{{t}^{4}}+1}dt}=\int\limits_{1}^{+\infty }{\frac{{{t}^{2}}+1}{{{t}^{4}}+1}dt}\),</p>
+<p>получим, </p>
+<p>\(\displaystyle \int\limits_{0}^{1}{\frac{1+{{x}^{2}}}{1+{{x}^{4}}}\,dx}=\frac{1}{2}\int\limits_{0}^{+\infty }{\frac{{{t}^{2}}+1}{{{t}^{4}}+1}dt}=\left[ y={{t}^{4}} \right]=\)
+\(\displaystyle =\frac{1}{8}\int\limits_{0}^{+\infty }{\frac{{{y}^{1/2}}+1}{y+1}\cdot \frac{{{y}^{-3/4}}}{4}dy}\)\(\displaystyle =\frac{1}{8}\int\limits_{0}^{+\infty }{\left( \frac{{{y}^{-1/4}}}{y+1}+\frac{{{y}^{-3/4}}}{y+1} \right)dy}=\)</p>
+<p>\(\displaystyle =\frac{1}{8}\left( B\left( \frac{3}{4},\frac{1}{4} \right)+B\left( \frac{1}{4},\frac{3}{4} \right) \right)=\frac{1}{4}\frac{\pi }{\sin \frac{\pi }{4}}=\frac{\pi \sqrt{2}}{4}.\)<span>3</span>
+</p></div>
+</div></section>
+
+</main>
+</div>
+<footer class="footer"><h1>Учебные материалы</h1></footer><script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+<head><title>Математический анализ</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><link href="style.css" type="text/css" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></head>
+<body>
+<header class="header"><h1>Математический анализ</h1></header>
+<div class="main-grid">
+<nav class="side-menu"><h2>Темы</h2><ul class="no-dec"><li><div class="spoiler spoiler-submenu"><button class="spoiler-button spoiler-submenu">Интегралы, зависящие от параметра.</button><div class="spoiler-content spoiler-submenu"><ul class="no-dec"><li><p><a href="1.1. Равномерная сходимость функций по параметру.html">1.1. Равномерная сходимость функций по параметру.</a></p></li><li><p><a href="1.2. Собственные интегралы.html">1.2. Собственные интегралы.</a></p></li><li><p><a href="Общий случай.html">Общий случай.</a></p></li><li><div class="spoiler spoiler-submenu"><button class="spoiler-button spoiler-submenu">1.3 Несобственные интегралы.</button><div class="spoiler-content spoiler-submenu"><ul class="no-dec"><li><p><a href="">1.3.1. Основные определения.</a></p></li><li><p><a href="">1.3.2. Равномерная сходимость несобственных интегралов.</a></p></li><li><p><a href="">1.3.3. Признаки равномерной сходимости.</a></p></li><li><p><a href="">1.3.4. Свойства равномерно сходящихся интегралов.</a></p></li><li><p><a href="">1.3.5. Эйлеровы интегралы.</a></p></li></ul></div></div></li></ul></div></div></li></ul></nav>
+<main class="main">
+
+<ol>
+    <li>
+        <h4>Свойства равномерно сходящихся интегралов<span> Виноградова т.2, с.416, Фихтенгольц т.2, с.749</span></h4>
+    </li>
+</ol>
+<p>1. Если интегралы \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) и \(\displaystyle \int\limits_{a}^{\mathbf{B}}{g(x,\gamma )dx}\) равномерно сходятся на \(\displaystyle \Gamma \), то и интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{\left( \alpha f(x,\gamma )+\beta g(x,\gamma ) \right)dx}\), \(\displaystyle \alpha ,\beta \in \mathbb{R}\) равномерно сходится на \(\displaystyle \Gamma \).</p>
+<p>2. Если  интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) равномерно сходится на \(\displaystyle \Gamma \), то он равномерно сходится на любом \(\displaystyle A\subset \Gamma \);</p>
+<p>3. Если  интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) <em>сходится</em> на \(\displaystyle \Gamma \) и сходится неравномерно на некотором \(\displaystyle A\subset \Gamma \), то он сходится неравномерно и на \(\displaystyle \Gamma \).</p>
+<p>4. Если интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) равномерно сходится на каждом из множеств \(\displaystyle {{\Gamma }_{1}}\), \(\displaystyle {{\Gamma }_{2}}\), то он равномерно сходится на \(\displaystyle {{\Gamma }_{1}}\bigcup {{\Gamma }_{2}}\).</p>
+
+<section class="theorem"><section class="theorem"><strong>Теорема </strong><strong>15</strong><strong> (предельный переход в несобственном интеграле).</strong> Пусть \(\displaystyle f:\left[ a,\mathbf{B} \right)\times \Gamma \to \mathbb{R}\), \(\displaystyle g:\left[ a,\mathbf{B} \right)\to \mathbb{R}\), \(\displaystyle {{\gamma }_{0}}\) – предельная точка множества \(\displaystyle \Gamma \).<br>Тогда, если 
+<p>1) \(\displaystyle \forall \eta \in \left( a,\mathbf{B} \right)\,\ f\left( x,\gamma  \right)\underset{\left[ a,\eta  \right]}{\mathop{\begin{matrix}
+   \to   \\
+   \to   \\
+\end{matrix}}}\,g\left( x \right)\) при \(\displaystyle \gamma \to {{\gamma }_{0}}\);</p>
+<p>2) \(\displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) сходится равномерно на \(\displaystyle \Gamma \);
+</p><p>то \(\displaystyle \forall {{\gamma }_{0}}\in \operatorname{int}\Gamma \) справедливо равенство </p>
+<p>              \(\displaystyle \underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}=\int\limits_{a}^{\mathbf{B}}{\underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,f(x,\gamma )dx}=\int\limits_{a}^{\mathbf{B}}{g(x)dx}\).                                                         </p>
+<p>Если \(\displaystyle {{\gamma }_{0}}\in \partial \Gamma \bigcap \Gamma \), то в выражении все пределы надо заменить на соответствующие односторонние.
+</p><div class="spoiler">
+<button class="spoiler-button">Доказательство</button>
+<div class="spoiler-content">
+<span>4</span><span>Рассмотрим собственный интеграл \(\displaystyle \varphi \,(\eta ,\gamma )\,=\,\int\limits_{a}^{\eta }{f(x,\gamma )dx}\), \(\displaystyle \eta \,\in \,\left( a,\mathbf{B} \right)\).</span>
+<p><span>В силу теоремы </span>8<span> для этого интеграла верно, что</span></p>
+<p><span>\(\displaystyle \underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,\int\limits_{a}^{\eta }{f(x,\gamma )dx}=\int\limits_{a}^{\eta }{\underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,f(x,\gamma )dx}=\int\limits_{a}^{\eta }{g(x)dx}\).</span></p>
+<p><span>Кроме этого \(\displaystyle \underset{\eta \to \mathbf{B}}{\mathop{\lim }}\,\varphi \,(\eta ,\gamma )\,=\,\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\), причем стремление функции \(\displaystyle \varphi \,(\eta ,\gamma )\) к своему пределу, согласно условию, происходит <em>равномерно</em> относительно \(\displaystyle \gamma \), а значит, справедлива теорема </span>3<span> о предельном переходе, т.е. пределы можно переставить местами. Следовательно, </span></p>
+<p><span>\(\displaystyle \underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}=\underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,\underset{\eta \to \mathbf{B}}{\mathop{\lim }}\,\int\limits_{a}^{\eta }{f(x,\gamma )dx}=\underset{\eta \to \mathbf{B}}{\mathop{\lim }}\,\underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,\int\limits_{a}^{\eta }{f(x,\gamma )dx}=\)</span></p>
+<p><span>\(\displaystyle =\underset{\eta \to \mathbf{B}}{\mathop{\lim }}\,\int\limits_{a}^{\eta }{\underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,f(x,\gamma )dx}=\underset{\eta \to \mathbf{B}}{\mathop{\lim }}\,\int\limits_{a}^{\eta }{g(x)dx}=\int\limits_{a}^{\mathbf{B}}{g(x)dx}\).</span><span>3</span>
+</p></div>
+</div>
+<p><span>Замечание 1.</span> Применять формулу  для граничных точек, не входящих во множество \(\displaystyle \Gamma \), на котором выполняются условия теоремы, нельзя. </p>
+<div class="spoiler">
+<button class="spoiler-button">Доказательство</button>
+<div class="spoiler-content">
+<span>4</span>\(\displaystyle \forall a&gt;0\) \(\displaystyle \int\limits_{0}^{+\infty }{a{{e}^{-ax}}dx}=\left. -{{e}^{-ax}} \right|_{0}^{+\infty }=1\), поэтому, \(\displaystyle \underset{a\to 0+}{\mathop{\lim }}\,\int\limits_{0}^{+\infty }{a{{e}^{-ax}}dx}=1\).
+<p>При этом \(\displaystyle \int\limits_{0}^{+\infty }{\underset{a\to 0+}{\mathop{\lim }}\,\left( a{{e}^{-ax}} \right)dx}=0\).<span>3</span>
+</p></div>
+</div>
+<p><span>Замечание 2.</span><span> Теорему часто применяют при работе с функциональными рядами для доказательства равенства </span></p>
+<p><span>\(\displaystyle \sum\limits_{n=0}^{\infty }{\int\limits_{a}^{\mathbf{B}}{{{u}_{n}}\left( x \right)dx}}=\underset{N\to \infty }{\mathop{\lim }}\,\sum\limits_{n=0}^{N}{\int\limits_{a}^{\mathbf{B}}{{{u}_{n}}\left( x \right)dx}}=\)</span></p>
+<p><span>\(\displaystyle =\int\limits_{a}^{\mathbf{B}}{\underset{N\to \infty }{\mathop{\lim }}\,\sum\limits_{n=0}^{N}{{{u}_{n}}\left( x \right)}\,dx}=\int\limits_{a}^{\mathbf{B}}{\sum\limits_{n=0}^{\infty }{{{u}_{n}}\left( x \right)}\,dx}\)</span></p>
+<p><span>(роль параметра играет \(\displaystyle n\)).</span></p>
+
+<section class="example">Пример <span>7</span><span>*</span><span>.</span><span> </span><span>Вычислим сумму ряда </span>
+<p><span>\(\displaystyle S=1+\frac{1}{3}-\frac{1}{5}-\frac{1}{7}+\frac{1}{9}+\frac{1}{11}-...=\sum\limits_{n=0}^{\infty }{{{\left( -1 \right)}^{n}}\left( \frac{1}{4n+1}+\frac{1}{4n+3} \right)}\).</span></p>
+<div class="spoiler">
+<button class="spoiler-button">Доказательство</button>
+<div class="spoiler-content">
+<span>4</span><span>\(\displaystyle S\,=\,\sum\limits_{n=0}^{\infty }{{{\left( -1 \right)}^{n}}\int\limits_{0}^{1}{\left( {{x}^{4n}}+{{x}^{4n+2}} \right)dx}}=\)\(\displaystyle \int\limits_{0}^{1}{\sum\limits_{n=0}^{\infty }{{{\left( -1 \right)}^{n}}\left( {{x}^{4n}}+{{x}^{4n+2}} \right)\,}dx}=\)</span>
+<p><span>\(\displaystyle =\int\limits_{0}^{1}{\left( 1+{{x}^{2}} \right)\sum\limits_{n=0}^{\infty }{{{\left( -1 \right)}^{n}}{{x}^{4n}}\,}dx}=\int\limits_{0}^{1}{\frac{1+{{x}^{2}}}{1+{{x}^{4}}}dx}=\)</span></p>
+<p><span>\(\displaystyle =\int\limits_{0}^{1}{\frac{1\,+\frac{1}{{{x}^{2}}}}{{{x}^{2}}+\,\frac{1}{{{x}^{2}}}}dx}=\int\limits_{0}^{1}{\frac{d\left( x\,-\frac{1}{x} \right)}{{{\left( x\,-\,\frac{1}{x} \right)}^{2}}+\,2}dx}\,=\)\(\displaystyle \left. \frac{1}{\sqrt{2}}\operatorname{arctg}\frac{x\,-\frac{1}{x}}{\sqrt{2}} \right|_{0}^{1}\,=\,\frac{\pi \sqrt{2}}{4}.\)</span></p>
+<p><span>Хотя особенностей сумма ряда </span></p>
+<p><span>\(\displaystyle \sum\limits_{n=0}^{\infty }{{{\left( -1 \right)}^{n}}\left( {{x}^{4n}}+\,{{x}^{4n+2}} \right)}\,=\,\frac{1\,+\,{{x}^{2}}}{1\,+\,{{x}^{4}}}\)</span></p>
+<p><span>не имеет, но равномерная сходимость нарушается вблизи \(\displaystyle x=1\). Для оправдания почленного интегрирования, покажем равномерную относительно \(\displaystyle n\) сходимость интеграла от частичной суммы ряда. Так как </span></p>
+<p><span>\(\displaystyle {{S}_{N}}\,=\sum\limits_{n=0}^{N}{{{\left( -1 \right)}^{n}}{{x}^{4n}}\left( 1+{{x}^{2}} \right)}=\frac{1\pm {{x}^{4n}}}{1+{{x}^{4}}}\left( 1+{{x}^{2}} \right)\le 2\frac{1+{{x}^{2}}}{1+{{x}^{4}}}\le 4\),</span></p>
+<p>то в роли мажоранты можно использовать константу 4.<span>3</span>
+</p></div>
+</div><strong><br> </strong>
+<section class="consequence"><strong>Следствие 1. </strong><span>Пусть неотрицательная функция \(\displaystyle f(x,\gamma )\) непрерывна <br> по \(\displaystyle x\) в промежутке \(\displaystyle \left[ a,\mathbf{B} \right)\) и стремится, <em>возрастая по</em> \(\displaystyle \gamma \), к предельной функции \(\displaystyle g\left( x \right)\), также непрерывной в указанном промежутке. Тогда из существования интеграла \(\displaystyle \int\limits_{a}^{\mathbf{B}}{g(x)dx}\) вытекает как существование интеграла \(\displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) \(\displaystyle \forall \gamma \in \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), так и справедливость формулы </span><span>. </span>
+<div class="spoiler">
+<button class="spoiler-button">Доказательство</button>
+<div class="spoiler-content">
+<span>4</span><span>В силу обобщенной теоремы Дини (теоремы </span>5<span>): </span>
+<p><span>\(\displaystyle \forall \eta \in \left( a,\mathbf{B} \right)\,\ f\left( x,\gamma   \right)\underset{\left[ a,\eta   \right]}{\mathop{\begin{matrix}
+   \to    \\
+   \to    \\
+\end{matrix}}}\,g\left( x \right)\) </span><span>при</span><span> \(\displaystyle \gamma \to {{\gamma }_{0}}\).</span>
+<span>Так</span><span> </span><span>как</span><span> </span><span>по</span><span> </span><span>условию</span><span> \(\displaystyle \forall \gamma \in \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) \(\displaystyle \left| f\left( x,\gamma   \right) \right|=f\left( x,\gamma   \right)\le g\left( x \right)\), </span><span>то</span><span> </span><span>интеграл</span><span> \(\displaystyle I(\gamma )\) сходится равномерно<span> </span><span>на</span><span> \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) </span><span>и</span><span> </span><span>в</span><span> </span><span>силу</span><span> </span><span>теоремы</span><span> </span><span>15</span><span> </span><span>выполняется</span><span> </span><span>формула</span><span> </span><span>.</span><span>3</span>
+</span></p></div>
+</div>
+<span>Замечание</span><span>.</span><span> </span><span>Предположение</span><span> </span><span>о</span><span> </span><span>существовании</span><span> </span><span>интеграла</span><span> \(\displaystyle \int\limits_{a}^{\mathbf{B}}{g(x)dx}\) </span><span>может</span><span> </span><span>быть</span><span> </span><span>заменено</span><span> </span><span>предположением</span><span> </span><span>о</span><span> </span><span>существовании</span><span> </span><em><span>конечного</span></em><span> <br> </span><span>предела</span><span> \(\displaystyle \underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\).        </span>
+<strong>Следствие 2 (теорема о почленном интегрировании функциональных рядов). </strong>Пусть ряд \(\displaystyle \sum\limits_{n=1}^{\infty }{{{u}_{n}}\left( x \right)}\), состоящий из положительных непрерывных на \(\displaystyle \left[ a,+\infty   \right)\) (или \(\displaystyle \left[ a,b \right)\)) функций, имеет для этих значений \(\displaystyle x\) непрерывную же сумму \(\displaystyle S\left( x \right)\). Тогда, если \(\displaystyle S\left( x \right)\) интегрируема на \(\displaystyle \left[ a,+\infty   \right)\) (или \(\displaystyle \left[ a,b \right]\)),<br> то ряд можно почленно интегрировать.
+<span>Замечание 1.</span> Утверждение остается справедливым, если все члены ряда отрицательные. 
+<span>Замечание 2.</span><span> Предположение об интегрируемости суммы ряда <br> на \(\displaystyle \left[ a,+\infty  \right)\) (или \(\displaystyle \left[ a,b \right]\)) может быть заменено предположением о сходимости ряда \(\displaystyle \sum\limits_{n=1}^{\infty }{\int\limits_{a}^{+\infty }{{{u}_{n}}\left( x \right)dx}}\) (или \(\displaystyle \sum\limits_{n=1}^{\infty }{\int\limits_{a}^{b}{{{u}_{n}}\left( x \right)dx}}\)).</span>
+<span><section class="example">Пример <span>8</span><span>. </span></section></span></section></section></section></section>
+
+<section class="theorem">
+<p>Таким образом, в силу следствия 1 к теореме 16, можно утверждать, что функция \(\displaystyle I\left( a \right)\) непрерывна на \(\displaystyle \left[ 0,+\infty  \right)\).</p><div class="spoiler">
+<button class="spoiler-button">Доказательство</button>
+<div class="spoiler-content">
+<span>3</span>
+
+<p><span>Пример </span><span>12</span><span>. </span>Покажем, что интеграл \(\displaystyle I(\gamma )=\int\limits_{0}^{+\infty }{{{e}^{-\gamma x}}dx}\) сходится равномерно на множестве \(\displaystyle \left[ \varepsilon ,+\infty  \right)\), \(\displaystyle \varepsilon &gt;0\) и неравномерно на \(\displaystyle \left( 0,+\infty   \right)\).</p>
+<p><span>4</span>На множестве \(\displaystyle \left[ \varepsilon ,+\infty \right)\), \(\displaystyle \varepsilon &gt;0\) интеграл сходится равномерно<br> в силу признака Вейерштрасса:</p>
+<p>\(\displaystyle I(\gamma )=\int\limits_{0}^{+\infty }{{{e}^{-\gamma x}}dx}\le \int\limits_{0}^{+\infty }{{{e}^{-\varepsilon x}}dx}=\left. \frac{{{e}^{-\varepsilon x}}}{-\varepsilon } \right|_{0}^{+\infty }=\frac{1}{\varepsilon }&lt;+\infty \).</p>
+<p>Подынтегральная функция \(\displaystyle {{e}^{-\gamma x}}\) непрерывна на \(\displaystyle \left[ 0,+\infty   \right)\).</p>
+<p>Интеграл \(\displaystyle I(\gamma )=\int\limits_{0}^{+\infty }{{{e}^{-\gamma x}}dx}=\frac{1}{\gamma }\) сходится \(\displaystyle \forall \gamma \in \left( 0,+\infty  \right)\), но в граничной точке \(\displaystyle \gamma =0\) интеграл \(\displaystyle I(\gamma )\) расходится, а значит, в силу следствия 2 из теоремы 16, на множестве \(\displaystyle \left( 0,+\infty  \right)\) интеграл \(\displaystyle I(\gamma )\) сходится неравномерно.<span>3</span>
+</p></div>
+</div>
+
+<p><strong>Теорема </strong><strong>17</strong><strong> (Дифференцируемость).</strong> Если</p>
+<p>1) \(\displaystyle f\left( x,\gamma  \right)\) и \(\displaystyle \frac{\partial f}{\partial \gamma }\left( x,\gamma   \right)\) непрерывны на \(\displaystyle \left[ a,\mathbf{B} \right)\,\times \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),</p>
+<p>2) для некоторого \(\displaystyle \gamma \in \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) сходится интеграл \(\displaystyle I(\gamma )\,=\,\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\),</p>
+<p>3) интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{\frac{\partial f}{\partial \gamma }dx}\) сходится равномерно по \(\displaystyle \gamma \) на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),</p>
+<p>то функция \(\displaystyle I(\gamma )\) дифференцируема на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и ее производная может быть вычислена <strong><em>по правилу Лейбница:</em></strong></p>
+<p>\(\displaystyle {I}'(\gamma )=\int\limits_{a}^{\mathbf{B}}{\frac{\partial f}{\partial \gamma }dx}\).</p>
+<p><strong>Следствие</strong><strong> 1. </strong>Теорема остается справедливой, если \(\displaystyle f\left( x,\gamma   \right)\) и \(\displaystyle \frac{\partial f}{\partial \gamma }\left( x,\gamma  \right)\) можно доопределить до непрерывных на множестве \(\displaystyle \left[ a,\mathbf{B} \right)\,\times \,\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) изменением их значений не более чем на конечном множестве прямых \(\displaystyle x=\text{const}\).</p>
+<p><strong>Следствие 2. </strong>Если теорема справедлива на любом сегменте \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\,\subset \,\Gamma \), то она будет справедливой и на самом множестве \(\displaystyle \Gamma \).</p>
+
+<section class="example">Пример <span>13</span><span>.</span>Вычислим интеграл
+<p>\(\displaystyle I\left( a \right)=\int\limits_{0}^{+\infty }{\frac{1-{{e}^{-ax}}}{x{{e}^{x}}}dx}\), \(\displaystyle a\ge 0\).
+</p><div class="spoiler">
+<button class="spoiler-button">Доказательство</button>
+<div class="spoiler-content">
+<span>4</span><span>Пусть \(\displaystyle f\left( x,a \right)=\frac{1-{{e}^{-ax}}}{x{{e}^{x}}}\). Учитывая, что \(\displaystyle \underset{x\to 0}{\mathop{\lim }}\,\frac{1-{{e}^{-ax}}}{x{{e}^{x}}}=a\), подынтегральную функцию можно доопределить до непрерывной на \(\displaystyle {{\left[ 0,+\infty  \right)}^{2}}\): </span>
+<span>\(\displaystyle \tilde{f}\left( x,a \right)=\left\{ \begin{matrix}
+   f\left( x,a \right),\,\,x&gt;0,  \\
+   a,\,\,x=0.  \\
+\end{matrix} \right.\)</span>
+<p><span>1) \(\displaystyle \tilde{f}\left( x,a \right)\in \mathbb{C}\left( {{\mathbb{R}}^{2}} \right)\) </span><span>и</span><span> \(\displaystyle \frac{\partial \tilde{f}\left( x,a \right)}{\partial a}={{e}^{-\left( a+1 \right)x}}\in \mathbb{C}\left( {{\mathbb{R}}^{2}} \right)\).       </span>
+<span>2) \(\displaystyle I\left( 0 \right)=0\). </span></p>
+<p>3) Интеграл<span> \(\displaystyle K\left( a \right)=\int\limits_{0}^{+\infty }{\frac{\partial \tilde{f}}{\partial a}dx}=\int\limits_{0}^{+\infty }{{{e}^{-\left( a+1 \right)x}}dx}\le \int\limits_{0}^{+\infty }{{{e}^{-x}}dx}=1\) </span><span>сходится</span><span> </span><span>равномерно</span><span> </span><span>по</span><span> \(\displaystyle a\) на множестве \(\displaystyle \left[ 0,+\infty   \right)\) (по признаку Вейерштрасса</span><span>).</span></p>
+<p><span>Все условия теоремы </span><span>17</span><span> о дифференцировании по параметру выполнены, поэтому по правилу Лейбница</span></p>
+<p><span>\(\displaystyle {I}'\left( a \right)=K\left( a \right)=\int\limits_{0}^{+\infty }{\frac{\partial }{\partial a}\left( \frac{1-{{e}^{-ax}}}{x{{e}^{x}}} \right)dx}=\frac{1}{1+a}\).
+Следовательно, 
+\(\displaystyle I\left( a \right)=\int{\frac{da}{1+a}}=\ln \left( 1+a \right)+C\). </span>
+<span>Учитывая, что \(\displaystyle I\left( 0 \right)=0\), получим \(\displaystyle C=0\), а значит, </span>
+<span>\(\displaystyle \int\limits_{0}^{+\infty }{\frac{1-{{e}^{-ax}}}{x{{e}^{x}}}dx}=\ln \left( 1+a \right)\).3
+</span></p></div>
+</div>
+
+<section class="example">Пример <span>14</span><span>.</span>Вычислим интеграл
+<p><span>\(\displaystyle I\left( a \right)=\int\limits_{0}^{+\infty }{\frac{1-{{e}^{-ax}}}{x}\cos x\,dx}\), \(\displaystyle a&gt;0\).</span></p>
+<div class="spoiler">
+<button class="spoiler-button">Доказательство</button>
+<div class="spoiler-content">
+<span>4</span><span>Вычислим значение функции \(\displaystyle I\left( a \right)\) в произвольной точке \(\displaystyle {{a}_{0}}&gt;0\). Для этого рассмотрим функцию \(\displaystyle I\left( a \right)\) на отрезке \(\displaystyle E=\left[ \frac{{{a}_{0}}}{2},{{a}_{0}}+1 \right]\).</span>
+<p><span>Учитывая, что \(\displaystyle \underset{x\to 0}{\mathop{\lim }}\,\frac{1\,-\,{{e}^{-ax}}}{x}\cos x\,=\,a\), доопределим подынтегральную функцию до непрерывной на</span><span> \(\displaystyle {{\left[ 0,+\infty  \right)}^{2}}\): </span></p>
+<p><span>\(\displaystyle \tilde{f}\left( x,a \right)=\left\{ \begin{matrix}</span></p>
+<p>   \frac{1\,-\,{{e}^{-ax}}}{x}\cos x,\,\,x&gt;0,  \\</p>
+<p>   a,\,\,x=0.  \\</p>
+<p>\end{matrix} \right.\)</p>
+<p>1) \(\displaystyle \tilde{f}\left( x,a \right)\in \mathbb{C}\left( {{\mathbb{R}}^{2}} \right)\) <span>и</span><span> \(\displaystyle \frac{\partial \tilde{f}\left( x,a \right)}{\partial a}={{e}^{-ax}}\cos x\in \mathbb{C}\left( {{\mathbb{R}}^{2}} \right)\).</span></p>
+<p><span>2) В примере </span><span>11</span><span> была доказана сходимость интеграла \(\displaystyle I\left( a \right)\) на множестве \(\displaystyle \left[ 0,+\infty  \right)\), поэтому можно утверждать, что интеграл сходится на всем отрезке \(\displaystyle E\), и в частности в некоторой его точке.</span>
+<span>3) Интеграл  \(\displaystyle K\left( a \right)=\int\limits_{0}^{+\infty }{\frac{\partial \tilde{f}}{\partial a}dx}=\int\limits_{0}^{+\infty }{{{e}^{-ax}}\cos x\,dx}\) сходится равномерно по \(\displaystyle a\) на множестве \(\displaystyle E\) в силу признака Вейерштрасса:</span></p>
+<p><span>\(\displaystyle \int\limits_{0}^{+\infty }{\left| {{e}^{-ax}}\cos x \right|\,dx}\le \int\limits_{0}^{+\infty }{{{e}^{-ax}}\,dx}\le \int\limits_{0}^{+\infty }{{{e}^{-\frac{{{a}_{0}}}{2}x}}\,dx}=\frac{2}{{{a}_{0}}}&lt;\infty \).</span></p>
+<p>На множестве \(\displaystyle E\) выполнены все условия теоремы <span>17</span><span> о дифференцировании по параметру, поэтому \(\displaystyle \forall a\in E\) (а значит, и для \(\displaystyle a={{a}_{0}}\)):</span></p>
+<p>\(\displaystyle {I}'\left( a \right)=K\left( a \right)=\int\limits_{0}^{+\infty }{{{e}^{-ax}}\cos x\,dx}=\frac{a}{{{a}^{2}}+1}\).</p>
+<p><span>Следовательно, </span></p>
+<p><span> \(\displaystyle I\left( a \right)=\int{\frac{a\,da}{{{a}^{2}}+1}}=\frac{1}{2}\ln \left( 1+{{a}^{2}} \right)+C\),</span>                                      </p>
+<p><span>В силу произвольности выбора \(\displaystyle {{a}_{0}}\), формула <span> справедлива \(\displaystyle \forall a\,&gt;\,0\). </span></span></p>
+
+<p><span>Учитывая, доказанную в примере </span><span>11</span><span> непрерывность функции \(\displaystyle I\left( a \right)\) <br> на \(\displaystyle \left[ 0,+\infty  \right)\), получим</span></p>
+<p>\(\displaystyle \underset{a\to 0+}{\mathop{\lim }}\,I\left( a \right)=\underset{a\to 0+}{\mathop{\lim }}\,\int\limits_{0}^{+\infty }{\frac{1-{{e}^{-ax}}}{x}\cos x\,dx}=\int\limits_{0}^{+\infty }{\underset{a\to 0+}{\mathop{\lim }}\,\left( \frac{1-{{e}^{-ax}}}{x}\cos x \right)\,dx}=0\).</p>
+<p><span>С другой стороны </span></p>
+<p><span>\(\displaystyle 0=I\left( 0 \right)=\underset{a\to 0+}{\mathop{\lim }}\,I\left( a \right)=\underset{a\to 0+}{\mathop{\lim }}\,\left( \frac{1}{2}\ln \left( 1+{{a}^{2}} \right)+C \right)=C\).</span></p>
+<p>Следовательно<span>, \(\displaystyle \forall a&gt;0\)  \(\displaystyle I\left( a \right)=\frac{1}{2}\ln \left( 1+{{a}^{2}} \right)\).</span><span>3</span>
+</p></div>
+</div><span><br> </span>
+<section class="example">Пример<span> </span><span>15</span><span>.</span><strong> </strong>Вычислим интеграл \(\displaystyle I\left( a,b \right)=\int\limits_{0}^{+\infty }{\frac{{{e}^{-ax}}-{{e}^{-bx}}}{x}dx}\)
+<div class="spoiler">
+<button class="spoiler-button">Доказательство</button>
+<div class="spoiler-content">
+<span>4</span>Зафиксируем некоторое значение \(\displaystyle {{b}_{0}}&gt;0\) и рассмотрим интеграл \(\displaystyle I\left( a,b \right)\) как функцию от \(\displaystyle a\):
+<p>\(\displaystyle J\left( a \right)=I\left( a,{{b}_{0}} \right)=\int\limits_{0}^{+\infty }{\frac{{{e}^{-ax}}-{{e}^{-{{b}_{0}}x}}}{x}dx}\)</p>
+<p>на отрезке \(\displaystyle E=\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),  \(\displaystyle {{\gamma }_{1}}=\min \left\{ a,b \right\}/2\), \(\displaystyle {{\gamma }_{2}}=\max \left\{ {{a}_{0}}+1,\,\,{{b}_{0}}+1 \right\}\).</p>
+<p><span>Пусть \(\displaystyle f\left( x,a,{{b}_{0}} \right)\,=\,\frac{{{e}^{-ax}}-\,{{e}^{-{{b}_{0}}x}}}{x}\) Учитывая, что \(\displaystyle \underset{x\to 0}{\mathop{\lim }}\,f\left( x,a,{{b}_{0}} \right)\,=\,{{b}_{0}}-\,a\), <br> доопределим подынтегральную функцию до непрерывной по \(\displaystyle x\) на \(\displaystyle \left[ 0,+\infty  \right)\): </span></p>
+<p><span>           </span><span>\(\displaystyle \tilde{f}\left( x,a,{{b}_{0}} \right)=\left\{ \begin{matrix}</span>
+<span>    f\left( x,a,{{b}_{0}} \right),\,\,x&gt;0   \\</span>
+<span>    {{b}_{0}}-a,\,\,x=0  \\</span>
+<span>\end{matrix} \right.\)</span></p>
+<p><span>1) \(\displaystyle \tilde{f}\left( x,a,{{b}_{0}} \right)\in \mathbb{C}\left( {{\mathbb{R}}^{3}} \right)\) и \(\displaystyle \frac{\partial \tilde{f}\left( x,a,{{b}_{0}} \right)}{\partial a}={{e}^{-ax}}\in \mathbb{C}\left( {{\mathbb{R}}^{3}} \right)\).</span>
+<span>2) \(\displaystyle J\left( {{b}_{0}} \right)=I\left( {{b}_{0}},{{b}_{0}} \right)=0\).</span></p>
+<p><span>3) </span><span>Интеграл</span><span> \(\displaystyle K\left( a \right)\,=\,\int\limits_{0}^{+\infty }{\frac{\partial \tilde{f}}{\partial a}dx}\,=\,-\,\int\limits_{0}^{+\infty }{{{e}^{-ax}}dx}\) </span><span>сходится</span><span> </span><span>равномерно</span><span> </span><span>на</span><span> \(\displaystyle E\) в силу признака Вейерштрасса<span>, </span><span>так</span><span> </span><span>как</span><span> \(\displaystyle \int\limits_{0}^{+\infty }{{{e}^{-ax}}\,dx}\le \int\limits_{0}^{+\infty }{{{e}^{-{{\gamma }_{1}}x}}\,dx}=\frac{2}{{{\gamma }_{1}}}&lt;\infty \).</span>
+На множестве \(\displaystyle E\) выполнены все условия теоремы 17 о дифференцировании по параметру, поэтому \(\displaystyle \forall a\in E\) (а значит, и для значения \(\displaystyle {{a}_{0}}\)):</span></p>
+<p>\(\displaystyle {J}'\left( a \right)=K\left( a \right)=-\int\limits_{0}^{+\infty }{{{e}^{-ax}}dx=-\frac{1}{a}}\).</p>
+<p>Следовательно, \(\displaystyle I\left( a,{{b}_{0}} \right)=J\left( a \right)=\int{-\frac{da}{a}}=-\ln a+C\left( {{b}_{0}} \right)\,\). Учитывая, что \(\displaystyle 0={{\left. J\left( a \right)\, \right|}_{a={{b}_{0}}}}\,=\,-\ln {{b}_{0}}\,+\,C\left( {{b}_{0}} \right)\), получим \(\displaystyle J\left( a \right)\,=\,I\left( a,{{b}_{0}} \right)\,=\,\ln \frac{{{b}_{0}}}{a}\). 
+В силу произвольности выбора \(\displaystyle {{b}_{0}}\), последняя формула справедлива \(\displaystyle \forall {{b}_{0}}\,&gt;\,0\), следовательно, \(\displaystyle I\left( a,b \right)\,=\,\ln \frac{b}{a}\).<span>3</span>
+</p></div>
+</div>
+<section class="example">Пример<span> </span><span>16</span><span>.</span><strong> </strong>Вычислим интеграл 
+<p>\(\displaystyle \int\limits_{0}^{+\infty }{x{{e}^{-ax}}\sin x\,dx}\), \(\displaystyle a&gt;0\).
+</p><div class="spoiler">
+<button class="spoiler-button">Доказательство</button>
+<div class="spoiler-content">
+4Заметим, что 
+<p>\(\displaystyle \int\limits_{0}^{+\infty }{x{{e}^{-ax}}\sin x\,dx}={{\left. \left( -\frac{\partial }{\partial b}\int\limits_{0}^{+\infty }{{{e}^{-ax}}\cos \left( bx \right)\,dx} \right) \right|}_{b=1}}.\)</p>
+<p>Рассмотрим интеграл \(\displaystyle I\left( a,b \right)=\int\limits_{0}^{+\infty }{{{e}^{-ax}}\cos \left( bx \right)\,dx}\) как функцию \(\displaystyle J\left( b \right)\) на отрезке \(\displaystyle \,\left[ 0.5,\,2 \right]\). Дважды интегрируя по частям для этого интеграла получим \(\displaystyle I\left( a,b \right)=\frac{a}{{{a}^{2}}+{{b}^{2}}}\). <span>В силу теоремы </span><span>17</span><span> функцию \(\displaystyle I\left( a,b \right)\) можно дифференцировать по \(\displaystyle b\) по правилу Лейбница:</span></p>
+<p><span>1) \(\displaystyle {{e}^{-ax}}\cos \left( bx \right)\) и \(\displaystyle \frac{\partial }{\partial b}\left( {{e}^{-ax}}\cos \left( bx \right) \right)=-x{{e}^{-ax}}\sin \left( bx \right)\) непрерывны, </span></p>
+<p><span>2) \(\displaystyle J\left( b \right)\) </span><span>сходится</span><span> </span><span>на</span><span> \(\displaystyle \,\left[ 0.5,\,2 \right]\): </span></p>
+<p><span>\(\displaystyle \int\limits_{0}^{+\infty }{\left| {{e}^{-ax}}\cos \left( bx \right) \right|\,dx}\,=\,\int\limits_{0}^{+\infty }{{{e}^{-ax}}\,dx}\,=\,\frac{1}{a}\,&lt;\,+\,\infty \),</span>
+</p><p><span>3) </span><span>интеграл</span><span> \(\displaystyle K\left( b \right)={J}'\left( b \right)=-\int\limits_{0}^{+\infty }{x{{e}^{-ax}}\sin \left( bx \right)\,dx}\) </span><span>сходится</span><span> </span><span>равномерно</span><span> <br> </span><span>на</span><span> \(\displaystyle \,\left[ 0.5,\,2 \right]\) </span><span>по</span><span> </span><span>признаку</span><span> </span><span>Вейерштрасса</span><span>: </span></p>
+<p><span>\(\displaystyle \int\limits_{0}^{+\infty }{\left| x{{e}^{-ax}}\sin \left( bx \right) \right|\,dx}\,\le \,\int\limits_{0}^{+\infty }{x{{e}^{-ax}}\,dx}\,=\,\frac{1}{{{a}^{2}}}\,&lt;\,\infty \).</span>
+Следовательно, 
+<span>\(\displaystyle \int\limits_{0}^{+\infty }{x{{e}^{-ax}}\sin x\,dx}={{\left. \left( -\frac{\partial }{\partial b}\int\limits_{0}^{+\infty }{{{e}^{-ax}}\cos \left( bx \right)\,dx} \right) \right|}_{b=1}}=\)</span></p>
+<p>\(\displaystyle =-\frac{\partial }{\partial b}{{\left. \left( \frac{a}{{{a}^{2}}+{{b}^{2}}} \right) \right|}_{b=1}}={{\left. -\left( -\frac{2ab}{{{\left( {{a}^{2}}+{{b}^{2}} \right)}^{2}}} \right) \right|}_{b=1}}=\frac{2a}{{{\left( {{a}^{2}}+1 \right)}^{2}}}\).<span>3</span>
+</p></div>
+</div>
+
+<section class="example">Пример<span> </span><span>17</span><span>.</span> Вычислим интеграл 
+<p> \(\displaystyle I\left( a,b \right)=\int\limits_{0}^{+\infty }{{{e}^{-bx}}\frac{\sin ax}{x}dx}\), \(\displaystyle b&gt;0\).                                           </p>
+<div class="spoiler">
+<button class="spoiler-button">Доказательство</button>
+<div class="spoiler-content">
+<span>4</span>Зафиксируем некоторое значение \(\displaystyle {{b}_{0}}&gt;0\) и рассмотрим интеграл как функцию от \(\displaystyle a\):
+<p>\(\displaystyle J\left( a \right)=I\left( a,{{b}_{0}} \right)=\int\limits_{0}^{+\infty }{{{e}^{-{{b}_{0}}x}}\frac{\sin ax}{x}dx}\).</p>
+<p><span>Учитывая, что \(\displaystyle \underset{x\to 0}{\mathop{\lim }}\,{{e}^{-{{b}_{0}}x}}\frac{\sin ax}{x}=a\), доопределим подынтегральную функцию до непрерывной по \(\displaystyle x\) на множестве \(\displaystyle \left[ 0,+\infty  \right)\):</span></p>
+<p><span>\(\displaystyle \tilde{f}\left( x,a,{{b}_{0}} \right)=\left\{ \begin{matrix}
+    {{e}^{-{{b}_{0}}x}}\frac{\sin ax}{x},\,\,x&gt;0  \\
+    a,\,\,x=0  \\
+\end{matrix} \right.\)</span>
+<span>1) \(\displaystyle \tilde{f}\left( x,a,{{b}_{0}} \right)\in \mathbb{C}\left( {{\mathbb{R}}^{3}} \right)\) </span><span>и</span><span> \(\displaystyle \frac{\partial \tilde{f}\left( x,a,{{b}_{0}} \right)}{\partial a}={{e}^{-{{b}_{0}}x}}\cos ax\in \mathbb{C}\left( {{\mathbb{R}}^{3}} \right)\).</span></p>
+<p><span>2) \(\displaystyle J\left( 0 \right)=0\).
+3) Интеграл \(\displaystyle K\left( a \right)\,=\,\int\limits_{0}^{+\infty }{\frac{\partial }{\partial a}\left( {{e}^{-{{b}_{0}}x}}\frac{\sin ax}{x} \right)dx}\,=\,\int\limits_{0}^{+\infty }{{{e}^{-{{b}_{0}}x}}\cos ax\,dx}\) </span><span>сходится</span><span> </span><span>равномерно</span><span> </span><span>относительно</span><span> </span><span>параметра</span><span> \(\displaystyle a\) на \(\displaystyle \mathbb{R}\) в силу признака Вейерштрасса</span><span>:</span></p>
+<p><span>\(\displaystyle \int\limits_{0}^{+\infty }{\left| {{e}^{-{{b}_{0}}x}}\cos ax \right|dx}\le \int\limits_{0}^{+\infty }{{{e}^{-{{b}_{0}}x}}dx}=\frac{1}{{{b}_{0}}}&lt;\infty \).</span>
+Все условия теоремы 17 о дифференцировании по параметру выполнены, поэтому по правилу Лейбница</p>
+<p>\(\displaystyle {I}'\left( a \right)=K\left( a \right)=\int\limits_{0}^{+\infty }{{{e}^{-{{b}_{0}}x}}\cos ax\,dx}=\frac{{{b}_{0}}}{{{a}^{2}}+b_{0}^{2}}\).
+Следовательно,
+\(\displaystyle I\left( a,{{b}_{0}} \right)=\int{\frac{{{b}_{0}}}{{{a}^{2}}+b_{0}^{2}}da}+C\left( {{b}_{0}} \right)=\operatorname{arctg}\frac{a}{{{b}_{0}}}+C\left( {{b}_{0}} \right)\).</p>
+<p>Учитывая, что \(\displaystyle J\left( 0 \right)=I\left( 0,{{b}_{0}} \right)=0\), получим \(\displaystyle C\left( {{b}_{0}} \right)=0\),  а значит,
+                    \(\displaystyle \int\limits_{0}^{+\infty }{{{e}^{-bx}}\frac{\sin ax}{x}dx}=\operatorname{arctg}\frac{a}{b}\).3
+</p></div>
+</div>                                    
+
+<section class="example">Пример <span>18</span><span>*</span><span>.</span><strong> </strong><span>Докажем, что </span>
+<p><span> \(\displaystyle \int\limits_{0}^{+\infty }{\frac{\sin ax}{x}dx}=\frac{\pi }{2}\,\,\operatorname{sign}a\), \(\displaystyle a\ne 0\).                                         </span></p>
+<p>(этот интеграл называют <strong><em>интегралом Дирихле</em></strong>) и вычислим интегралы</p>
+<p>\(\displaystyle \int\limits_{0}^{+\infty }{\frac{\sin \left( {{x}^{3}} \right)}{x}dx}\)   и  \(\displaystyle \int\limits_{0}^{+\infty }{\frac{{{\sin }^{3}}x}{x}dx}\,\).
+</p><div class="spoiler">
+<button class="spoiler-button">Доказательство</button>
+<div class="spoiler-content">
+<span>4</span><span>1. Рассмотрим сначала более общий интеграл  </span>
+<p><span>\(\displaystyle I\left( a,b \right)=\int\limits_{0}^{+\infty }{{{e}^{-bx}}\frac{\sin ax}{x}dx}\), \(\displaystyle b\in \left[ 0,1 \right]\)</span><span>.</span>
+<span>Этот интеграл при каждом фиксированном \(\displaystyle a\ne 0\) сходится равномерно по \(\displaystyle b\) на отрезке \(\displaystyle \left[ 0,1 \right]\) по признаку Дирихле:</span></p>
+<p><span>1) \(\displaystyle \left| \int\limits_{0}^{B}{\sin ax\,dx} \right|=\left| \left. \frac{\cos ax}{a} \right|_{0}^{B} \right|\le \frac{2}{\left| a \right|}&lt;+\infty \),
+2) \(\displaystyle \frac{{{e}^{-bx}}}{x}\) монотонно убывает по \(\displaystyle x\),</span></p>
+<p><span>3) \(\displaystyle \frac{{{e}^{-bx}}}{x}\underset{\left[ 0,1 \right]}{\mathop{\begin{matrix}
+   \to    \\
+   \to    \\
+\end{matrix}}}\,0\) при \(\displaystyle x\to \infty \), так как \(\displaystyle \underset{x\to +\infty }{\mathop{\lim }}\,\underset{b\in \left[ 0,1 \right]}{\mathop{\sup }}\,\left| \frac{{{e}^{-bx}}}{x}-0 \right|=\underset{x\to +\infty }{\mathop{\lim }}\,\frac{1}{x}=0\).</span></p>
+<p><span>x \(\displaystyle \underset{x\to +\infty }{\mathop{\lim }}\,\underset{b\in \left[ 0,1 \right]}{\mathop{\sup }}\,\left| \frac{{{e}^{-bx}}}{x}-0 \right|=\underset{x\to +\infty }{\mathop{\lim }}\,\underset{b\in \left[ 0,1 \right]}{\mathop{\sup }}\,\frac{{{e}^{-bx}}}{x}=\underset{x\to +\infty }{\mathop{\lim }}\,\frac{1}{x}=0\)x \(\displaystyle \underset{x\to +\infty }{\mathop{\lim }}\,\underset{b\in \left[ 0,1 \right]}{\mathop{\sup }}\,\left| \frac{{{e}^{-bx}}}{x}-0 \right|=\underset{x\to +\infty }{\mathop{\lim }}\,\underset{b\in \left[ 0,1 \right]}{\mathop{\sup }}\,\frac{{{e}^{-bx}}}{x}=\underset{x\to +\infty }{\mathop{\lim }}\,\frac{1}{x}=0\).</span></p>
+<p><span>Из равномерной сходимости интеграла \(\displaystyle I\left( a,b \right)\) и непрерывности на множестве \(\displaystyle \left\{ \left. \left( x,b \right)\, \right|\,\,x\in \left[ 0,+\infty   \right),\,\,b\in \left[ 0,1 \right] \right\}\) </span><span>функции</span><span> </span></p>
+<p><span>\(\displaystyle \left\{ \begin{matrix}</span></p>
+<p>    {{e}^{-bx}}\frac{\sin ax}{x},\,\,x&gt;0   \\</p>
+<p>    a,\,\,x=0  \\</p>
+<p>\end{matrix} \right.\)</p>
+<p>следует (в силу теоремы <span>16</span><span>) непрерывность по \(\displaystyle b\) функции \(\displaystyle I\left( a,b \right)\) на \(\displaystyle \left[ 0,1 \right]\)</span><span>, а значит, в формуле </span><span> можно перейти к пределу:</span>
+<span>         \(\displaystyle \int\limits_{0}^{+\infty }{\frac{\sin ax}{x}dx}=\underset{b\to +0}{\mathop{\lim }}\,\int\limits_{0}^{+\infty }{{{e}^{-bx}}\frac{\sin ax}{x}dx}=\underset{b\to +0}{\mathop{\lim }}\,\operatorname{arctg}\frac{a}{b}=\frac{\pi }{2}\,\,\operatorname{sign}a\).</span></p>
+<p><span>2. \(\displaystyle \int\limits_{0}^{+\infty }{\frac{\sin \left( {{x}^{3}} \right)}{x}dx}=\left[ t={{x}^{3}} \right]=\frac{1}{3}\int\limits_{0}^{+\infty }{\frac{\sin t}{t}dt}=\frac{\pi }{6}\).
+3. \(\displaystyle \int\limits_{0}^{+\infty }{\frac{{{\sin }^{3}}x}{x}dx}\,=\,\int\limits_{\,0}^{+\infty }{\frac{3\sin x\,-\,\sin \left( 3x \right)}{4x}dx}=\)</span></p>
+<p><span>\(\displaystyle =\frac{3}{4}\int\limits_{0}^{+\infty }{\frac{\sin x}{x}dx}\,-\,\frac{1}{4}\int\limits_{0}^{+\infty }{\frac{\sin \left( 3x \right)}{3x}d\left( 3x \right)}\,=\,\frac{\pi }{8}\left( 3-1 \right)=\frac{\pi }{4}\).</span><span>3</span>
+</p></div>
+</div>
+
+<p><strong>Теорема </strong><strong>18</strong><strong> (Интегрируемость в собственном смысле). </strong>Если функция \(\displaystyle f(x,\gamma )\) непрерывна в полуполосе \(\displaystyle \left[ a,\mathbf{B} \right)\times \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), а интеграл</p>
+<p>          \(\displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\)      </p>
+<p>сходится равномерно на сегменте \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), то интеграл  можно интегрировать по параметру \(\displaystyle \gamma \) на сегменте \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), причем</p>
+<p> \(\displaystyle \int\limits_{{{\gamma }_{1}}}^{{{\gamma }_{2}}}{I(\gamma )d\gamma =\int\limits_{{{\gamma }_{1}}}^{{{\gamma }_{2}}}{\left( \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx} \right)d\gamma }=\int\limits_{a}^{\mathbf{B}}{\left( \int\limits_{{{\gamma }_{1}}}^{{{\gamma }_{2}}}{f(x,\gamma )d\gamma } \right)dx}}\).                                        </p>
+<section class="consequence"><strong>Следствие</strong><strong>.</strong> Если \(\displaystyle f(x,\gamma )\) непрерывна и неотрицательна в полуполосе \(\displaystyle \left[ a,\mathbf{B} \right)\times \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и интеграл  является непрерывной функцией на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), то справедлива формула .
+<div class="spoiler">
+<button class="spoiler-button">Доказательство</button>
+<div class="spoiler-content">
+<span>4</span>Следует из теоремы в силу признака Дини.<span>3</span>
+</div>
+</div>
+<p><span>Замечание.</span><strong> </strong>В общем случае перестановка порядка интегрирования недопустима. Например,</p>
+<p>\(\displaystyle \int\limits_{0}^{1}{\left( \int\limits_{0}^{1}{\frac{\gamma \,-\,x}{{{\left( x\,+\,\gamma   \right)}^{3}}}dx} \right)d\gamma }=\frac{1}{2}.\)         \(\displaystyle \int\limits_{0}^{1}{\left( \int\limits_{0}^{1}{\frac{\gamma \,-\,x}{{{\left( x\,+\,\gamma  \right)}^{3}}}d\gamma } \right)dx}=-\frac{1}{2}.\)
+x \(\displaystyle \begin{matrix}
+  \int\limits_{0}^{1}{d\gamma \int\limits_{0}^{1}{\frac{\gamma \,-\,x}{{{\left( x\,+\,\gamma   \right)}^{3}}}dx=}}\int\limits_{0}^{1}{d\gamma \int\limits_{0}^{1}{\left( \frac{-1}{{{\left( x\,+\,\gamma  \right)}^{2}}}+\frac{2\gamma }{{{\left( x\,+\,\gamma  \right)}^{3}}} \right)dx}}= \\ </p>
+<p>  =\int\limits_{0}^{1}{\left. \left( \frac{1}{x\,+\,\gamma }-\frac{\gamma }{{{\left( x\,+\,\gamma  \right)}^{2}}} \right) \right|_{x=0}^{x=1}d\gamma }=\int\limits_{0}^{1}{\left. \frac{x}{{{\left( x\,+\,\gamma  \right)}^{2}}} \right|_{x=0}^{x=1}d\gamma }=\int\limits_{0}^{1}{\frac{d\gamma }{{{\left( 1\,+\,\gamma  \right)}^{2}}}}=\left. \frac{1}{1\,+\,\gamma } \right|_{0}^{1}=\frac{1}{2}. \\ </p>
+<p>\end{matrix}\)</p>
+<p>x \(\displaystyle \begin{matrix}
+  \int\limits_{0}^{1}{dx\int\limits_{0}^{1}{\frac{\gamma \,-\,x}{{{\left( x\,+\,\gamma   \right)}^{3}}}d\gamma =}}\int\limits_{0}^{1}{dx\int\limits_{0}^{1}{\left( \frac{1}{{{\left( x\,+\,\gamma   \right)}^{2}}}-\frac{2x}{{{\left( x\,+\,\gamma  \right)}^{3}}} \right)d\gamma }}= \\ 
+  =\int\limits_{0}^{1}{\left. \left( \frac{-1}{x\,+\,\gamma }+\frac{x}{{{\left( x\,+\,\gamma  \right)}^{2}}} \right) \right|_{\gamma =0}^{\gamma =1}d\gamma }=\int\limits_{0}^{1}{\left. \frac{-\gamma }{{{\left( x\,+\,y \right)}^{2}}} \right|_{\gamma =0}^{\gamma =1}d\gamma }=\int\limits_{0}^{1}{\frac{-d\gamma }{{{\left( 1\,+\,y \right)}^{2}}}}=\left. \frac{-1}{1\,+\,y} \right|_{0}^{1}=-\frac{1}{2}. \\ </p>
+<p>\end{matrix}\)</p>
+<p>В этих интегралах перестановка недопустима, так как подынтегральная функция в точке \(\displaystyle (0,0)\) терпит неустранимый разрыв.
+ 
+</p><section class="example">Пример 19. Вычислим интеграл \(\displaystyle I\left( a \right)=\int\limits_{0}^{+\infty }{\frac{1-{{e}^{-ax}}}{x{{e}^{x}}}dx}\), \(\displaystyle a\ge 0\).
+<div class="spoiler">
+<button class="spoiler-button">Доказательство</button>
+<div class="spoiler-content">
+<span>4</span>Для нахождения \(\displaystyle I\left( a \right)\) воспользуемся теоремой об интегрировании:
+\(\displaystyle I\left( a \right)=\int\limits_{0}^{+\infty }{\frac{1-{{e}^{-ax}}}{x{{e}^{x}}}dx}=\int\limits_{0}^{+\infty }{\frac{1}{{{e}^{x}}}\left( \int\limits_{0}^{a}{{{e}^{-\gamma x}}d\gamma } \right)dx}=\int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{a}{{{e}^{-x\left( \gamma +1 \right)}}d\gamma } \right)dx}=\)
+<p>\(\displaystyle =\int\limits_{0}^{a}{\left( \int\limits_{0}^{+\infty }{{{e}^{-x\left( \gamma +1 \right)}}dx} \right)d\gamma }=\int\limits_{0}^{a}{\frac{1}{\gamma +1}d\gamma =\ln \left( a+1 \right)}\).
+Возможность использования формулы  обусловлена выполнением всех условий теоремы <span>18</span><span>: 1) функция \(\displaystyle {{e}^{-x\left( \gamma +1 \right)}}\) непрерывна; 2) интеграл \(\displaystyle \int\limits_{0}^{+\infty }{{{e}^{-x\left( \gamma +1 \right)}}dx}=\frac{1}{\gamma +1}\le 1\) сходится равномерно относительно \(\displaystyle \gamma \) на \(\displaystyle \left[ 0,+\infty  \right)\).</span><span>3</span>
+</p></div>
+</div>     
+<section class="example">Пример <span>20</span><span>.</span> Вычислим интеграл \(\displaystyle I\left( a,b \right)=\int\limits_{0}^{+\infty }{{{e}^{-bx}}\frac{\sin ax}{x}dx}\), \(\displaystyle b&gt;0\).
+<div class="spoiler">
+<button class="spoiler-button">Доказательство</button>
+<div class="spoiler-content">
+<span>4</span>Для нахождения \(\displaystyle I\left( a,b \right)=J\left( a \right)\) воспользуемся теоремой 18:
+\(\displaystyle J\left( a \right)=\int\limits_{0}^{+\infty }{{{e}^{-bx}}\frac{\sin ax}{x}dx}=\int\limits_{0}^{+\infty }{{{e}^{-bx}}\left( \int\limits_{0}^{a}{\cos \left( \gamma x \right)d\gamma } \right)dx}=\)
+<p>\(\displaystyle =\int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{a}{{{e}^{-bx}}\cos \left( \gamma x \right)\,d\gamma } \right)dx}=\int\limits_{0}^{a}{\left( \int\limits_{0}^{+\infty }{{{e}^{-bx}}\cos \left( \gamma x \right)\,dx} \right)d\gamma }=\)</p>
+<p>\(\displaystyle =\int\limits_{0}^{a}{\frac{b}{{{\gamma }^{2}}+{{b}^{2}}}d\gamma }=\operatorname{arctg}\frac{a}{b}\).</p>
+<p><span>Возможность использования формулы </span><span> обусловлена выполнением всех условий теоремы </span><span>18</span><span>:</span></p>
+<p><span>1) функция \(\displaystyle {{e}^{-bx}}\cos \left( \gamma x \right)\) непрерывна;</span></p>
+<p><span>2) интеграл \(\displaystyle \underset{0}{\overset{+\infty }{\mathop \int }}\,{{e}^{-bx}}\cos \left( \gamma x \right)\,dx\) сходится равномерно относительно \(\displaystyle \gamma \) в силу признака Вейерштрасса: \(\displaystyle \underset{0}{\overset{+\infty }{\mathop \int }}\,\left| {{e}^{-bx}}\cos \left( \gamma x \right) \right|\,dx\le \int\limits_{0}^{+\infty }{{{e}^{-bx}}dx}=\frac{1}{b}&lt;+\infty \).</span><span>3</span>
+</p></div>
+</div><span> </span>
+
+<section class="example">Пример <span>21</span><span>.</span> Вычислим интеграл \(\displaystyle I\left( a,b \right)=\int\limits_{0}^{+\infty }{\frac{{{e}^{-ax}}-{{e}^{-bx}}}{x}dx}\), \(\displaystyle a&gt;0,b&gt;0\).
+<div class="spoiler">
+<button class="spoiler-button">Доказательство</button>
+<div class="spoiler-content">
+<span>4</span>Для нахождения \(\displaystyle I\left( a,b \right)=J\left( a \right)\) воспользуемся теоремой 18:
+\(\displaystyle \int\limits_{0}^{+\infty }{\frac{{{e}^{-ax}}-{{e}^{-bx}}}{x}dx}=\int\limits_{0}^{+\infty }{\left( \int\limits_{a}^{b}{{{e}^{-\gamma x}}d\gamma } \right)dx}=\int\limits_{a}^{b}{\left( \int\limits_{0}^{+\infty }{{{e}^{-\gamma x}}dx} \right)d\gamma }=\int\limits_{a}^{b}{\frac{1}{\gamma }d\gamma =\ln \frac{b}{a}}\).
+<p><span>Возможность использования формулы </span><span> обусловлена выполнением всех условий теоремы </span><span>18</span><span>:</span></p>
+<p><span>1) функция \(\displaystyle {{e}^{-\gamma x}}\) непрерывна; 
+2) интеграл \(\displaystyle \int\limits_{0}^{+\infty }{{{e}^{-\gamma x}}dx}=\frac{1}{\gamma }\) сходится равномерно относительно \(\displaystyle \gamma \) для \(\displaystyle \gamma \,\ge \,{{\gamma }_{0}}\,&gt;\,0\), \(\displaystyle {{\gamma }_{0}}=\min \left\{ a,b \right\}/2\).</span><span>3</span>
+</p></div>
+</div>
+<p>Замечание. Интегралы из примеров 19-21 были решены ранее с помощью теоремы 17 о дифференцировании по параметру.</p>
+
+<p><strong>Теорема </strong><strong>19</strong><strong>. (Интегрируемость в несобственном смысле)</strong><span>. Пусть функция \(\displaystyle f:\left[ a,\mathbf{B} \right)\times \left[ {{\gamma }_{1}},+\infty  \right)\) удовлетворяет условиям:    </span></p>
+<p><span>1) \(\displaystyle f\in \mathbb{C}\left( \left[ a,\mathbf{B} \right)\times \left[ {{\gamma }_{1}},+\infty  \right) \right)\);</span></p>
+<p><span>2) \(\displaystyle \forall {{\gamma }_{2}}&gt;{{\gamma }_{1}}\ \) \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) </span><span>сходится</span><span> </span><span>равномерно</span><span> </span><span>на</span><span> \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\);</span>
+<span>3) \(\displaystyle \forall b\in \left( a,\mathbf{B} \right)\) \(\displaystyle \int\limits_{{{\gamma }_{1}}}^{+\infty }{f(x,\gamma )d\gamma }\) </span><span>сходится</span><span> </span><span>равномерно</span><span> </span><span>на</span><span> \(\displaystyle \left[ a,b \right]\);
+<span>4) \(\displaystyle \forall \gamma &gt;{{\gamma }_{1}}\) </span><span>сходится</span><span> </span><span>интеграл</span><span> \(\displaystyle \int\limits_{a}^{\mathbf{B}}{\left| f(x,\gamma ) \right|dx}\);   
+5) \(\displaystyle \forall x\ge a\) сходится интеграл \(\displaystyle \int\limits_{{{\gamma }_{1}}}^{+\infty }{\left| f(x,\gamma ) \right|d\gamma }\).</span></span></p>
+<p><span>Тогда, если сходится хотя бы один из интегралов </span></p>
+<p><span>\(\displaystyle \int\limits_{{{\gamma }_{1}}}^{+\infty }{\left( \int\limits_{a}^{+\infty }{\left| f(x,\gamma ) \right|dx} \right)d\gamma }\), \(\displaystyle \int\limits_{a}^{+\infty }{\left( \int\limits_{{{\gamma }_{1}}}^{+\infty }{\left| f(x,\gamma ) \right|}d\gamma  \right)dx}\),</span></p>
+<p><span>то справедливо равенство </span></p>
+<p><span>\(\displaystyle \int\limits_{{{\gamma }_{1}}}^{+\infty }{\left( \int\limits_{a}^{+\infty }{f(x,\gamma )dx} \right)d\gamma }=\int\limits_{a}^{+\infty }{\left( \int\limits_{{{\gamma }_{1}}}^{+\infty }{f(x,\gamma )}d\gamma   \right)dx}\),</span></p>
+<p><span>в котором все интегралы сходятся.</span></p>
+
+<p><strong>Следствие</strong><span>. Пусть функция \(\displaystyle f(x,\gamma )\) <em>неотрицательна</em> и непрерывна при \(\displaystyle a\le x&lt;\mathbf{B}\) и \(\displaystyle \gamma \ge {{\gamma }_{1}}\). Пусть далее интегралы </span></p>
+<p>\(\displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) и \(\displaystyle K(x)=\int\limits_{{{\gamma }_{1}}}^{+\infty }{f(x,\gamma )d\gamma }\)</p>
+<p><span>непрерывны соответственно при \(\displaystyle \gamma \ge {{\gamma }_{1}}\) и \(\displaystyle x\ge a\). Тогда из сходимости <br> одного из следующих двух несобственных интегралов </span></p>
+<p><span>\(\displaystyle \int\limits_{{{\gamma }_{1}}}^{+\infty }{I(\gamma )d\gamma }=\int\limits_{{{\gamma }_{1}}}^{+\infty }{\left( \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx} \right)d\gamma }\) и \(\displaystyle \int\limits_{a}^{+\infty }{K(x)dx}=\int\limits_{a}^{\mathbf{B}}{\left( \int\limits_{{{\gamma }_{1}}}^{+\infty }{f(x,\gamma )d\gamma } \right)dx}\)</span></p>
+<p><span>вытекает сходимость другого и равенство этих интегралов. .</span></p>
+</section></section></section></section></section></section></section></section></section></section></section>
+
+
+
+
+</main>
+</div>
+<footer class="footer"><h1>Учебные материалы</h1></footer><script src="main.js"></script>
+</body>
+</html>

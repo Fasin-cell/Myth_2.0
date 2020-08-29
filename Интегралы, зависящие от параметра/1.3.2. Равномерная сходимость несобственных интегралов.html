@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head><title>Математический анализ</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><link href="style.css" type="text/css" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></head>
+<body>
+<header class="header"><h1>Математический анализ</h1></header>
+<div class="main-grid">
+<nav class="side-menu"><h2>Темы</h2><ul class="no-dec"><li><div class="spoiler spoiler-submenu"><button class="spoiler-button spoiler-submenu">Интегралы, зависящие от параметра.</button><div class="spoiler-content spoiler-submenu"><ul class="no-dec"><li><p><a href="1.1. Равномерная сходимость функций по параметру.html">1.1. Равномерная сходимость функций по параметру.</a></p></li><li><p><a href="1.2. Собственные интегралы.html">1.2. Собственные интегралы.</a></p></li><li><p><a href="Общий случай.html">Общий случай.</a></p></li><li><div class="spoiler spoiler-submenu"><button class="spoiler-button spoiler-submenu">1.3 Несобственные интегралы.</button><div class="spoiler-content spoiler-submenu"><ul class="no-dec"><li><p><a href="">1.3.1. Основные определения.</a></p></li><li><p><a href="">1.3.2. Равномерная сходимость несобственных интегралов.</a></p></li><li><p><a href="">1.3.3. Признаки равномерной сходимости.</a></p></li><li><p><a href="">1.3.4. Свойства равномерно сходящихся интегралов.</a></p></li><li><p><a href="">1.3.5. Эйлеровы интегралы.</a></p></li></ul></div></div></li></ul></div></div></li></ul></nav>
+<main class="main">
+<section class="theorem">
+<ol>
+    <li>
+        <h4>Равномерная сходимость несобственных интегралов</h4>
+    </li>
+</ol>
+
+<p><strong><em>Несобственный интеграл </em></strong>называется <strong><em>равномерно сходящимся по параметру</em></strong><strong> \(\displaystyle \gamma \) <em>на \(\displaystyle \Gamma \)</em></strong>, если он сходится на \(\displaystyle \Gamma \) и выполняется одно из следующих эквивалентных условий:</p>
+<p>1) x \(\displaystyle \forall \varepsilon &gt;0\) x \(\displaystyle \exists {{A}_{\varepsilon }}\ge a\) x \(\displaystyle \forall A\in \left( {{A}_{\varepsilon }},\mathbf{B} \right)\) </p>
+<p>x \(\displaystyle \forall \gamma \in \Gamma \) x \(\displaystyle \left| \int\limits_{A}^{\mathbf{B}}{f(x,\gamma )dx} \right|&lt;\text{ }\!\!\varepsilon\!\!\text{ }\)  или  x \(\displaystyle \underset{\gamma \in \Gamma }{\mathop{\sup }}\,\) x \(\displaystyle \left| \int\limits_{A}^{\mathbf{B}}{f(x,\gamma )dx} \right|&lt;\text{ }\!\!\varepsilon\!\!\text{ }\),</p>
+<p>1) \(\displaystyle \forall \varepsilon &gt;0\) \(\displaystyle \exists {{\eta }_{\varepsilon }}\ge a\) \(\displaystyle \forall \eta \in \left( {{\eta }_{\varepsilon }},\mathbf{B} \right)\) \(\displaystyle \forall \gamma \in \Gamma \) \(\displaystyle \left| \int\limits_{\eta }^{\mathbf{B}}{f(x,\gamma )dx} \right|&lt;\text{ }\!\!\varepsilon\!\!\text{ }\),</p>
+<p>2) \(\displaystyle \forall \varepsilon &gt;0\) \(\displaystyle \exists {{\eta }_{\varepsilon }}\ge a\) \(\displaystyle \forall \eta \in \left( {{\eta }_{\varepsilon }},\mathbf{B} \right)\) \(\displaystyle \underset{\gamma \in \Gamma }{\mathop{\sup }}\,\) \(\displaystyle \left| \int\limits_{\eta }^{\mathbf{B}}{f(x,\gamma )dx} \right|&lt;\text{ }\!\!\varepsilon\!\!\text{ }\),</p>
+<p>3) \(\displaystyle \underset{\eta \to \mathbf{B}}{\mathop{\lim }}\,\underset{\gamma \in \Gamma }{\mathop{\sup }}\,\left| \int\limits_{\eta }^{\mathbf{B}}{f\left( x,\gamma  \right)dx} \right|=0.\)</p>
+<p><span>Замечание 1</span><span>.</span> Равномерная сходимость интеграла x \(\displaystyle \int\limits_{a}^{\infty }{f(x,\gamma )dx}\), x \(\displaystyle \gamma \in \Gamma \) означает, что наряду с существованием <em>конечных</em> пределов x \(\displaystyle \underset{A\to \infty }{\mathop{\lim }}\,\int\limits_{a}^{A}{f(x,\gamma )dx}\) для каждого фиксированного x \(\displaystyle \gamma \in \Gamma \), существует и конечен предел x \(\displaystyle \underset{A\to \infty }{\mathop{\lim }}\,\underset{\gamma \in \Gamma }{\mathop{\sup }}\,\int\limits_{a}^{A}{f(x,\gamma )dx}\). </p>
+<p><span>Замечание 2.</span> Для несобственных интегралов второго рода аналогично формулируются теоремы о непрерывности, интегрируемости и дифференцируемости по параметру (так как несобственные интегралы второго рода с помощью <span>преобразования переменной</span> x \(\displaystyle x\) сводятся к зависящим от параметра несобственным интегралам первого рода). </p>
+<p>Несобственный интеграл x \(\displaystyle \int\limits_{a}^{b}{f\left( x,\gamma  \right)dx}\) II-го рода заменой x \(\displaystyle x=\frac{bt+a}{t+1}\) приводится к несобственному интегралу I рода x \(\displaystyle \int\limits_{0}^{+\infty }{f\left( \frac{bt+a}{t+1} \right)\frac{b-a}{{{\left( t+1 \right)}^{2}}}dt}\).</p><div class="spoiler">
+<button class="spoiler-button">Доказательство</button>
+<div class="spoiler-content">
+<span>3</span>
+
+
+<p><strong>Теорема </strong><strong>14</strong><strong> (критерий равномерной сходимости Коши). </strong>Для равномерной по параметру \(\displaystyle \gamma \) на \(\displaystyle \Gamma \) сходимости несобственного интеграла</p>
+<p>\(\displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\), \(\displaystyle \gamma \in \Gamma \)</p>
+<p>необходимо и достаточно, чтобы</p>
+<p>\(\displaystyle \forall \varepsilon &gt;0\) \(\displaystyle \exists {{\eta }_{\varepsilon }}\ge a\) \(\displaystyle \forall {\eta }'\in \left( {{\eta }_{\varepsilon }},\mathbf{B} \right)\,\,\,\forall {\eta }''\in \left( {{\eta }_{\varepsilon }},\mathbf{B} \right)\) \(\displaystyle \underset{\gamma \in \Gamma }{\mathop{\sup }}\,\)\(\displaystyle \left| \int\limits_{{{\eta }'}}^{{{\eta }''}}{f(x,\gamma )\,dx} \right|&lt;\text{ }\!\!\varepsilon\!\!\text{ }\).</p>
+<p><strong>Следствие (связь с функциональными рядами).</strong> Равномерная по \(\displaystyle \gamma \) сходимость интеграла \(\displaystyle I(\gamma )\), \(\displaystyle \gamma \in \Gamma \) эквивалентна равномерной сходимости всех рядов вида \(\displaystyle \sum\limits_{n=0}^{+\infty }{\int\limits_{{{c}_{n}}}^{{{c}_{n+1}}}{f(x,\gamma )dx}}\), где \(\displaystyle \left\{ {{c}_{n}} \right\}\) – произвольная, сходящаяся к \(\displaystyle \mathbf{B}\) последовательность.</p>
+
+</div></div></section>
+
+
+</main>
+</div>
+<footer class="footer"><h1>Учебные материалы</h1></footer><script src="main.js"></script>
+</body>
+</html>
