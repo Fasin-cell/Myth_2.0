@@ -1,7 +1,14 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2rem;
+}
+
+div, section {
+    margin-top: 3rem;
 }
 
 .header {
@@ -14,6 +21,7 @@
 }
 
 .main-grid {
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     column-gap: 0;
@@ -61,6 +69,13 @@
     height: 300px;
 }
 
+.spoiler {
+    margin-top: 1rem;
+}
+
+.float-r {
+    float: right;
+}
 
 .spoiler-button {
     padding: 5px 10px;
@@ -93,6 +108,7 @@
 }
 
 .spoiler-content {
+    margin: 0;
     padding-left: 15px;
     border-left: 3px solid whitesmoke;
     border-right: 3px solid whitesmoke;
@@ -129,4 +145,28 @@
 .no-dec {
     margin-left: 20px;
     list-style: none;
+}
+
+table {
+    table-layout: fixed;
+    margin: 5rem auto 2rem auto;
+    border-spacing: 0;
+    border: 2px solid rgb(221, 221, 221);
+}
+
+
+td:first-child {
+    border-left: none;
+}
+
+table tr {
+    text-align: center;
+}
+
+table tr td {
+    padding: 10px;
+}
+
+table tr:nth-child(2n-1) {
+    background-color: rgb(221, 221, 221);
 }

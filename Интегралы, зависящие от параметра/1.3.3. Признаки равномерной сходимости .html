@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Математический анализ</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Математический анализ</h1>
+    </header>
+    <div class="main-grid">
+        <nav class="side-menu">
+            <h2>Темы</h2>
+            <ul class="no-dec">
+                <li>
+                    <div class="spoiler spoiler-submenu"><button class="spoiler-button spoiler-submenu">Интегралы,
+                            зависящие от параметра.</button>
+                        <div class="spoiler-content spoiler-submenu">
+                            <ul class="no-dec">
+                                <li>
+                                    <p><a href="1.1. Равномерная сходимость функций по параметру.html">1.1. Равномерная
+                                            сходимость функций по параметру.</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="1.2. Собственные интегралы.html">1.2. Собственные интегралы.</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="Общий случай.html">Общий случай.</a></p>
+                                </li>
+                                <li>
+                                    <div class="spoiler spoiler-submenu"><button
+                                            class="spoiler-button spoiler-submenu">1.3 Несобственные интегралы.</button>
+                                        <div class="spoiler-content spoiler-submenu">
+                                            <ul class="no-dec">
+                                                <li>
+                                                    <p><a href="">1.3.1. Основные определения.</a></p>
+                                                </li>
+                                                <li>
+                                                    <p><a href="">1.3.2. Равномерная сходимость несобственных
+                                                            интегралов.</a></p>
+                                                </li>
+                                                <li>
+                                                    <p><a href="">1.3.3. Признаки равномерной сходимости.</a></p>
+                                                </li>
+                                                <li>
+                                                    <p><a href="">1.3.4. Свойства равномерно сходящихся интегралов.</a>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p><a href="">1.3.5. Эйлеровы интегралы.</a></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <main class="main">
+            <h4>Признаки равномерной сходимости</h4>
+            <section class="theorem">
+                <p><strong>1. Признак Вейерштрасса.</strong></p>
+                <p>Пусть функция \(\displaystyle f(x,\gamma )\) определена на множестве \(\displaystyle \left[
+                    a,\mathbf{B} \right)\times \Gamma \), \(\displaystyle \forall \gamma \in \Gamma
+                    \)<br>интегрируема по \(\displaystyle x\) на любом сегменте \(\displaystyle \left[ a,\eta
+                    \right]\,\subset \,\left[ a,\mathbf{B} \right)\) и равномерно по \(\displaystyle \gamma \)
+                    ограничена на \(\displaystyle \left[ a,\mathbf{B} \right)\) (т.е. \(\displaystyle \forall x\,\in
+                    \left[ a,\mathbf{B} \right)\,\,\,\underset{\gamma \in \Gamma }{\mathop{\sup }}\,\left|
+                    f(x,\gamma ) \right|\,\le \,g(x)\)). Тогда из сходимости интеграла \(\displaystyle
+                    \int\limits_{a}^{\mathbf{B}}{g(x)dx}\) следует равномерная по \(\displaystyle \gamma \) на
+                    множестве \(\displaystyle \Gamma \) сходимость интеграла \(\displaystyle I(\gamma
+                    )\,=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\).</p>
+                <div class="spoiler">
+                    <button class="spoiler-button">Доказательство</button>
+                    <div class="spoiler-content">
+                        <span>Требуемое утверждение получается из неравенства</span>
+                        <p><span> \(\displaystyle \left| \int\limits_{{{A}'}}^{{{A}''}}{f(x,\gamma )dx} \right|\le \int\limits_{{{A}'}}^{{{A}''}}{\left| f(x,\gamma ) \right|dx}\le \int\limits_{{{A}'}}^{{{A}''}}{g(x)dx}\). </span></p>
+                        </div>
+                    </div>
+            </section>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p><strong>2. Признак Дирихле</strong></p>
+                        </td>
+                        <td>
+                            <p><strong>3. Признак Абеля</strong></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p><span>Пусть функции \(\displaystyle f(x,\gamma )\) и \(\displaystyle g(x,\gamma )\) определены на множестве \(\displaystyle \left[ a,\mathbf{B} \right)\times \Gamma \). </span></p>
+                            <p><span>Несобственный интеграл \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f\left( x,\gamma  \right)g\left( x,\gamma  \right)dx}\) сходится равномерно на \(\displaystyle \Gamma \), если:</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><strong>1)</strong><span> \(\displaystyle \exists C\in \mathbb{R}\,\)\(\displaystyle \underset{\gamma \in \Gamma }{\mathop{\sup }}\,\underset{a\le \eta &lt;\mathbf{B}}{\mathop{\sup }}\,\left| \int\limits_{a}^{\eta }{f\left( x,\gamma     \right)dx} \right|\le C\);</span></p>
+                        </td>
+                        <td>
+                            <p><strong>1)</strong><span> \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f\left( x,\gamma  \right)dx}\) </span></p>
+                            <p><span>сходится равномерно на \(\displaystyle \Gamma \);</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p><strong>2) \(\displaystyle \forall \gamma \in \Gamma \)</strong><span>  \(\displaystyle g\left( x,\gamma  \right)\) монотонна по \(\displaystyle x\);</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <strong>3)</strong><span> \(\displaystyle g\left( x,\gamma  \right)\underset{\Gamma }{\mathop{\begin{matrix}
+                                \to   \\
+                                \to   \\
+                                \end{matrix}}}\,0\) при \(\displaystyle x\to \mathbf{B}\), <br>
+                                т.е. \(\displaystyle \underset{x\to
+                                \mathbf{B}}{\mathop{\lim }}\,\underset{\gamma \in \Gamma }{\mathop{\sup }}\,\left|
+                                g\left( x,\gamma \right) \right|=0\).</span>
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <strong>3)</strong><span> \(\displaystyle g\left( x,\gamma \right)\) равномерно
+                                ограничена на<span> \(\displaystyle \Gamma \),
+                                т.е.. \(\displaystyle \exists
+                                C\in \mathbb{R}\,\)\(\displaystyle \underset{a\le
+                                x&lt;\mathbf{B}}{\mathop{\sup }}\,\underset{\gamma \in \Gamma }{\mathop{\sup
+                                }}\,\left| g\left( x,\gamma \right) \right|\le C\).</span></span>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <section class="remark">
+                <p>Замечание 1. Признаки Вейерштрасса, Дирихле и Абеля являются
+                    достаточными.</p>
+                <p>Замечание 2. Признак Вейерштрасса дает абсолютную сходимость, а признаки
+                    Дирихле и Абеля обычно используют при доказательстве условной сходимости.</p>
+            </section>
+            <div>
+                <p><strong>4. Признак Дини.</strong></p>
+                <p>
+                    <span>Пусть функция \(\displaystyle f(x,\gamma )\) непрерывна и <em>неотрицательна</em> в
+                    полуполосе \(\displaystyle \left[ a,\mathbf{B} \right)\times \left[
+                    {{\gamma }_{1}},{{\gamma }_{2}} \right]\), и пусть для каждого \(\displaystyle
+                    \gamma \in \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\) сходится несобственный
+                    <br> интеграл \(\displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma
+                    )dx}\), причем функция \(\displaystyle I(\gamma )\) непрерывна на \(\displaystyle
+                    \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\). <br> Тогда интеграл
+                    \(\displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma
+                    )dx}\) сходится равномерно по \(\displaystyle \gamma \) на
+                    \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\).</span>
+                </p>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <h1>Учебные материалы</h1>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

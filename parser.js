@@ -185,7 +185,7 @@ function removeComments() {
     });
     let anchors = Array.from(document.querySelectorAll("a"));
     anchors.forEach(a => {
-        a.parentNode.parentNode.removeChild(a.parentNode);
+        a.parentNode.removeChild(a);
     })
 }
 
