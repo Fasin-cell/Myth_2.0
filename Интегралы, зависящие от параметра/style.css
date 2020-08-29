@@ -1,3 +1,10 @@
+:root {
+    --dark-blue: #112d4e;
+    --light-blue:  #f9f7f7;
+    --selection-color: #f9f7f7;
+    --selection-background: #112d4e;
+}
+
 
 * {
     margin: 0;
@@ -5,6 +12,16 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     line-height: 2rem;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: var(--selection-color);
+    background: var(--selection-background);
+  }
+  
+::selection {
+color: var(--selection-color);
+background: var(--selection-background);
 }
 
 div, section {
@@ -15,7 +32,7 @@ div, section {
     font-family: 'Roboto', sans-serif;
     font-weight: 70%;
     height: 70px;
-    background-color: rgb(96, 66, 131);
+    background-color: var(--dark-blue);
     padding: 20px;
     color: white;
 }
@@ -23,9 +40,24 @@ div, section {
 .main-grid {
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 7fr;
     column-gap: 0;
 }
+
+.side-menu .spoiler-content {
+    background-color: white;
+}
+
+.side-menu .spoiler-button.active {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+.side-menu .spoiler-button.active:hover {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
 
 .side-menu li {
     box-sizing: content-box;
@@ -49,8 +81,8 @@ div, section {
 .main {
     width: 100%;
     padding: 10px;
-    border-left: 1px solid rgb(96, 66, 131);
-    border-right: 1px solid rgb(96, 66, 131);
+    border-left: 1px solid var(--dark-blue);
+    border-right: 1px solid var(--dark-blue);
     min-height: 100vh;
 }
 
@@ -90,7 +122,12 @@ div, section {
 
 .spoiler-button:hover {
     cursor: pointer;
-    background-color: rgb(96, 66, 131);
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+.spoiler-button.active {
+    background-color: var(--dark-blue);
     color: white;
 }
 
@@ -116,6 +153,7 @@ div, section {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-in-out;
+    background-color: var(--light-blue);
 }
 
 .spoiler-content.spoiler-submenu {
@@ -127,19 +165,18 @@ div, section {
 }
 
 .footer {
-    
-    height: 60px;
-    background-color: rgb(96, 66, 131);
+    background-color: var(--dark-blue);
     color: white;
-    text-align: center;
+    font-size: 10px;
 }
 
-.footer h1 {
+
+.footer p {
     font-family: 'Roboto', sans-serif;
-    font-size: 28px;
     text-transform: uppercase;
     display: block;
-    padding: 10px;
+    padding: 0;
+    margin: 0;
 }
 
 .no-dec {
@@ -170,3 +207,60 @@ table tr td {
 table tr:nth-child(2n-1) {
     background-color: rgb(221, 221, 221);
 }
+
+.additional-info {
+    margin: 15px;
+    position: relative;
+    width: 50%;
+    border: 1px solid rgb(221, 221, 221);
+}
+
+.tooltip {
+    background-color: white;
+    margin: 0;
+    display: none;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 0.2rem;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    max-width: 45%;
+    z-index: 100;
+}
+
+.tooltip > img {
+    max-width: 100%;
+}
+
+.tooltip.active {
+    display: block;
+}
+
+.tooltip-tail {
+    content: "";
+    display: none;
+    width: 0; 
+    height: 0; 
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+
+    border-bottom: 10px solid rgb(221, 221, 221);
+    z-index: 100;
+}
+
+.tooltip-tail.active {
+    display: block;
+}
+
+.centered {
+    text-align: center;
+}
+
+.shortcut {
+    text-decoration: underline var(--dark-blue);
+}
+.shortcut {
+    color: var(--dark-blue);
+}
+

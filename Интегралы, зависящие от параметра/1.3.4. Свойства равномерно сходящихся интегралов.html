@@ -11,12 +11,9 @@
 </head>
 
 <body>
-   <header class="header">
-      <h1>Математический анализ</h1>
-   </header>
    <div class="main-grid">
       <nav class="side-menu">
-         <h2>Темы</h2>
+         <h3>Темы</h3>
          <ul class="no-dec">
             <li>
                <div class="spoiler spoiler-submenu"><button class="spoiler-button spoiler-submenu">Интегралы, зависящие
@@ -66,7 +63,7 @@
       <main class="main">
 
 
-         <h4>Свойства равномерно сходящихся интегралов</h4>
+         <h2 class="centered">Свойства равномерно сходящихся интегралов</h2>
          <div>
             <p>1. Если интегралы \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) и \(\displaystyle
                \int\limits_{a}^{\mathbf{B}}{g(x,\gamma )dx}\) равномерно сходятся на \(\displaystyle \Gamma \), то и
@@ -100,8 +97,8 @@
             <p>то \(\displaystyle \forall {{\gamma }_{0}}\in \operatorname{int}\Gamma \) справедливо равенство </p>
             <p> \(\displaystyle \underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim
                }}\,\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}=\int\limits_{a}^{\mathbf{B}}{\underset{\gamma \to
-               {{\gamma }_{0}}}{\mathop{\lim }}\,f(x,\gamma )dx}=\int\limits_{a}^{\mathbf{B}}{g(x)dx}\).  <strong class="float-r">(0.8)</strong><br></p>
-            <p>Если \(\displaystyle {{\gamma }_{0}}\in \partial \Gamma \bigcap \Gamma \), то в выражении (0.8) все пределы
+               {{\gamma }_{0}}}{\mathop{\lim }}\,f(x,\gamma )dx}=\int\limits_{a}^{\mathbf{B}}{g(x)dx}\).  <strong class="float-r" id="0.8">(0.8)</strong><br></p>
+            <p>Если \(\displaystyle {{\gamma }_{0}}\in \partial \Gamma \bigcap \Gamma \), то в выражении <a class="shortcut" href="#0.8">(0.8)</a> все пределы
                надо заменить на соответствующие односторонние.
             </p>
             <div class="spoiler">
@@ -138,7 +135,7 @@
          <section class="remark">
                <div>
                   <p><span>Замечание 1.</span> Применять формулу для граничных точек, не входящих во множество
-                     \(\displaystyle \Gamma \), на котором выполняются условия теоремы (0.8), нельзя. </p>
+                     \(\displaystyle \Gamma \), на котором выполняются условия теоремы <a class="shortcut" href="#0.8">(0.8)</a>, нельзя. </p>
                   <div class="spoiler">
                      <button class="spoiler-button">Доказательство</button>
                      <div class="spoiler-content">
@@ -191,7 +188,7 @@
          g\left( x \right)\), также непрерывной в указанном промежутке. Тогда из существования интеграла \(\displaystyle
          \int\limits_{a}^{\mathbf{B}}{g(x)dx}\) вытекает как существование интеграла \(\displaystyle I(\gamma
          )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) \(\displaystyle \forall \gamma \in \left[
-         {{\gamma }_{1}},{{\gamma }_{2}} \right]\), так и справедливость формулы. (0.8)</span>
+         {{\gamma }_{1}},{{\gamma }_{2}} \right]\), так и справедливость формулы. <a class="shortcut" href="#0.8">(0.8)</a></span>
       <div class="spoiler">
          <button class="spoiler-button">Доказательство</button>
          <div class="spoiler-content">
@@ -469,10 +466,10 @@
                   }}\,\frac{1\,-\,{{e}^{-ax}}}{x}\cos x\,=\,a\), доопределим подынтегральную
                   функцию до непрерывной на \(\displaystyle
                   {{\left[ 0,+\infty  \right)}^{2}}\): </span></p>
-            <p><span>\(\displaystyle \tilde{f}\left( x,a \right)=\left\{ \begin{matrix}</span>
-               <span> \frac{1\,-\,{{e}^{-ax}}}{x}\cos x,\,\,x&gt;0, \\</span>
-               <span> a,\,\,x=0. \\</span>
-               <span>\end{matrix} \right.\)</span></p>
+            <p><span>\(\displaystyle \tilde{f}\left( x,a \right)=\left\{ \begin{matrix}
+               \frac{1\,-\,{{e}^{-ax}}}{x}\cos x,\,\,x&gt;0, \\
+                a,\,\,x=0. \\
+               \end{matrix} \right.\)</span></p>
             <p><span>1) \(\displaystyle \tilde{f}\left( x,a \right)\in \mathbb{C}\left(
                   {{\mathbb{R}}^{2}} \right)\) и \(\displaystyle \frac{\partial \tilde{f}\left( x,a
                   \right)}{\partial a}={{e}^{-ax}}\cos x\in \mathbb{C}\left( {{\mathbb{R}}^{2}}
@@ -493,8 +490,8 @@
                   \(\displaystyle {I}'\left( a \right)=K\left( a \right)=\int\limits_{0}^{+\infty
                   }{{{e}^{-ax}}\cos x\,dx}=\frac{a}{{{a}^{2}}+1}\).</span></p>
             <p><span>Следовательно, </span></p>
-            <p><span> \(\displaystyle I\left( a \right)=\int{\frac{a\,da}{{{a}^{2}}+1}}=\frac{1}{2}\ln \left( 1+{{a}^{2}} \right)+C\), <strong class="float-r">(0.9)</strong><br></span>                                      </p>
-            <p><span>В силу произвольности выбора (0.9) \(\displaystyle {{a}_{0}}\), формула  справедлива \(\displaystyle \forall a\,&gt;\,0\). </span></p>
+            <p><span> \(\displaystyle I\left( a \right)=\int{\frac{a\,da}{{{a}^{2}}+1}}=\frac{1}{2}\ln \left( 1+{{a}^{2}} \right)+C\), <strong class="float-r" id="0.9">(0.9)</strong><br></span>                                      </p>
+            <p><span>В силу произвольности выбора <a class="shortcut" href="#0.9">(0.9)</a> \(\displaystyle {{a}_{0}}\), формула  справедлива \(\displaystyle \forall a\,&gt;\,0\). </span></p>
 
             <p><span>Учитывая, доказанную в примере 11 непрерывность функции \(\displaystyle I\left( a \right)\) <br> на \(\displaystyle \left[ 0,+\infty  \right)\), получим</span></p>
             <p><span>\(\displaystyle \underset{a\to 0+}{\mathop{\lim }}\,I\left( a \right)=\underset{a\to 0+}{\mathop{\lim }}\,\int\limits_{0}^{+\infty }{\frac{1-{{e}^{-ax}}}{x}\cos
@@ -830,7 +827,8 @@
    </main>
    </div>
    <footer class="footer">
-      <h1>Учебные материалы</h1>
+      <p>Учебные материалы </p>
+      <p>Автор материалов - Рояк Светлана Хаимовна.</p>
    </footer>
    <script src="main.js"></script>
 </body>
