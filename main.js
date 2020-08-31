@@ -1,6 +1,7 @@
 const menuButton = document.getElementById("toggle-menu");
 const submenus = Array.from(document.querySelectorAll(".sub-menu"));
 
+if (submenus.length !== 0) {
 submenus.forEach(submenu => {
     submenu.addEventListener("click", e => {
         e.stopPropagation();
@@ -11,7 +12,9 @@ submenus.forEach(submenu => {
         })
     })
 })
+}
 
+if (menuButton) {
 menuButton.addEventListener("click", e => {
     e.preventDefault();
     if (!document.getElementById("main-menu").classList.contains("active")) {
@@ -30,10 +33,11 @@ menuButton.addEventListener("click", e => {
     menuButton.classList.toggle("active");
     document.getElementById("main-menu").classList.toggle("active");
 });
-
+}
 
 const spoilersBtns = Array.from(document.querySelectorAll(".spoiler-button"));
 
+if (spoilersBtns.length !== 0) {
 spoilersBtns.forEach(button => {
     button.addEventListener('click', e => {
         e.stopPropagation();
@@ -51,9 +55,9 @@ spoilersBtns.forEach(button => {
         }
     });
 });
-
+}
 const toolTipsTriggers = Array.from(document.querySelectorAll(".tooltip-trigger"));
-
+if (toolTipsTriggers.length !== 0) {
 toolTipsTriggers.forEach(trigger => {
     trigger.addEventListener("mouseenter", e => {
         const tooltip = e.target.parentNode.querySelector(".tooltip");
@@ -79,8 +83,10 @@ toolTipsTriggers.forEach(trigger => {
         });
     });
 });
+}
 
 const sizeButton = document.getElementById("size");
+if (sizeButton) {
 sizeButton.addEventListener("click", () => {
     document.querySelector(".main").classList.toggle("small");
     if (document.querySelector(".main").classList.contains("small")) {
@@ -89,3 +95,4 @@ sizeButton.addEventListener("click", () => {
         sizeButton.querySelector(".size-icon").src = "../icons/shrink.png";
     }
 });
+}
