@@ -1,7 +1,4 @@
-//////////////////////////////////
-// Bubbles 2
-//////////////////////////////////
-// copyright: Daniel Erickson 2012
+// copyright: based on "Bubbles 2" by  Daniel Erickson 2012
 var WIDTH;
 var HEIGHT;
 var ZOOM = 2.0;
