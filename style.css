@@ -103,7 +103,7 @@ div, section {
 }
 .hamburger.active > .line:nth-child(2) {
     transform: translateX(30px);
-    background: transparent;
+    background: transparent !important;
     box-shadow: none;
 }
 
