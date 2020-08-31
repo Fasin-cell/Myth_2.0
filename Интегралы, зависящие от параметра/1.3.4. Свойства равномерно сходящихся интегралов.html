@@ -148,8 +148,9 @@
                </div>
          </section>
 
-         <section class="example">Пример <span>7*. Вычислим сумму ряда </span>
-         <p><span>\(\displaystyle S=1+\frac{1}{3}-\frac{1}{5}-\frac{1}{7}+\frac{1}{9}+\frac{1}{11}-...=\sum\limits_{n=0}^{\infty }{{{\left( -1 \right)}^{n}}\left( \frac{1}{4n+1}+\frac{1}{4n+3} \right)}\).</span></p>
+         <section class="example">
+		 <div class="col-red">Пример <span>7*. Вычислим сумму ряда </span>
+         <p><span>\(\displaystyle S=1+\frac{1}{3}-\frac{1}{5}-\frac{1}{7}+\frac{1}{9}+\frac{1}{11}-...=\sum\limits_{n=0}^{\infty }{{{\left( -1 \right)}^{n}}\left( \frac{1}{4n+1}+\frac{1}{4n+3} \right)}\).</span></p></div>
             <div class="spoiler">
             <button class="spoiler-button">Решение</button>
                <div class="spoiler-content">
@@ -342,7 +343,7 @@
             <p>Интеграл \(\displaystyle I\left( a \right)\,\) сходится равномерно на \(\displaystyle
                \left[ 0,+\infty \right)\) в силу признака<br> Дирихле:</p>
             <p>1) \(\displaystyle \left| \int\limits_{0}^{B}{\cos x\,dx} \right|\le \left| \sin B
-               \right|\le 1\);
+               \right|\le 1\);<br>
                2) \(\displaystyle \forall a\in \left[ 0,+\infty \right)\) функция \(\displaystyle
                \frac{1-{{e}^{-ax}}}{x}\) монотонна по \(\displaystyle x\):
             </p>
@@ -636,9 +637,9 @@
             <span>1. Рассмотрим сначала более общий интеграл  </span>
             <span>\(\displaystyle I\left( a,b \right)=\int\limits_{0}^{+\infty }{{{e}^{-bx}}\frac{\sin ax}{x}dx}\), \(\displaystyle b\in \left[ 0,1 \right]\).
             Этот интеграл при каждом фиксированном \(\displaystyle a\ne 0\) сходится равномерно по \(\displaystyle b\) на отрезке \(\displaystyle \left[ 0,1 \right]\) по признаку Дирихле:</span>
-            <span>1) \(\displaystyle \left| \int\limits_{0}^{B}{\sin ax\,dx} \right|=\left| \left. \frac{\cos ax}{a} \right|_{0}^{B} \right|\le \frac{2}{\left| a \right|}&lt;+\infty \),</span>
-            <span>2) \(\displaystyle \frac{{{e}^{-bx}}}{x}\) монотонно убывает по \(\displaystyle x\),
-            3) \(\displaystyle \frac{{{e}^{-bx}}}{x}\underset{\left[ 0,1
+            <span><br>1) \(\displaystyle \left| \int\limits_{0}^{B}{\sin ax\,dx} \right|=\left| \left. \frac{\cos ax}{a} \right|_{0}^{B} \right|\le \frac{2}{\left| a \right|}&lt;+\infty \),</span>
+            <span><br>2) \(\displaystyle \frac{{{e}^{-bx}}}{x}\) монотонно убывает по \(\displaystyle x\),
+            <br>3) \(\displaystyle \frac{{{e}^{-bx}}}{x}\underset{\left[ 0,1
             \right]}{\mathop{\begin{matrix} \to \\ \to \\ \end{matrix}}}\,0\) при \(\displaystyle x\to \infty \), так как \(\displaystyle
                \underset{x\to +\infty }{\mathop{\lim }}\,\underset{b\in \left[ 0,1
                \right]}{\mathop{\sup }}\,\left| \frac{{{e}^{-bx}}}{x}-0 \right|=\underset{x\to +\infty
@@ -664,8 +665,8 @@
                \left[ 0,1 \right]\), а значит, в формуле (0.11) можно перейти к пределу:</span>
             <span> \(\displaystyle \int\limits_{0}^{+\infty }{\frac{\sin ax}{x}dx}=\underset{b\to
                +0}{\mathop{\lim }}\,\int\limits_{0}^{+\infty }{{{e}^{-bx}}\frac{\sin ax}{x}dx}=\underset{b\to +0}{\mathop{\lim }}\,\operatorname{arctg}\frac{a}{b}=\frac{\pi }{2}\,\,\operatorname{sign}a\).
-            2. \(\displaystyle \int\limits_{0}^{+\infty }{\frac{\sin \left( {{x}^{3}} \right)}{x}dx}=\left[ t={{x}^{3}} \right]=\frac{1}{3}\int\limits_{0}^{+\infty }{\frac{\sin t}{t}dt}=\frac{\pi }{6}\).</span>
-            <span>3. \(\displaystyle \int\limits_{0}^{+\infty }{\frac{{{\sin }^{3}}x}{x}dx}\,=\,\int\limits_{\,0}^{+\infty }{\frac{3\sin x\,-\,\sin \left( 3x \right)}{4x}dx}=\)</span>
+            <br>2. \(\displaystyle \int\limits_{0}^{+\infty }{\frac{\sin \left( {{x}^{3}} \right)}{x}dx}=\left[ t={{x}^{3}} \right]=\frac{1}{3}\int\limits_{0}^{+\infty }{\frac{\sin t}{t}dt}=\frac{\pi }{6}\).</span>
+            <span><br>3. \(\displaystyle \int\limits_{0}^{+\infty }{\frac{{{\sin }^{3}}x}{x}dx}\,=\,\int\limits_{\,0}^{+\infty }{\frac{3\sin x\,-\,\sin \left( 3x \right)}{4x}dx}=\)</span>
             <span>\(\displaystyle =\frac{3}{4}\int\limits_{0}^{+\infty }{\frac{\sin x}{x}dx}\,-\,\frac{1}{4}\int\limits_{0}^{+\infty }{\frac{\sin \left( 3x \right)}{3x}d\left( 3x \right)}\,=\,\frac{\pi }{8}\left( 3-1 \right)=\frac{\pi }{4}\).</span>
          </div>
       </div>
