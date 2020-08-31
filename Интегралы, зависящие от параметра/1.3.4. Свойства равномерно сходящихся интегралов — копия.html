@@ -4,49 +4,62 @@
 <head>
    <title>Математический анализ</title>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-   <link href="../style.css" type="text/css" rel="stylesheet">
+   <link href="style.css" type="text/css" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
    <script type="text/javascript"
       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 
 <body>
-   <nav>
-		<div class="hamburger" id="toggle-menu">
-			<div class="line"></div>
-			<div class="line"></div>
-			<div class="line"></div>
-		</div>
-		<div class="side-menu" id="main-menu">
-			<ul>
-				<li class="sub-menu">
-					<a href="#">Интегралы, зависящие
-						от параметра.<img src="../icons/down.png" class="submenu-icon submenu-trigger"></a>
-					<ul>
-						<li><a href="1.1. Равномерная сходимость функций по параметру.html">1.1. Равномерная сходимость
-								функций по параметру.</a></li>
-						<li><a href="1.2. Собственные интегралы.html">1.2. Собственные интегралы.</a></li>
-						<li><a href="Общий случай.html">Общий случай.</a></li>
-						<li class="sub-menu">
-							<a href="#">1.3 Несобственные интегралы.<img src="../icons/down.png"
-									class="submenu-icon submenu-trigger"></a>
-							<ul>
-								<li><a href="1.3.1. Основные определения.html">1.3.1. Основные определения.</a></li>
-								<li><a href="1.3.2. Равномерная сходимость несобственных интегралов.html">1.3.2.
-										Равномерная сходимость несобственных интегралов.</a></li>
-								<li><a href="1.3.3. Признаки равномерной сходимости .html">1.3.3. Признаки равномерной
-										сходимости.</a></li>
-								<li><a href="1.3.4. Свойства равномерно сходящихся интегралов — копия.html">1.3.4.
-										Свойства равномерно сходящихся интегралов.</a></li>
-								<li><a href="1.3.5. Эйлеровы интегралы.html">1.3.5. Эйлеровы интегралы.</a></li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-<div id="size"><img src="../icons/shrink.png" class="size-icon"></div>
-			</ul>
-		</div>
-	</nav>
+   <div class="main-grid">
+      <nav class="side-menu">
+         <h3>Темы</h3>
+         <ul class="no-dec">
+            <li>
+               <div class="spoiler spoiler-submenu"><button class="spoiler-button spoiler-submenu">Интегралы, зависящие
+                     от параметра.</button>
+                  <div class="spoiler-content spoiler-submenu">
+                     <ul class="no-dec">
+                        <li>
+                           <p><a href="1.1. Равномерная сходимость функций по параметру.html">1.1. Равномерная
+                                 сходимость функций по параметру.</a></p>
+                        </li>
+                        <li>
+                           <p><a href="1.2. Собственные интегралы.html">1.2. Собственные интегралы.</a></p>
+                        </li>
+                        <li>
+                           <p><a href="Общий случай.html">Общий случай.</a></p>
+                        </li>
+                        <li>
+                           <div class="spoiler spoiler-submenu"><button class="spoiler-button spoiler-submenu">1.3
+                                 Несобственные интегралы.</button>
+                              <div class="spoiler-content spoiler-submenu">
+                                 <ul class="no-dec">
+                                    <li>
+                                       <p><a href="">1.3.1. Основные определения.</a></p>
+                                    </li>
+                                    <li>
+                                       <p><a href="">1.3.2. Равномерная сходимость несобственных интегралов.</a></p>
+                                    </li>
+                                    <li>
+                                       <p><a href="">1.3.3. Признаки равномерной сходимости.</a></p>
+                                    </li>
+                                    <li>
+                                       <p><a href="">1.3.4. Свойства равномерно сходящихся интегралов.</a></p>
+                                    </li>
+                                    <li>
+                                       <p><a href="">1.3.5. Эйлеровы интегралы.</a></p>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </li>
+         </ul>
+      </nav>
       <main class="main">
 
 
@@ -91,7 +104,6 @@
             <div class="spoiler">
                <button class="spoiler-button">Доказательство</button>
                <div class="spoiler-content">
-			   <div class="col-red">
                   <span>Рассмотрим собственный интеграл \(\displaystyle \varphi \,(\eta ,\gamma
                      )\,=\,\int\limits_{a}^{\eta }{f(x,\gamma )dx}\), \(\displaystyle \eta \,\in \,\left(
                      a,\mathbf{B} \right)\).</span>
@@ -117,7 +129,6 @@
                         \mathbf{B}}{\mathop{\lim }}\,\int\limits_{a}^{\eta
                         }{g(x)dx}=\int\limits_{a}^{\mathbf{B}}{g(x)dx}\).</span>
                   </p>
-				</div>
                </div>
             </div>
          </section>
@@ -139,12 +150,12 @@
                   </div>
                </div>
                <div>
-                  <div class="col-red"><p><span>Замечание 2. Теорему часто применяют при работе с функциональными рядами для
+                  <p><span>Замечание 2. Теорему часто применяют при работе с функциональными рядами для
                         доказательства равенства </span></p>
                   <p><span>\(\displaystyle \sum\limits_{n=0}^{\infty
                         }{\int\limits_{a}^{\mathbf{B}}{{{u}_{n}}\left( x \right)dx}}=\underset{N\to \infty }{\mathop{\lim }}\,\sum\limits_{n=0}^{N}{\int\limits_{a}^{\mathbf{B}}{{{u}_{n}}\left( x \right)dx}}=\)</span></p>
                   <p><span>\(\displaystyle =\int\limits_{a}^{\mathbf{B}}{\underset{N\to \infty }{\mathop{\lim }}\,\sum\limits_{n=0}^{N}{{{u}_{n}}\left( x \right)}\,dx}=\int\limits_{a}^{\mathbf{B}}{\sum\limits_{n=0}^{\infty }{{{u}_{n}}\left( x \right)}\,dx}\)</span></p>
-                  <p><span>(роль параметра играет \(\displaystyle n\)).</span></p></div>
+                  <p><span>(роль параметра играет \(\displaystyle n\)).</span></p>
                </div>
          </section>
 
@@ -153,7 +164,7 @@
             <div class="spoiler">
             <button class="spoiler-button">Решение</button>
                <div class="spoiler-content">
-                  <div class="col-red"><span>\(\displaystyle S\,=\,\sum\limits_{n=0}^{\infty }{{{\left( -1 \right)}^{n}}\int\limits_{0}^{1}{\left( {{x}^{4n}}+{{x}^{4n+2}} \right)dx}}=\)\(\displaystyle \int\limits_{0}^{1}{\sum\limits_{n=0}^{\infty }{{{\left( -1 \right)}^{n}}\left( {{x}^{4n}}+{{x}^{4n+2}} \right)\,}dx}=\)</span>
+                  <span>\(\displaystyle S\,=\,\sum\limits_{n=0}^{\infty }{{{\left( -1 \right)}^{n}}\int\limits_{0}^{1}{\left( {{x}^{4n}}+{{x}^{4n+2}} \right)dx}}=\)\(\displaystyle \int\limits_{0}^{1}{\sum\limits_{n=0}^{\infty }{{{\left( -1 \right)}^{n}}\left( {{x}^{4n}}+{{x}^{4n+2}} \right)\,}dx}=\)</span>
                   <p><span>\(\displaystyle =\int\limits_{0}^{1}{\left( 1+{{x}^{2}} \right)\sum\limits_{n=0}^{\infty }{{{\left( -1 \right)}^{n}}{{x}^{4n}}\,}dx}=\int\limits_{0}^{1}{\frac{1+{{x}^{2}}}{1+{{x}^{4}}}dx}=\)</span></p>
                   <p><span>\(\displaystyle
                            =\int\limits_{0}^{1}{\frac{1\,+\frac{1}{{{x}^{2}}}}{{{x}^{2}}+\,\frac{1}{{{x}^{2}}}}dx}=\int\limits_{0}^{1}{\frac{d\left(
@@ -168,22 +179,19 @@
                         {{S}_{N}}\,=\sum\limits_{n=0}^{N}{{{\left( -1 \right)}^{n}}{{x}^{4n}}\left( 1+{{x}^{2}} \right)}=\frac{1\pm {{x}^{4n}}}{1+{{x}^{4}}}\left(
                         1+{{x}^{2}} \right)\le 2\frac{1+{{x}^{2}}}{1+{{x}^{4}}}\le 4\),</span></p>
                   <p><span>то в роли мажоранты можно использовать константу 4.</span></p>
-				  </div>
                </div>
             </div>
          </section>
-   <section class="consequence"><div class="col-blue"><strong>Следствие 1. </strong><span>Пусть неотрицательная функция \(\displaystyle
+   <section class="consequence"><strong>Следствие 1. </strong><span>Пусть неотрицательная функция \(\displaystyle
          f(x,\gamma )\) непрерывна <br> по \(\displaystyle x\) в промежутке \(\displaystyle \left[ a,\mathbf{B}
          \right)\) и стремится, <em>возрастая по</em> \(\displaystyle \gamma \), к предельной функции \(\displaystyle
          g\left( x \right)\), также непрерывной в указанном промежутке. Тогда из существования интеграла \(\displaystyle
          \int\limits_{a}^{\mathbf{B}}{g(x)dx}\) вытекает как существование интеграла \(\displaystyle I(\gamma
          )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) \(\displaystyle \forall \gamma \in \left[
          {{\gamma }_{1}},{{\gamma }_{2}} \right]\), так и справедливость формулы. <a class="shortcut" href="#0.8">(0.8)</a></span>
-		 </div>
       <div class="spoiler">
          <button class="spoiler-button">Доказательство</button>
          <div class="spoiler-content">
-		 <div class="col-blue">
             <span>В силу обобщенной теоремы Дини (теоремы </span>5<span>): </span>
             <p>
                <span>\(\displaystyle \forall \eta \in \left( a,\mathbf{B} \right)\,\ f\left( x,\gamma
@@ -198,8 +206,7 @@
                равномерно на \(\displaystyle \left[
                   {{\gamma }_{1}},{{\gamma }_{2}} \right]\) и в силу теоремы 15 выполняется формула .</span>
             </p>
-		</div>
-        </div>
+         </div>
       </div>
    </section>
    <section class="remark">
@@ -213,10 +220,10 @@
       }{{{u}_{n}}\left( x \right)}\), состоящий из положительных непрерывных на \(\displaystyle \left[ a,+\infty   \right)\) (или \(\displaystyle \left[ a,b \right)\)) функций, имеет для этих значений \(\displaystyle x\) непрерывную же сумму \(\displaystyle S\left( x \right)\). Тогда, если \(\displaystyle S\left( x \right)\) интегрируема на \(\displaystyle \left[ a,+\infty   \right)\) (или \(\displaystyle \left[ a,b \right]\)),<br> то ряд можно почленно интегрировать.
       <section class="remark">
          <p>Замечание 1. Утверждение остается справедливым, если все члены ряда отрицательные.</p>  
-         <div class="col-red"><p>Замечание 2. Предположение об интегрируемости суммы ряда <br> на \(\displaystyle \left[ a,+\infty  \right)\) (или \(\displaystyle \left[ a,b \right]\)) может быть заменено предположением о сходимости ряда \(\displaystyle \sum\limits_{n=1}^{\infty }{\int\limits_{a}^{+\infty }{{{u}_{n}}\left( x \right)dx}}\) (или \(\displaystyle \sum\limits_{n=1}^{\infty }{\int\limits_{a}^{b}{{{u}_{n}}\left( x \right)dx}}\)).</p></div>
+         <p>Замечание 2. Предположение об интегрируемости суммы ряда <br> на \(\displaystyle \left[ a,+\infty  \right)\) (или \(\displaystyle \left[ a,b \right]\)) может быть заменено предположением о сходимости ряда \(\displaystyle \sum\limits_{n=1}^{\infty }{\int\limits_{a}^{+\infty }{{{u}_{n}}\left( x \right)dx}}\) (или \(\displaystyle \sum\limits_{n=1}^{\infty }{\int\limits_{a}^{b}{{{u}_{n}}\left( x \right)dx}}\)).</p>
       </section> 
    </section>
-  <div class="col-red"><section class="example">Пример 8.Считая известным, что <span>\(\displaystyle \sum\limits_{n=1}^{\infty }{\frac{1}{{{n}^{2}}}}=\frac{{{\pi }^{2}}}{6}\),
+   <section class="example">Пример 8.Считая известным, что <span>\(\displaystyle \sum\limits_{n=1}^{\infty }{\frac{1}{{{n}^{2}}}}=\frac{{{\pi }^{2}}}{6}\),
       с помощью разложения в ряд вычислим интеграл \(\displaystyle \int\limits_{0}^{1}{\frac{\ln x}{1-x}\,dx}\).</span>
          <div class="spoiler">
             <button class="spoiler-button">Решение</button>
@@ -296,7 +303,6 @@
          </div>
       </div>
    </section>
-   </div>
    <section class="remark">
       <p><span>Замечание. Вычисление последнего интеграла показано в примерах <br>
       </span>7<span> и 23.<br> </span></p>
@@ -318,8 +324,8 @@
       <div class="spoiler">
          <button class="spoiler-button">Доказательство</button>
          <div class="spoiler-content">
-            <div class="col-red"><span>Доказательство аналогично доказательству следствия 1 из теоремы
-            </span>9.</div>
+            <span>Доказательство аналогично доказательству следствия 1 из теоремы
+            </span>9<span>.</span>
          </div>
       </div>
    </section>
@@ -413,7 +419,7 @@
       <div class="spoiler">
          <button class="spoiler-button">Решение</button>
          <div class="spoiler-content">
-            <div class="col-blue"><span>Пусть \(\displaystyle f\left( x,a
+            <span>Пусть \(\displaystyle f\left( x,a
                \right)=\frac{1-{{e}^{-ax}}}{x{{e}^{x}}}\). Учитывая, что \(\displaystyle
                \underset{x\to 0}{\mathop{\lim }}\,\frac{1-{{e}^{-ax}}}{x{{e}^{x}}}=a\),
                подынтегральную функцию можно доопределить до непрерывной на \(\displaystyle
@@ -428,7 +434,7 @@
                <p>3) <span>Интеграл \(\displaystyle K\left( a
                      \right)=\int\limits_{0}^{+\infty }{\frac{\partial \tilde{f}}{\partial
                      a}dx}=\int\limits_{0}^{+\infty
-                     }{{{e}^{-\left( a+1 \right)x}}dx}\le \int\limits_{0}^{+\infty }{{{e}^{-x}}dx}=1\) сходится равномерно по \(\displaystyle a\) на множестве \(\displaystyle \left[ 0,+\infty  \right)\) (по признаку Вейерштрасса).</span></p></div>
+                     }{{{e}^{-\left( a+1 \right)x}}dx}\le \int\limits_{0}^{+\infty }{{{e}^{-x}}dx}=1\) сходится равномерно по \(\displaystyle a\) на множестве \(\displaystyle \left[ 0,+\infty  \right)\) (по признаку Вейерштрасса).</span></p>
                <p><span>Все условия теоремы 17 о дифференцировании по параметру выполнены, поэтому по правилу Лейбница</span></p>
                <p><span>\(\displaystyle {I}'\left( a \right)=K\left( a \right)=\int\limits_{0}^{+\infty }{\frac{\partial }{\partial a}\left( \frac{1-{{e}^{-ax}}}{x{{e}^{x}}}
                      \right)dx}=\frac{1}{1+a}\).
@@ -456,7 +462,7 @@
                произвольной точке \(\displaystyle {{a}_{0}}&gt;0\). Для этого рассмотрим функцию
                \(\displaystyle I\left( a \right)\) на отрезке \(\displaystyle E=\left[
                \frac{{{a}_{0}}}{2},{{a}_{0}}+1 \right]\).</span>
-            <div class="col-blue"><p><span>Учитывая, что \(\displaystyle \underset{x\to 0}{\mathop{\lim
+            <p><span>Учитывая, что \(\displaystyle \underset{x\to 0}{\mathop{\lim
                   }}\,\frac{1\,-\,{{e}^{-ax}}}{x}\cos x\,=\,a\), доопределим подынтегральную
                   функцию до непрерывной на \(\displaystyle
                   {{\left[ 0,+\infty  \right)}^{2}}\): </span></p>
@@ -477,8 +483,8 @@
                   }{\frac{\partial \tilde{f}}{\partial a}dx}=\int\limits_{0}^{+\infty
                   }{{{e}^{-ax}}\cos x\,dx}\) сходится равномерно по \(\displaystyle a\) на множестве \(\displaystyle E\) в силу признака Вейерштрасса:</span></p>
             <p><span>\(\displaystyle \int\limits_{0}^{+\infty }{\left| {{e}^{-ax}}\cos x \right|\,dx}\le \int\limits_{0}^{+\infty }{{{e}^{-ax}}\,dx}\le \int\limits_{0}^{+\infty }{{{e}^{-\frac{{{a}_{0}}}{2}x}}\,dx}=\frac{2}{{{a}_{0}}}&lt;\infty
-                  \).</p></div>
-                  <p>На множестве \(\displaystyle E\) выполнены все условия теоремы
+                  \).
+                  На множестве \(\displaystyle E\) выполнены все условия теоремы
                17 о дифференцировании по параметру, поэтому
                   \(\displaystyle \forall a\in E\) (а значит, и для \(\displaystyle a={{a}_{0}}\)):
                   \(\displaystyle {I}'\left( a \right)=K\left( a \right)=\int\limits_{0}^{+\infty
@@ -516,7 +522,7 @@
             <p>на отрезке \(\displaystyle E=\left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\),
                \(\displaystyle {{\gamma }_{1}}=\min \left\{ a,b \right\}/2\), \(\displaystyle
                {{\gamma }_{2}}=\max \left\{ {{a}_{0}}+1,\,\,{{b}_{0}}+1 \right\}\).</p>
-            <p><div class="col-blue"><span>Пусть \(\displaystyle f\left( x,a,{{b}_{0}}
+            <p><span>Пусть \(\displaystyle f\left( x,a,{{b}_{0}}
                   \right)\,=\,\frac{{{e}^{-ax}}-\,{{e}^{-{{b}_{0}}x}}}{x}\) Учитывая, что
                   \(\displaystyle \underset{x\to 0}{\mathop{\lim }}\,f\left( x,a,{{b}_{0}}
                   \right)\,=\,{{b}_{0}}-\,a\), <br> доопределим подынтегральную функцию до
@@ -537,7 +543,7 @@
                   \right)\,=\,\int\limits_{0}^{+\infty }{\frac{\partial \tilde{f}}{\partial
                   a}dx}\,=\,-\,\int\limits_{0}^{+\infty
                   }{{{e}^{-ax}}dx}\) сходится равномерно на \(\displaystyle E\) в силу признака Вейерштрасса, так как \(\displaystyle \int\limits_{0}^{+\infty }{{{e}^{-ax}}\,dx}\le \int\limits_{0}^{+\infty }{{{e}^{-{{\gamma }_{1}}x}}\,dx}=\frac{2}{{{\gamma }_{1}}}&lt;\infty
-                  \).</span></div>
+                  \).</span>
                На множестве \(\displaystyle E\) выполнены все условия теоремы 17 о
                дифференцировании по параметру, поэтому \(\displaystyle \forall a\in E\) (а
                значит, и для значения \(\displaystyle {{a}_{0}}\)):
@@ -566,7 +572,7 @@
             Рассмотрим интеграл \(\displaystyle I\left( a,b
             \right)=\int\limits_{0}^{+\infty
             }{{{e}^{-ax}}\cos \left( bx \right)\,dx}\) как функцию \(\displaystyle J\left( b \right)\) на отрезке \(\displaystyle \,\left[ 0.5,\,2 \right]\). Дважды интегрируя по частям для этого интеграла получим \(\displaystyle I\left( a,b \right)=\frac{a}{{{a}^{2}}+{{b}^{2}}}\).
-            <div class="col-blue">В силу теоремы 17 функцию \(\displaystyle I\left( a,b \right)\) можно
+            В силу теоремы 17 функцию \(\displaystyle I\left( a,b \right)\) можно
             дифференцировать по \(\displaystyle b\) по правилу Лейбница:
             <span>1) \(\displaystyle {{e}^{-ax}}\cos \left( bx \right)\) и \(\displaystyle
                \frac{\partial }{\partial b}\left( {{e}^{-ax}}\cos \left( bx \right)
@@ -578,7 +584,7 @@
                }{{{e}^{-ax}}\,dx}\,=\,\frac{1}{a}\,&lt;\,+\,\infty \),</span>
             <span>3) интеграл \(\displaystyle K\left( b \right)={J}'\left( b \right)=-\int\limits_{0}^{+\infty }{x{{e}^{-ax}}\sin \left( bx \right)\,dx}\) сходится равномерно <br> на \(\displaystyle \,\left[ 0.5,\,2 \right]\) по признаку Вейерштрасса: </span>
             <span>\(\displaystyle \int\limits_{0}^{+\infty }{\left| x{{e}^{-ax}}\sin \left( bx \right) \right|\,dx}\,\le \,\int\limits_{0}^{+\infty }{x{{e}^{-ax}}\,dx}\,=\,\frac{1}{{{a}^{2}}}\,&lt;\,\infty
-               \).</div>
+               \).
                Следовательно,
                \(\displaystyle \int\limits_{0}^{+\infty }{x{{e}^{-ax}}\sin
                x\,dx}={{\left. \left( -\frac{\partial }{\partial b}\int\limits_{0}^{+\infty }{{{e}^{-ax}}\cos
@@ -600,7 +606,7 @@
          <div class="spoiler-content">
          Зафиксируем некоторое значение \(\displaystyle {{b}_{0}}&gt;0\) и рассмотрим интеграл как функцию от \(\displaystyle a\):
                \(\displaystyle J\left( a \right)=I\left( a,{{b}_{0}} \right)=\int\limits_{0}^{+\infty }{{{e}^{-{{b}_{0}}x}}\frac{\sin ax}{x}dx}\).
-               <div class="col-blue"><span>Учитывая, что \(\displaystyle \underset{x\to 0}{\mathop{\lim }}\,{{e}^{-{{b}_{0}}x}}\frac{\sin ax}{x}=a\), доопределим подынтегральную функцию до непрерывной по \(\displaystyle x\) на множестве \(\displaystyle \left[ 0,+\infty  \right)\):</span>
+               <span>Учитывая, что \(\displaystyle \underset{x\to 0}{\mathop{\lim }}\,{{e}^{-{{b}_{0}}x}}\frac{\sin ax}{x}=a\), доопределим подынтегральную функцию до непрерывной по \(\displaystyle x\) на множестве \(\displaystyle \left[ 0,+\infty  \right)\):</span>
                <span>\(\displaystyle \tilde{f}\left( x,a,{{b}_{0}} \right)=\left\{ \begin{matrix}
                   {{e}^{-{{b}_{0}}x}}\frac{\sin ax}{x},\,\,x&gt;0  \\
                   a,\,\,x=0   \\
@@ -609,7 +615,7 @@
                <span>2) \(\displaystyle J\left( 0 \right)=0\).
                3) Интеграл \(\displaystyle K\left( a \right)\,=\,\int\limits_{0}^{+\infty }{\frac{\partial }{\partial a}\left( {{e}^{-{{b}_{0}}x}}\frac{\sin ax}{x} \right)dx}\,=\,\int\limits_{0}^{+\infty }{{{e}^{-{{b}_{0}}x}}\cos ax\,dx}\) сходится равномерно относительно параметра \(\displaystyle a\) на \(\displaystyle \mathbb{R}\) в силу признака Вейерштрасса:</span>
                <span>\(\displaystyle \int\limits_{0}^{+\infty }{\left| {{e}^{-{{b}_{0}}x}}\cos ax \right|dx}\le \int\limits_{0}^{+\infty }{{{e}^{-{{b}_{0}}x}}dx}=\frac{1}{{{b}_{0}}}&lt;\infty
-                                                   \).</span></div>
+                                                   \).</span>
                <span>
                   Все условия теоремы 17 о дифференцировании по параметру выполнены, поэтому по
                   правилу Лейбница
@@ -626,7 +632,7 @@
          </div>
       </div>
    </section>
-   <div class="col-red"><section class="example">Пример 18*. Докажем, что
+   <section class="example">Пример 18*. Докажем, что
       <span> \(\displaystyle \int\limits_{0}^{+\infty }{\frac{\sin ax}{x}dx}=\frac{\pi }{2}\,\,\operatorname{sign}a\), \(\displaystyle a\ne 0\). <strong class="float-r">(0.12)</strong><br>                                         </span>
       <span>(этот интеграл называют <strong><em>интегралом Дирихле</em></strong>) и вычислим интегралы</span>
       <span>\(\displaystyle \int\limits_{0}^{+\infty }{\frac{\sin \left( {{x}^{3}} \right)}{x}dx}\)  и  \(\displaystyle \int\limits_{0}^{+\infty }{\frac{{{\sin }^{3}}x}{x}dx}\,\).</span>
@@ -669,7 +675,7 @@
             <span>\(\displaystyle =\frac{3}{4}\int\limits_{0}^{+\infty }{\frac{\sin x}{x}dx}\,-\,\frac{1}{4}\int\limits_{0}^{+\infty }{\frac{\sin \left( 3x \right)}{3x}d\left( 3x \right)}\,=\,\frac{\pi }{8}\left( 3-1 \right)=\frac{\pi }{4}\).</span>
          </div>
       </div>
-   </section></div>
+   </section>
    <section class="theorem">
       <strong>Теорема 18 (Интегрируемость в собственном смысле). </strong>Если функция \(\displaystyle f(x,\gamma )\) непрерывна в полуполосе \(\displaystyle \left[ a,\mathbf{B} \right)\times \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\), а интеграл
       \(\displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) <strong class="float-r">(0.13)</strong> 
@@ -715,8 +721,8 @@
             }{\frac{1-{{e}^{-ax}}}{x{{e}^{x}}}dx}=\int\limits_{0}^{+\infty
             }{\frac{1}{{{e}^{x}}}\left( \int\limits_{0}^{a}{{{e}^{-\gamma x}}d\gamma } \right)dx}=\int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{a}{{{e}^{-x\left( \gamma +1 \right)}}d\gamma } \right)dx}=\)
             \(\displaystyle =\int\limits_{0}^{a}{\left( \int\limits_{0}^{+\infty }{{{e}^{-x\left( \gamma +1 \right)}}dx} \right)d\gamma }=\int\limits_{0}^{a}{\frac{1}{\gamma +1}d\gamma =\ln \left( a+1 \right)}\).
-            <div class="col-blue"><span>Возможность использования формулы (0.14)  обусловлена выполнением всех условий теоремы 18: <p>1) функция \(\displaystyle {{e}^{-x\left( \gamma +1 \right)}}\) непрерывна; </p>
-                                                                                                                                <p>2) интеграл \(\displaystyle \int\limits_{0}^{+\infty }{{{e}^{-x\left( \gamma +1 \right)}}dx}=\frac{1}{\gamma +1}\le 1\) сходится равномерно относительно \(\displaystyle \gamma \) на \(\displaystyle \left[ 0,+\infty  \right)\).</p></span></div>
+            <span>Возможность использования формулы (0.14)  обусловлена выполнением всех условий теоремы 18: <p>1) функция \(\displaystyle {{e}^{-x\left( \gamma +1 \right)}}\) непрерывна; </p>
+                                                                                                                                <p>2) интеграл \(\displaystyle \int\limits_{0}^{+\infty }{{{e}^{-x\left( \gamma +1 \right)}}dx}=\frac{1}{\gamma +1}\le 1\) сходится равномерно относительно \(\displaystyle \gamma \) на \(\displaystyle \left[ 0,+\infty  \right)\).</p></span>
          </div>
       </div> 
    </section>
@@ -729,7 +735,7 @@
                   \(\displaystyle =\int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{a}{{{e}^{-bx}}\cos \left( \gamma x \right)\,d\gamma } \right)dx}=\int\limits_{0}^{a}{\left( \int\limits_{0}^{+\infty }{{{e}^{-bx}}\cos \left( \gamma x \right)\,dx} \right)d\gamma }=\)
                   \(\displaystyle =\int\limits_{0}^{a}{\frac{b}{{{\gamma }^{2}}+{{b}^{2}}}d\gamma
                                                    }=\operatorname{arctg}\frac{a}{b}\).
-            <div class="col-blue"><span>Возможность использования формулы (0.14)  обусловлена
+            <span>Возможность использования формулы (0.14)  обусловлена
                выполнением всех условий теоремы 18:</span>
             <span>1) функция \(\displaystyle {{e}^{-bx}}\cos \left( \gamma x \right)\)
                непрерывна;</span>
@@ -739,7 +745,7 @@
                Вейерштрасса: \(\displaystyle \underset{0}{\overset{+\infty }{\mathop
                \int }}\,\left| {{e}^{-bx}}\cos \left( \gamma x \right) \right|\,dx\le
                \int\limits_{0}^{+\infty
-               }{{{e}^{-bx}}dx}=\frac{1}{b}&lt;+\infty \).</span></div>
+               }{{{e}^{-bx}}dx}=\frac{1}{b}&lt;+\infty \).</span>
          </div>
       </div>
    </section>  
@@ -754,16 +760,16 @@
             }{\frac{{{e}^{-ax}}-{{e}^{-bx}}}{x}dx}=\int\limits_{0}^{+\infty
             }{\left(
             \int\limits_{a}^{b}{{{e}^{-\gamma x}}d\gamma } \right)dx}=\int\limits_{a}^{b}{\left( \int\limits_{0}^{+\infty }{{{e}^{-\gamma x}}dx} \right)d\gamma }=\int\limits_{a}^{b}{\frac{1}{\gamma }d\gamma =\ln \frac{b}{a}}\).
-            <div class="col-blue"><p><span>Возможность использования формулы (0.14)  обусловлена выполнением всех условий теоремы 18:</span></p>
+            <p><span>Возможность использования формулы (0.14)  обусловлена выполнением всех условий теоремы 18:</span></p>
             <p><span>1) функция \(\displaystyle {{e}^{-\gamma x}}\) непрерывна; </span>
-            <span>2) интеграл \(\displaystyle \int\limits_{0}^{+\infty }{{{e}^{-\gamma x}}dx}=\frac{1}{\gamma }\) сходится равномерно относительно \(\displaystyle \gamma \) для \(\displaystyle \gamma \,\ge \,{{\gamma }_{0}}\,&gt;\,0\), \(\displaystyle {{\gamma }_{0}}=\min \left\{ a,b \right\}/2\).</span></p></div>
+            <span>2) интеграл \(\displaystyle \int\limits_{0}^{+\infty }{{{e}^{-\gamma x}}dx}=\frac{1}{\gamma }\) сходится равномерно относительно \(\displaystyle \gamma \) для \(\displaystyle \gamma \,\ge \,{{\gamma }_{0}}\,&gt;\,0\), \(\displaystyle {{\gamma }_{0}}=\min \left\{ a,b \right\}/2\).</span></p>
          </div>
       </div>
    </section>
    <section class="remark">
       <p>Замечание. Интегралы из примеров 19-21 были решены ранее с помощью теоремы 17 о дифференцировании по параметру.</p>
    </section>
-   <div class="col-blue"><section class="theorem">
+   <section class="theorem">
       <p><strong>Теорема 19. (Интегрируемость в несобственном смысле)</strong><span>. Пусть функция \(\displaystyle f:\left[ a,\mathbf{B} \right)\times \left[ {{\gamma }_{1}},+\infty  \right)\) удовлетворяет условиям:          </span></p>
       <p><span>1) \(\displaystyle f\in \mathbb{C}\left( \left[ a,\mathbf{B} \right)\times \left[ {{\gamma }_{1}},+\infty  \right) \right)\);</span></p>
       <p><span>2) \(\displaystyle \forall {{\gamma }_{2}}&gt;{{\gamma }_{1}}\ \) \(\displaystyle \int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\) сходится равномерно на \(\displaystyle \left[ {{\gamma }_{1}},{{\gamma }_{2}} \right]\);
@@ -817,13 +823,14 @@
                                                    \right)dx}\)
                                           <p>вытекает сходимость другого и равенство этих интегралов.</p>
    </section>
-</div>
+
    </main>
-<footer class="footer">
-   <p>Учебные материалы </p>
-   <p>Автор материалов - Рояк Светлана Хаимовна.</p>
-</footer>
-<script src="../main.js"></script>
+   </div>
+   <footer class="footer">
+      <p>Учебные материалы </p>
+      <p>Автор материалов - Рояк Светлана Хаимовна.</p>
+   </footer>
+   <script src="main.js"></script>
 </body>
 
 </html>
